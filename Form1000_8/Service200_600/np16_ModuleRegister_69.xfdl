@@ -1,6 +1,6 @@
-ï»¿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <FDL version="2.0">
-  <Form id="PP_ModuleRegister" classname="PP_BaseFunctionkMM" left="0" top="0" width="1185" height="881" titletext="ëª¨ë“ˆ ë“±ë¡" cssclass="frm_popBg" onload="PP_ModuleRegister_onload">
+  <Form id="PP_ModuleRegister" classname="PP_BaseFunctionkMM" left="0" top="0" width="1185" height="881" titletext="¸ðµâ µî·Ï" cssclass="frm_popBg" onload="PP_ModuleRegister_onload">
     <Layouts>
       <Layout>
         <Div id="div_detail" taborder="103" left="972" top="45" width="203" height="791" Style1="background:cornsilk;" text="div_body">
@@ -8,10 +8,10 @@
             <Layout>
               <Static id="Static14" taborder="22" cssclass="sta_WF_detailLbl03" left="0" top="28" width="203" bottom="0"/>
               <Static id="Static11" taborder="1" cssclass="sta_WF_titleBg" left="0" top="0" width="81" height="29"/>
-              <Static id="Static05" taborder="0" text="ì‚¬ìš©" left="20" top="0" width="50" height="28"/>
+              <Static id="Static05" taborder="0" text="»ç¿ë" left="20" top="0" width="50" height="28"/>
               <Combo id="Combo01" taborder="2" codecolumn="CODE" datacolumn="CAPTION" left="5" top="31" width="71" height="22" innerdataset="@ds_cmm_usecd"/>
               <Static id="Static00" taborder="23" cssclass="sta_WF_titleBg" left="80" top="0" width="66" height="29"/>
-              <Static id="Static01" taborder="24" text="ë©”ë‰´ì–¼" left="94" top="0" width="38" height="28"/>
+              <Static id="Static01" taborder="24" text="¸Þ´º¾ó" left="94" top="0" width="38" height="28"/>
               <Static id="Static02" taborder="25" cssclass="sta_WF_titleBg" left="145" top="0" width="58" height="29"/>
               <Static id="Static03" taborder="26" text="Abstract" left="150" top="0" width="50" height="28"/>
               <Static id="Static37" taborder="27" cssclass="sta_WF_detailLbl03" left="80" top="28" width="66" height="28"/>
@@ -59,7 +59,7 @@
           </Layouts>
         </Div>
         <Static id="Static11" taborder="5" cssclass="sta_WF_titleBg" left="10" top="45" width="372" height="29"/>
-        <Static id="Static05" taborder="6" text="ì§€ì›ì—¬ë¶€" cssclass="sta_POP_GroupTit" left="20" top="45" width="76" height="28"/>
+        <Static id="Static05" taborder="6" text="Áö¿ø¿©ºÎ" cssclass="sta_POP_GroupTit" left="20" top="45" width="76" height="28"/>
         <Static id="Static14" taborder="7" cssclass="sta_WF_detailLbl03" left="10" top="73" width="372" height="394"/>
         <Combo id="Combo01" taborder="8" left="304" top="84" width="63" height="22" codecolumn="CODE" datacolumn="CAPTION" innerdataset="@ds_cmm_supporttype"/>
         <Combo id="Combo00" taborder="9" left="188" top="84" width="63" height="22" codecolumn="CODE" datacolumn="CAPTION" innerdataset="@ds_cmm_supporttype"/>
@@ -67,10 +67,10 @@
         <Static id="Static15" taborder="13" text="Mobile" cssclass="sta_WF_DetailTit" left="249" top="84" width="49" height="22"/>
         <Static id="Static10" taborder="15" text="HTML5" cssclass="sta_WF_DetailTit" left="133" top="84" width="49" height="22"/>
         <Static id="Static00" taborder="17" text="Runtime" cssclass="sta_WF_DetailTit" left="16" top="84" width="49" height="22"/>
-        <Static id="st_title" taborder="31" text="ëª¨ë“ˆ ë“±ë¡ -" cssclass="sta_POP_Title" left="10" top="1" right="1098" height="35" Style1="color:#ffffffff;"/>
+        <Static id="st_title" taborder="31" text="¸ðµâ µî·Ï -" cssclass="sta_POP_Title" left="10" top="1" right="1098" height="35" Style1="color:#ffffffff;"/>
         <Button id="btn_close" taborder="32" onclick="common_onclick" cssclass="btn_POP_Cls" top="10" right="10" width="15" height="15" hotkey="ESCAPE"/>
         <Static id="Static12" taborder="33" cssclass="sta_POP_BtnBg" left="1" right="1" bottom="1" height="38"/>
-        <Button id="btn_save" taborder="34" text="ì €ìž¥" onclick="common_onclick" cssclass="btn_WF_tran" right="11" bottom="8" width="60" height="24"/>
+        <Button id="btn_save" taborder="34" text="ÀúÀå" onclick="common_onclick" cssclass="btn_WF_tran" right="11" bottom="8" width="60" height="24"/>
         <Static id="Static24" taborder="43" cssclass="sta_WF_titleBg" left="10" top="278" width="372" height="29"/>
         <Static id="Static25" taborder="44" text="Image" cssclass="sta_POP_GroupTit" left="20" top="278" width="111" height="28"/>
         <Static id="sta_stockLink_name" taborder="58" left="21" top="312" width="336" height="22" Style1="border:1 solid #808080ff ;padding:0 0 0 5;" onmouseenter="sta_stockLink_name_onmouseenter" onmouseleave="sta_stockLink_name_onmouseleave"/>
@@ -86,7 +86,7 @@
         <Edit id="edt_masterCode01" taborder="54" lengthunit="utf8" maxlength="30" onsetfocus="edt_masterCode_onsetfocus" onkillfocus="edt_masterCode_onkillfocus" left="21" top="253" width="164" height="21" onmouseenter="div_SyntaxDefault_edt_masterCode01_onmouseenter" onmouseleave="div_SyntaxDefault_edt_masterCode01_onmouseleave"/>
         <Edit id="edt_masterCode00" taborder="55" lengthunit="utf8" maxlength="30" onsetfocus="edt_masterCode_onsetfocus" onkillfocus="edt_masterCode_onkillfocus" left="206" top="253" width="165" height="21" onmouseenter="div_SyntaxDefault_edt_masterCode01_onmouseenter" onmouseleave="div_SyntaxDefault_edt_masterCode01_onmouseleave" enable="true"/>
         <Static id="Static44" taborder="97" cssclass="sta_WF_titleBg" left="10" top="339" width="372" height="29"/>
-        <Static id="Static45" taborder="98" text="ì„¤ê³„íŒŒì¼" cssclass="sta_POP_GroupTit" left="20" top="339" width="111" height="28"/>
+        <Static id="Static45" taborder="98" text="¼³°èÆÄÀÏ" cssclass="sta_POP_GroupTit" left="20" top="339" width="111" height="28"/>
         <Grid id="Grid02" taborder="101" autoenter="select" useinputpanel="false" autofittype="col" left="21" top="373" width="351" height="66" tooltiptype="hover" binddataset="ds_FILE">
           <Formats>
             <Format id="default">
@@ -99,8 +99,8 @@
                 <Row size="20"/>
               </Rows>
               <Band id="head">
-                <Cell text="íŒŒì¼ëª…"/>
-                <Cell col="1" text="êµ¬ë¶„"/>
+                <Cell text="ÆÄÀÏ¸í"/>
+                <Cell col="1" text="±¸ºÐ"/>
               </Band>
               <Band id="body">
                 <Cell edittype="none" text="bind:FILE_NAME"/>
@@ -137,16 +137,16 @@
               <Static id="Static08" taborder="3" text="Remark" cssclass="sta_POP_GroupTit" left="295" top="0" width="101" height="28"/>
               <Static id="Static20" taborder="7" cssclass="sta_WF_titleBg" left="0" top="91" width="570" height="29"/>
               <Static id="Static19" taborder="8" text="Constructor" cssclass="sta_POP_GroupTit" left="10" top="91" width="91" height="28"/>
-              <CheckBox id="chk_css" taborder="9" text="Constructor ì‚¬ìš©ì•ˆí•¨" value="0" truevalue="1" falsevalue="0" left="11" top="125" width="149" height="20"/>
-              <Static id="Static29" taborder="10" text="* Constructor ë°ì´í„°ëŠ” Init Methodì—ì„œ ê°€ì ¸ì˜µë‹ˆë‹¤." left="237" top="124" width="327" height="20" Style1="color:royalblue;font:bold 9 ë‹ì›€;"/>
+              <CheckBox id="chk_css" taborder="9" text="Constructor »ç¿ë¾ÈÇÔ" value="0" truevalue="1" falsevalue="0" left="11" top="125" width="149" height="20"/>
+              <Static id="Static29" taborder="10" text="* Constructor µ¥ÀÌÅÍ´Â Init Method¿¡¼­ °¡Á®¿É´Ï´Ù." left="237" top="124" width="327" height="20" Style1="color:royalblue;font:bold 9 µ¸¿ò;"/>
               <Static id="Static30" taborder="11" text="Syntax" cssclass="sta_WF_detailLbl01" left="0" top="148" width="78" height="54"/>
-              <TextArea id="txa_Syntax" taborder="12" scrollbars="autoboth" left="77" top="148" width="493" height="54" tooltiptype="hover" tooltiptext="Property Setting Syntax&#13;&#10;(í•„ìˆ˜ìš”ì†Œ : @, ì„ íƒìš”ì†Œ : [@], ë°°ì—´ì˜ ê²½ìš° : '['@']')&#13;&#10;&#13;&#10;&quot;XProperty&quot;ë¥¼ ìž…ë ¥í•˜ë©´ Syntaxë¡œ ë³€ê²½ë¨&#13;&#10;&quot;XObject&quot;ë¥¼ ìž…ë ¥í•˜ë©´ Link Objectë¡œ ë³€ê²½ë¨" wordwrap="true"/>
+              <TextArea id="txa_Syntax" taborder="12" scrollbars="autoboth" left="77" top="148" width="493" height="54" tooltiptype="hover" tooltiptext="Property Setting Syntax&#13;&#10;(ÇÊ¼ö¿ä¼Ò : @, ¼±ÅÃ¿ä¼Ò : [@], ¹è¿­ÀÇ °æ¿ì : '['@']')&#13;&#10;&#13;&#10;&quot;XProperty&quot;¸¦ ÀÔ·ÂÇÏ¸é Syntax·Î º¯°æµÊ&#13;&#10;&quot;XObject&quot;¸¦ ÀÔ·ÂÇÏ¸é Link Object·Î º¯°æµÊ" wordwrap="true"/>
               <Static id="Static32" taborder="13" text="Parameter Sample" cssclass="sta_WF_detailLbl01" left="0" top="201" width="78" height="59"/>
-              <TextArea id="txa_Parameter" taborder="15" scrollbars="autoboth" left="77" top="201" width="195" height="59" tooltiptype="hover" tooltiptext="Property Setting Syntax&#13;&#10;(í•„ìˆ˜ìš”ì†Œ : @, ì„ íƒìš”ì†Œ : [@], ë°°ì—´ì˜ ê²½ìš° : '['@']')&#13;&#10;&#13;&#10;&quot;XProperty&quot;ë¥¼ ìž…ë ¥í•˜ë©´ Syntaxë¡œ ë³€ê²½ë¨&#13;&#10;&quot;XObject&quot;ë¥¼ ìž…ë ¥í•˜ë©´ Link Objectë¡œ ë³€ê²½ë¨" wordwrap="true"/>
+              <TextArea id="txa_Parameter" taborder="15" scrollbars="autoboth" left="77" top="201" width="195" height="59" tooltiptype="hover" tooltiptext="Property Setting Syntax&#13;&#10;(ÇÊ¼ö¿ä¼Ò : @, ¼±ÅÃ¿ä¼Ò : [@], ¹è¿­ÀÇ °æ¿ì : '['@']')&#13;&#10;&#13;&#10;&quot;XProperty&quot;¸¦ ÀÔ·ÂÇÏ¸é Syntax·Î º¯°æµÊ&#13;&#10;&quot;XObject&quot;¸¦ ÀÔ·ÂÇÏ¸é Link Object·Î º¯°æµÊ" wordwrap="true"/>
               <Static id="Static34" taborder="16" text="Example" cssclass="sta_WF_detailLbl01" left="271" top="201" width="78" height="59"/>
-              <TextArea id="txa_Example" taborder="18" scrollbars="autoboth" left="348" top="201" width="222" height="59" tooltiptype="hover" tooltiptext="Property Setting Syntax&#13;&#10;(í•„ìˆ˜ìš”ì†Œ : @, ì„ íƒìš”ì†Œ : [@], ë°°ì—´ì˜ ê²½ìš° : '['@']')&#13;&#10;&#13;&#10;&quot;XProperty&quot;ë¥¼ ìž…ë ¥í•˜ë©´ Syntaxë¡œ ë³€ê²½ë¨&#13;&#10;&quot;XObject&quot;ë¥¼ ìž…ë ¥í•˜ë©´ Link Objectë¡œ ë³€ê²½ë¨" wordwrap="true"/>
-              <Button id="btn_addRowParameterSupport" taborder="19" text="ì¶”ê°€" onclick="btn_addRowParameterSupport_onclick" left="464" top="264" width="46" height="22"/>
-              <Button id="btn_delRowParameterSupport" taborder="20" text="ì‚­ì œ" onclick="btn_delRowParameterSupport_onclick" left="512" top="264" width="46" height="22"/>
+              <TextArea id="txa_Example" taborder="18" scrollbars="autoboth" left="348" top="201" width="222" height="59" tooltiptype="hover" tooltiptext="Property Setting Syntax&#13;&#10;(ÇÊ¼ö¿ä¼Ò : @, ¼±ÅÃ¿ä¼Ò : [@], ¹è¿­ÀÇ °æ¿ì : '['@']')&#13;&#10;&#13;&#10;&quot;XProperty&quot;¸¦ ÀÔ·ÂÇÏ¸é Syntax·Î º¯°æµÊ&#13;&#10;&quot;XObject&quot;¸¦ ÀÔ·ÂÇÏ¸é Link Object·Î º¯°æµÊ" wordwrap="true"/>
+              <Button id="btn_addRowParameterSupport" taborder="19" text="Ãß°¡" onclick="btn_addRowParameterSupport_onclick" left="464" top="264" width="46" height="22"/>
+              <Button id="btn_delRowParameterSupport" taborder="20" text="»èÁ¦" onclick="btn_delRowParameterSupport_onclick" left="512" top="264" width="46" height="22"/>
               <Grid id="grd_param" taborder="21" binddataset="ds_PARAMETERSUPPORT" autoenter="select" useinputpanel="false" autofittype="none" left="11" top="290" width="548" height="154">
                 <Formats>
                   <Format id="default">
@@ -168,10 +168,10 @@
                       <Cell text="Parameter"/>
                       <Cell col="1" text="Type"/>
                       <Cell col="2" text="Description"/>
-                      <Cell col="3" text="ìˆœì„œ"/>
-                      <Cell col="4" text="Runtimeì§€ì›"/>
-                      <Cell col="5" text="Html5ì§€ì›"/>
-                      <Cell col="6" text="Mobileì§€ì›"/>
+                      <Cell col="3" text="¼ø¼­"/>
+                      <Cell col="4" text="RuntimeÁö¿ø"/>
+                      <Cell col="5" text="Html5Áö¿ø"/>
+                      <Cell col="6" text="MobileÁö¿ø"/>
                     </Band>
                     <Band id="body">
                       <Cell edittype="text" text="bind:NAME"/>
@@ -214,7 +214,7 @@
                       <Cell text="Parameter"/>
                       <Cell col="1" text="Type"/>
                       <Cell col="2" text="Description"/>
-                      <Cell col="3" text="ìˆœì„œ"/>
+                      <Cell col="3" text="¼ø¼­"/>
                       <Cell col="4" text="nb(WIN)" tooltiptext="nexacro browser(Win)"/>
                       <Cell col="5" text="nb(OSX)" tooltiptext="desktop Hybrid(maxOS)"/>
                       <Cell col="6" text="IE8" tooltiptext="IE8"/>
@@ -260,12 +260,12 @@
                     <Layouts>
                       <Layout>
                         <Static id="Static36" taborder="0" text="Syntax" cssclass="sta_WF_detailLbl01" left="0" top="10" width="78" height="67"/>
-                        <TextArea id="txa_Syntax" taborder="2" scrollbars="autoboth" left="77" top="10" width="200" height="67" tooltiptype="hover" tooltiptext="Property Setting Syntax&#13;&#10;(í•„ìˆ˜ìš”ì†Œ : @, ì„ íƒìš”ì†Œ : [@], ë°°ì—´ì˜ ê²½ìš° : '['@']')&#13;&#10;&#13;&#10;&quot;XProperty&quot;ë¥¼ ìž…ë ¥í•˜ë©´ Syntaxë¡œ ë³€ê²½ë¨&#13;&#10;&quot;XObject&quot;ë¥¼ ìž…ë ¥í•˜ë©´ Link Objectë¡œ ë³€ê²½ë¨" wordwrap="true"/>
+                        <TextArea id="txa_Syntax" taborder="2" scrollbars="autoboth" left="77" top="10" width="200" height="67" tooltiptype="hover" tooltiptext="Property Setting Syntax&#13;&#10;(ÇÊ¼ö¿ä¼Ò : @, ¼±ÅÃ¿ä¼Ò : [@], ¹è¿­ÀÇ °æ¿ì : '['@']')&#13;&#10;&#13;&#10;&quot;XProperty&quot;¸¦ ÀÔ·ÂÇÏ¸é Syntax·Î º¯°æµÊ&#13;&#10;&quot;XObject&quot;¸¦ ÀÔ·ÂÇÏ¸é Link Object·Î º¯°æµÊ" wordwrap="true"/>
                         <Static id="Static38" taborder="3" text="Example" cssclass="sta_WF_detailLbl01" left="276" top="10" width="78" height="67"/>
-                        <TextArea id="txa_Example" taborder="5" scrollbars="autoboth" left="353" top="10" width="192" height="67" tooltiptype="hover" tooltiptext="Property Setting Syntax&#13;&#10;(í•„ìˆ˜ìš”ì†Œ : @, ì„ íƒìš”ì†Œ : [@], ë°°ì—´ì˜ ê²½ìš° : '['@']')&#13;&#10;&#13;&#10;&quot;XProperty&quot;ë¥¼ ìž…ë ¥í•˜ë©´ Syntaxë¡œ ë³€ê²½ë¨&#13;&#10;&quot;XObject&quot;ë¥¼ ìž…ë ¥í•˜ë©´ Link Objectë¡œ ë³€ê²½ë¨" wordwrap="true"/>
-                        <Button id="btn_addRowSettingSupport00" taborder="6" text="ì¶”ê°€" onclick="btn_addRowSettingSupport_onclick" left="451" top="80" width="46" height="22"/>
-                        <Button id="btn_delRowSettingSupport00" taborder="7" text="ì‚­ì œ" onclick="btn_delRowSettingSupport_onclick" left="499" top="80" width="46" height="22"/>
-                        <Grid id="grd_setting" taborder="8" binddataset="ds_SETTINGSUPPORT" autoenter="select" useinputpanel="false" autofittype="none" oncelldblclick="Grid00_oncelldblclick" left="0" top="105" width="546" height="144" tooltiptype="hover" tooltiptext="Setting : &#13;&#10; - Propertyì— ë“¤ì–´ê°ˆ ìˆ˜ ìžˆëŠ” Setting ìž…ë ¥&#13;&#10;Description :&#13;&#10; - Settingì— ëŒ€í•œ ì„¤ëª… ìž…ë ¥&#13;&#10; - Defaultê°’ ìž…ë ¥ (Styleì„ ì œì™¸í•˜ê³  ëª¨ë‘ ê¸°ë³¸ê°’ì„ ìž…ë ¥í•¨)" onexpandup="div_body_tab_module_tabpage1_Grid01_onexpandup" wheelscrollrow="1">
+                        <TextArea id="txa_Example" taborder="5" scrollbars="autoboth" left="353" top="10" width="192" height="67" tooltiptype="hover" tooltiptext="Property Setting Syntax&#13;&#10;(ÇÊ¼ö¿ä¼Ò : @, ¼±ÅÃ¿ä¼Ò : [@], ¹è¿­ÀÇ °æ¿ì : '['@']')&#13;&#10;&#13;&#10;&quot;XProperty&quot;¸¦ ÀÔ·ÂÇÏ¸é Syntax·Î º¯°æµÊ&#13;&#10;&quot;XObject&quot;¸¦ ÀÔ·ÂÇÏ¸é Link Object·Î º¯°æµÊ" wordwrap="true"/>
+                        <Button id="btn_addRowSettingSupport00" taborder="6" text="Ãß°¡" onclick="btn_addRowSettingSupport_onclick" left="451" top="80" width="46" height="22"/>
+                        <Button id="btn_delRowSettingSupport00" taborder="7" text="»èÁ¦" onclick="btn_delRowSettingSupport_onclick" left="499" top="80" width="46" height="22"/>
+                        <Grid id="grd_setting" taborder="8" binddataset="ds_SETTINGSUPPORT" autoenter="select" useinputpanel="false" autofittype="none" oncelldblclick="Grid00_oncelldblclick" left="0" top="105" width="546" height="144" tooltiptype="hover" tooltiptext="Setting : &#13;&#10; - Property¿¡ µé¾î°¥ ¼ö ÀÖ´Â Setting ÀÔ·Â&#13;&#10;Description :&#13;&#10; - Setting¿¡ ´ëÇÑ ¼³¸í ÀÔ·Â&#13;&#10; - Default°ª ÀÔ·Â (StyleÀ» Á¦¿ÜÇÏ°í ¸ðµÎ ±âº»°ªÀ» ÀÔ·ÂÇÔ)" onexpandup="div_body_tab_module_tabpage1_Grid01_onexpandup" wheelscrollrow="1">
                           <Formats>
                             <Format id="default">
                               <Columns>
@@ -286,11 +286,11 @@
                               <Band id="head">
                                 <Cell text="Setting"/>
                                 <Cell col="1" text="Description"/>
-                                <Cell col="2" text="ì‚¬ìš©êµ¬ë¶„"/>
-                                <Cell col="3" text="ìˆœì„œ"/>
-                                <Cell col="4" text="Runtimeì§€ì›"/>
-                                <Cell col="5" text="Html5ì§€ì›"/>
-                                <Cell col="6" text="Mobileì§€ì›"/>
+                                <Cell col="2" text="»ç¿ë±¸ºÐ"/>
+                                <Cell col="3" text="¼ø¼­"/>
+                                <Cell col="4" text="RuntimeÁö¿ø"/>
+                                <Cell col="5" text="Html5Áö¿ø"/>
+                                <Cell col="6" text="MobileÁö¿ø"/>
                               </Band>
                               <Band id="body">
                                 <Cell edittype="text" text="bind:NAME"/>
@@ -334,8 +334,8 @@
                               <Band id="head">
                                 <Cell text="Setting"/>
                                 <Cell col="1" text="Description"/>
-                                <Cell col="2" text="ì‚¬ìš©êµ¬ë¶„"/>
-                                <Cell col="3" text="ìˆœì„œ"/>
+                                <Cell col="2" text="»ç¿ë±¸ºÐ"/>
+                                <Cell col="3" text="¼ø¼­"/>
                                 <Cell col="4" text="nb(WIN)" tooltiptext="nexacro browser(Win)"/>
                                 <Cell col="5" text="nb(OSX)" tooltiptext="desktop Hybrid(maxOS)"/>
                                 <Cell col="6" text="IE8" tooltiptext="IE8"/>
@@ -376,8 +376,8 @@
                             </Format>
                           </Formats>
                         </Grid>
-                        <Button id="btn_viewOpen_Setting_Syntax" taborder="9" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="59" top="13" width="16" height="17" tooltiptext="ë‚´ìš© í¬ê²Œë³´ê¸°"/>
-                        <Button id="btn_viewOpen_SettingExample" taborder="10" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="335" top="13" width="16" height="17" tooltiptext="ë‚´ìš© í¬ê²Œë³´ê¸°"/>
+                        <Button id="btn_viewOpen_Setting_Syntax" taborder="9" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="59" top="13" width="16" height="17" tooltiptext="³»¿ë Å©°Ôº¸±â"/>
+                        <Button id="btn_viewOpen_SettingExample" taborder="10" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="335" top="13" width="16" height="17" tooltiptext="³»¿ë Å©°Ôº¸±â"/>
                       </Layout>
                     </Layouts>
                   </Tabpage>
@@ -385,15 +385,15 @@
                     <Layouts>
                       <Layout>
                         <Static id="Static40" taborder="1" text="Example" cssclass="sta_WF_detailLbl01" left="0" top="5" width="78" height="244"/>
-                        <TextArea id="txa_Example" taborder="3" left="77" top="5" width="467" height="244" tooltiptype="hover" tooltiptext="Property Setting Syntax&#13;&#10;(í•„ìˆ˜ìš”ì†Œ : @, ì„ íƒìš”ì†Œ : [@], ë°°ì—´ì˜ ê²½ìš° : '['@']')&#13;&#10;&#13;&#10;&quot;XProperty&quot;ë¥¼ ìž…ë ¥í•˜ë©´ Syntaxë¡œ ë³€ê²½ë¨&#13;&#10;&quot;XObject&quot;ë¥¼ ìž…ë ¥í•˜ë©´ Link Objectë¡œ ë³€ê²½ë¨" wordwrap="true"/>
-                        <Button id="btn_viewOpen_Object_Example" taborder="4" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="59" top="13" width="16" height="17" tooltiptext="ë‚´ìš© í¬ê²Œë³´ê¸°"/>
+                        <TextArea id="txa_Example" taborder="3" left="77" top="5" width="467" height="244" tooltiptype="hover" tooltiptext="Property Setting Syntax&#13;&#10;(ÇÊ¼ö¿ä¼Ò : @, ¼±ÅÃ¿ä¼Ò : [@], ¹è¿­ÀÇ °æ¿ì : '['@']')&#13;&#10;&#13;&#10;&quot;XProperty&quot;¸¦ ÀÔ·ÂÇÏ¸é Syntax·Î º¯°æµÊ&#13;&#10;&quot;XObject&quot;¸¦ ÀÔ·ÂÇÏ¸é Link Object·Î º¯°æµÊ" wordwrap="true"/>
+                        <Button id="btn_viewOpen_Object_Example" taborder="4" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="59" top="13" width="16" height="17" tooltiptext="³»¿ë Å©°Ôº¸±â"/>
                       </Layout>
                     </Layouts>
                   </Tabpage>
                 </Tabpages>
               </Tab>
-              <TextArea id="txa_remarkDefault" taborder="4" scrollbars="autoboth" left="0" top="28" width="286" height="57" tooltiptype="hover" tooltiptext="&quot;XProperty&quot;ë¥¼ ìž…ë ¥í•˜ë©´ Syntaxë¡œ ë³€ê²½ë¨&#13;&#10;componentì— ëŒ€í•œ ê¸°ë³¸ ì •ì˜ ì™¸ì— ë¶€ê°€ ì„¤ëª… ìž…ë ¥&#13;&#10;&#13;&#10; * Remark ì¤‘ê°„ì— í‘œë¥¼ ì‚½ìž…í•˜ê³ ìž í•  ë•Œì—ëŠ” &#13;&#10;   í‘œë¥¼ ìœ„ì¹˜í•˜ê³ ìž í•˜ëŠ” ìœ„ì¹˜ì— @T@ë¥¼ ìž…ë ¥&#13;&#10;&#13;&#10; * Html tagë¥¼ ìž…ë ¥í•˜ê³ ìž í•  ê²½ìš°&#13;&#10;   &lt; ëŠ” &lt;@&lt;, &gt; ëŠ” &gt;@&gt;ë¡œ ìž…ë ¥" wordwrap="true"/>
-              <TextArea id="txa_remarkDefault00" taborder="5" scrollbars="autoboth" left="285" top="28" width="285" height="57" tooltiptype="hover" tooltiptext="&quot;XProperty&quot;ë¥¼ ìž…ë ¥í•˜ë©´ Syntaxë¡œ ë³€ê²½ë¨&#13;&#10;componentì— ëŒ€í•œ ê¸°ë³¸ ì •ì˜ ì™¸ì— ë¶€ê°€ ì„¤ëª… ìž…ë ¥&#13;&#10;&#13;&#10; * Remark ì¤‘ê°„ì— í‘œë¥¼ ì‚½ìž…í•˜ê³ ìž í•  ë•Œì—ëŠ” &#13;&#10;   í‘œë¥¼ ìœ„ì¹˜í•˜ê³ ìž í•˜ëŠ” ìœ„ì¹˜ì— @T@ë¥¼ ìž…ë ¥&#13;&#10;&#13;&#10; * Html tagë¥¼ ìž…ë ¥í•˜ê³ ìž í•  ê²½ìš°&#13;&#10;   &lt; ëŠ” &lt;@&lt;, &gt; ëŠ” &gt;@&gt;ë¡œ ìž…ë ¥" wordwrap="true"/>
+              <TextArea id="txa_remarkDefault" taborder="4" scrollbars="autoboth" left="0" top="28" width="286" height="57" tooltiptype="hover" tooltiptext="&quot;XProperty&quot;¸¦ ÀÔ·ÂÇÏ¸é Syntax·Î º¯°æµÊ&#13;&#10;component¿¡ ´ëÇÑ ±âº» Á¤ÀÇ ¿Ü¿¡ ºÎ°¡ ¼³¸í ÀÔ·Â&#13;&#10;&#13;&#10; * Remark Áß°£¿¡ Ç¥¸¦ »ðÀÔÇÏ°íÀÚ ÇÒ ¶§¿¡´Â &#13;&#10;   Ç¥¸¦ À§Ä¡ÇÏ°íÀÚ ÇÏ´Â À§Ä¡¿¡ @T@¸¦ ÀÔ·Â&#13;&#10;&#13;&#10; * Html tag¸¦ ÀÔ·ÂÇÏ°íÀÚ ÇÒ °æ¿ì&#13;&#10;   &lt; ´Â &lt;@&lt;, &gt; ´Â &gt;@&gt;·Î ÀÔ·Â" wordwrap="true"/>
+              <TextArea id="txa_remarkDefault00" taborder="5" scrollbars="autoboth" left="285" top="28" width="285" height="57" tooltiptype="hover" tooltiptext="&quot;XProperty&quot;¸¦ ÀÔ·ÂÇÏ¸é Syntax·Î º¯°æµÊ&#13;&#10;component¿¡ ´ëÇÑ ±âº» Á¤ÀÇ ¿Ü¿¡ ºÎ°¡ ¼³¸í ÀÔ·Â&#13;&#10;&#13;&#10; * Remark Áß°£¿¡ Ç¥¸¦ »ðÀÔÇÏ°íÀÚ ÇÒ ¶§¿¡´Â &#13;&#10;   Ç¥¸¦ À§Ä¡ÇÏ°íÀÚ ÇÏ´Â À§Ä¡¿¡ @T@¸¦ ÀÔ·Â&#13;&#10;&#13;&#10; * Html tag¸¦ ÀÔ·ÂÇÏ°íÀÚ ÇÒ °æ¿ì&#13;&#10;   &lt; ´Â &lt;@&lt;, &gt; ´Â &gt;@&gt;·Î ÀÔ·Â" wordwrap="true"/>
             </Layout>
           </Layouts>
         </Div>
@@ -403,9 +403,9 @@
               <Static id="Static02" taborder="0" cssclass="sta_WF_detailLbl03" left="0" top="28" width="372" bottom="0"/>
               <Static id="Static03" taborder="1" cssclass="sta_WF_titleBg" left="0" top="0" width="372" height="29"/>
               <Static id="Static01" taborder="2" text="Pseudo" cssclass="sta_POP_GroupTit" left="10" top="0" width="76" height="28"/>
-              <Button id="btn_addRowPseudo" taborder="3" text="ì¶”ê°€" onclick="btn_addRowPseudo_onclick" left="268" top="4" width="46" height="21"/>
-              <Button id="btn_delRowPseudo" taborder="4" text="ì‚­ì œ" onclick="btn_delRowPseudo_onclick" left="316" top="4" width="46" height="21"/>
-              <Grid id="Grid00" taborder="5" binddataset="ds_PSEUDO" autoenter="select" useinputpanel="false" autofittype="col" left="11" top="39" width="351" tooltiptype="hover" tooltiptext="Setting : &#13;&#10; - Propertyì— ë“¤ì–´ê°ˆ ìˆ˜ ìžˆëŠ” Setting ìž…ë ¥&#13;&#10;Description :&#13;&#10; - Settingì— ëŒ€í•œ ì„¤ëª… ìž…ë ¥&#13;&#10; - Defaultê°’ ìž…ë ¥ (Styleì„ ì œì™¸í•˜ê³  ëª¨ë‘ ê¸°ë³¸ê°’ì„ ìž…ë ¥í•¨)" bottom="10">
+              <Button id="btn_addRowPseudo" taborder="3" text="Ãß°¡" onclick="btn_addRowPseudo_onclick" left="268" top="4" width="46" height="21"/>
+              <Button id="btn_delRowPseudo" taborder="4" text="»èÁ¦" onclick="btn_delRowPseudo_onclick" left="316" top="4" width="46" height="21"/>
+              <Grid id="Grid00" taborder="5" binddataset="ds_PSEUDO" autoenter="select" useinputpanel="false" autofittype="col" left="11" top="39" width="351" tooltiptype="hover" tooltiptext="Setting : &#13;&#10; - Property¿¡ µé¾î°¥ ¼ö ÀÖ´Â Setting ÀÔ·Â&#13;&#10;Description :&#13;&#10; - Setting¿¡ ´ëÇÑ ¼³¸í ÀÔ·Â&#13;&#10; - Default°ª ÀÔ·Â (StyleÀ» Á¦¿ÜÇÏ°í ¸ðµÎ ±âº»°ªÀ» ÀÔ·ÂÇÔ)" bottom="10">
                 <Formats>
                   <Format id="default">
                     <Columns>
@@ -445,9 +445,9 @@
               <Static id="Static02" taborder="6" cssclass="sta_WF_detailLbl03" left="0" top="28" width="372" bottom="0"/>
               <Static id="Static03" taborder="7" cssclass="sta_WF_titleBg" left="0" top="0" width="372" height="29"/>
               <Static id="sta_name" taborder="8" text="Pseudo" cssclass="sta_POP_GroupTit" left="10" top="0" width="76" height="28"/>
-              <Button id="btn_addRowPseudo" taborder="9" text="ì¶”ê°€" onclick="btn_addRowPseudo_onclick" left="267" top="5" width="46" height="21"/>
-              <Button id="btn_delRowPseudo" taborder="10" text="ì‚­ì œ" onclick="btn_delRowPseudo_onclick" left="315" top="5" width="46" height="21"/>
-              <Grid id="grd_pseudo" taborder="11" binddataset="ds_PSEUDO" autoenter="select" useinputpanel="false" autofittype="none" left="11" top="34" width="351" height="156" tooltiptype="hover" tooltiptext="Setting : &#13;&#10; - Propertyì— ë“¤ì–´ê°ˆ ìˆ˜ ìžˆëŠ” Setting ìž…ë ¥&#13;&#10;Description :&#13;&#10; - Settingì— ëŒ€í•œ ì„¤ëª… ìž…ë ¥&#13;&#10; - Defaultê°’ ìž…ë ¥ (Styleì„ ì œì™¸í•˜ê³  ëª¨ë‘ ê¸°ë³¸ê°’ì„ ìž…ë ¥í•¨)" cellsizingtype="col">
+              <Button id="btn_addRowPseudo" taborder="9" text="Ãß°¡" onclick="btn_addRowPseudo_onclick" left="267" top="5" width="46" height="21"/>
+              <Button id="btn_delRowPseudo" taborder="10" text="»èÁ¦" onclick="btn_delRowPseudo_onclick" left="315" top="5" width="46" height="21"/>
+              <Grid id="grd_pseudo" taborder="11" binddataset="ds_PSEUDO" autoenter="select" useinputpanel="false" autofittype="none" left="11" top="34" width="351" height="156" tooltiptype="hover" tooltiptext="Setting : &#13;&#10; - Property¿¡ µé¾î°¥ ¼ö ÀÖ´Â Setting ÀÔ·Â&#13;&#10;Description :&#13;&#10; - Setting¿¡ ´ëÇÑ ¼³¸í ÀÔ·Â&#13;&#10; - Default°ª ÀÔ·Â (StyleÀ» Á¦¿ÜÇÏ°í ¸ðµÎ ±âº»°ªÀ» ÀÔ·ÂÇÔ)" cellsizingtype="col">
                 <Formats>
                   <Format id="default">
                     <Columns>
@@ -516,9 +516,9 @@
               </Grid>
               <Static id="Static00" taborder="12" cssclass="sta_WF_titleBg" left="0" width="372" height="29" top="50%"/>
               <Static id="Static04" taborder="13" text="Control" cssclass="sta_POP_GroupTit" left="10" top="195" width="76" height="28"/>
-              <Button id="btn_addRowControl" taborder="14" text="ì¶”ê°€" left="267" top="199" width="46" height="21" onclick="div_control_btn_addRowControl_onclick"/>
-              <Button id="btn_delRowControl" taborder="15" text="ì‚­ì œ" left="315" top="199" width="46" height="21" onclick="div_control_btn_delRowControl_onclick"/>
-              <Grid id="grd_control" taborder="16" binddataset="ds_CONTROL_DATA" autoenter="select" useinputpanel="false" autofittype="none" left="11" top="228" width="351" height="155" tooltiptype="hover" tooltiptext="Setting : &#13;&#10; - Propertyì— ë“¤ì–´ê°ˆ ìˆ˜ ìžˆëŠ” Setting ìž…ë ¥&#13;&#10;Description :&#13;&#10; - Settingì— ëŒ€í•œ ì„¤ëª… ìž…ë ¥&#13;&#10; - Defaultê°’ ìž…ë ¥ (Styleì„ ì œì™¸í•˜ê³  ëª¨ë‘ ê¸°ë³¸ê°’ì„ ìž…ë ¥í•¨)" onexpandup="fnSearchObjectInfo_onclick" cellsizingtype="col" oncloseup="div_control_grd_control_oncloseup">
+              <Button id="btn_addRowControl" taborder="14" text="Ãß°¡" left="267" top="199" width="46" height="21" onclick="div_control_btn_addRowControl_onclick"/>
+              <Button id="btn_delRowControl" taborder="15" text="»èÁ¦" left="315" top="199" width="46" height="21" onclick="div_control_btn_delRowControl_onclick"/>
+              <Grid id="grd_control" taborder="16" binddataset="ds_CONTROL_DATA" autoenter="select" useinputpanel="false" autofittype="none" left="11" top="228" width="351" height="155" tooltiptype="hover" tooltiptext="Setting : &#13;&#10; - Property¿¡ µé¾î°¥ ¼ö ÀÖ´Â Setting ÀÔ·Â&#13;&#10;Description :&#13;&#10; - Setting¿¡ ´ëÇÑ ¼³¸í ÀÔ·Â&#13;&#10; - Default°ª ÀÔ·Â (StyleÀ» Á¦¿ÜÇÏ°í ¸ðµÎ ±âº»°ªÀ» ÀÔ·ÂÇÔ)" onexpandup="fnSearchObjectInfo_onclick" cellsizingtype="col" oncloseup="div_control_grd_control_oncloseup">
                 <Formats>
                   <Format id="default">
                     <Columns>
@@ -579,10 +579,10 @@
             </Layout>
           </Layouts>
         </Div>
-        <FileDownload id="btn_fileDown" taborder="107" retry="0" text="ë‹¤ìš´ë¡œë“œ" visible="false" top="343" right="814" width="70" height="21" onclick="btn_fileDown_onclick"/>
+        <FileDownload id="btn_fileDown" taborder="107" retry="0" text="´Ù¿î·Îµå" visible="false" top="343" right="814" width="70" height="21" onclick="btn_fileDown_onclick"/>
         <Button id="btn_addFile" taborder="108" onclick="div_fileTask_btn_addFile_onclick" cssclass="btn_POP_Add" left="84" top="345" width="16" height="16"/>
-        <Static id="Static01" taborder="109" text="íŒ¨ì¹˜ëª…" left="185" top="51" width="37" height="20"/>
-        <Combo id="cbo_patch" taborder="110" innerdataset="ds_cmm_patch" codecolumn="PP_SEQ" datacolumn="PATCH_INFO" left="227" top="50" width="150" height="20" validate="title:íŒ¨ì¹˜ëª…,required:true"/>
+        <Static id="Static01" taborder="109" text="ÆÐÄ¡¸í" left="185" top="51" width="37" height="20"/>
+        <Combo id="cbo_patch" taborder="110" innerdataset="ds_cmm_patch" codecolumn="PP_SEQ" datacolumn="PATCH_INFO" left="227" top="50" width="150" height="20" validate="title:ÆÐÄ¡¸í,required:true"/>
         <Div id="div_supportEnv_n" taborder="111" left="1211" top="65" width="359" height="35" Style1="background:white;" text="Div00" visible="false">
           <Layouts>
             <Layout>
@@ -601,12 +601,12 @@
             </Layout>
           </Layouts>
         </Div>
-        <Button id="btn_preView" taborder="112" text="ë¯¸ë¦¬ë³´ê¸°" onclick="btn_preView_onclick" left="10" bottom="8" width="70" height="24"/>
-        <Button id="btn_viewOpen_Description" taborder="113" cssclass="btn_WF_WinPop" left="659" top="49" width="16" height="17" onclick="common_viewOpen_onclick" tooltiptext="ë‚´ìš© í¬ê²Œë³´ê¸°"/>
-        <Button id="btn_viewOpen_Remark" taborder="114" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="943" top="49" width="16" height="17" tooltiptext="ë‚´ìš© í¬ê²Œë³´ê¸°"/>
-        <Button id="btn_viewOpen_Syntax" taborder="115" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="451" top="197" width="16" height="17" tooltiptext="ë‚´ìš© í¬ê²Œë³´ê¸°"/>
-        <Button id="btn_viewOpen_Parameter" taborder="116" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="451" top="249" width="16" height="17" tooltiptext="ë‚´ìš© í¬ê²Œë³´ê¸°"/>
-        <Button id="btn_viewOpen_Example" taborder="117" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="721" top="249" width="16" height="17" tooltiptext="ë‚´ìš© í¬ê²Œë³´ê¸°"/>
+        <Button id="btn_preView" taborder="112" text="¹Ì¸®º¸±â" onclick="btn_preView_onclick" left="10" bottom="8" width="70" height="24"/>
+        <Button id="btn_viewOpen_Description" taborder="113" cssclass="btn_WF_WinPop" left="659" top="49" width="16" height="17" onclick="common_viewOpen_onclick" tooltiptext="³»¿ë Å©°Ôº¸±â"/>
+        <Button id="btn_viewOpen_Remark" taborder="114" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="943" top="49" width="16" height="17" tooltiptext="³»¿ë Å©°Ôº¸±â"/>
+        <Button id="btn_viewOpen_Syntax" taborder="115" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="451" top="197" width="16" height="17" tooltiptext="³»¿ë Å©°Ôº¸±â"/>
+        <Button id="btn_viewOpen_Parameter" taborder="116" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="451" top="249" width="16" height="17" tooltiptext="³»¿ë Å©°Ôº¸±â"/>
+        <Button id="btn_viewOpen_Example" taborder="117" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="721" top="249" width="16" height="17" tooltiptext="³»¿ë Å©°Ôº¸±â"/>
         <Static id="st_fullPath" taborder="119" cssclass="sta_POP_Title" left="91" top="1" right="42" height="35" Style1="color:#ffffffff;" background="URL(&quot;imagefile::desktop_tablet.png&quot;)"/>
         <Grid id="grd_requirementData" taborder="120" binddataset="ds_REQUIREMENT_DATA" autoenter="select" useinputpanel="false" autofittype="col" oncellclick="grd_requirementData_oncellclick" ondropdown="grd_requirementData_ondropdown" oncloseup="grd_requirementData_oncloseup" left="21" top="150" width="351" height="64">
           <Formats>
@@ -622,10 +622,10 @@
                 <Row size="20"/>
               </Rows>
               <Band id="head">
-                <Cell text="íƒ€ìž…"/>
-                <Cell col="1" text="ì§€ì›ë‚´ìš©"/>
-                <Cell col="2" text="ë²„ì „"/>
-                <Cell col="3" text="ë²”ìœ„"/>
+                <Cell text="Å¸ÀÔ"/>
+                <Cell col="1" text="Áö¿ø³»¿ë"/>
+                <Cell col="2" text="¹öÀü"/>
+                <Cell col="3" text="¹üÀ§"/>
               </Band>
               <Band id="body">
                 <Cell displaytype="combo" edittype="combo" text="bind:SUPPORT_TYPE" combodataset="ds_cmm_productkind" combocodecol="CODE" combodatacol="CAPTION"/>
@@ -636,8 +636,8 @@
             </Format>
           </Formats>
         </Grid>
-        <Button id="btn_addRowRequirementData" taborder="121" text="ì¶”ê°€" onclick="btn_addRowRequirementData_onclick" left="278" top="120" width="46" height="22"/>
-        <Button id="btn_delRowRequirementData" taborder="122" text="ì‚­ì œ" onclick="btn_delRowRequirementData_onclick" left="326" top="120" width="46" height="22"/>
+        <Button id="btn_addRowRequirementData" taborder="121" text="Ãß°¡" onclick="btn_addRowRequirementData_onclick" left="278" top="120" width="46" height="22"/>
+        <Button id="btn_delRowRequirementData" taborder="122" text="»èÁ¦" onclick="btn_delRowRequirementData_onclick" left="326" top="120" width="46" height="22"/>
         <Button id="btn_PopContentsInfo" taborder="124" text="ContensInfo" left="90" bottom="8" width="86" height="24" onclick="common_viewOpen_onclick"/>
         <Div id="div_supportEnv_NP16" taborder="125" text="Div00" left="1211" top="113" width="359" height="138" Style1="background:white;" visible="false">
           <Layouts>
@@ -661,15 +661,15 @@
             </Layout>
           </Layouts>
         </Div>
-        <Button id="btn_PopCommentary" taborder="126" text="ì°¸ê³ ì‚¬í•­" onclick="common_viewOpen_onclick" left="186" bottom="8" width="86" height="24"/>
+        <Button id="btn_PopCommentary" taborder="126" text="Âü°í»çÇ×" onclick="common_viewOpen_onclick" left="186" bottom="8" width="86" height="24"/>
         <Div id="div_bg" taborder="127" left="1632" top="32" width="832" height="522" Style1="background:#00000096;" onkillfocus="div_bg_onkillfocus" onkeydown="div_bg_onkeydown" visible="false">
           <Layouts>
             <Layout>
               <Div id="div_Duple" taborder="0" left="6.73%" top="42" right="7.09%" height="428" Style1="background:white;border:1 solid #808080ff ;bordertype:round 5 5 ;">
                 <Layouts>
                   <Layout>
-                    <Static id="sta_title" taborder="45" text="  ì¤‘ë³µê¸°ëŠ¥ëª… ìƒì† ë¶ˆê°€" left="0%" top="0" right="0%" height="24" Style1="background:black;color:white;font:bold 9 Dotum;"/>
-                    <Button id="btn_close2" taborder="47" text="ë‹«ê¸°" escapebutton="true" onclick="hideDuplication" cssclass="btn_WF_cancel" right="10" bottom="7" width="60" height="24"/>
+                    <Static id="sta_title" taborder="45" text="  Áßº¹±â´É¸í »ó¼Ó ºÒ°¡" left="0%" top="0" right="0%" height="24" Style1="background:black;color:white;font:bold 9 Dotum;"/>
+                    <Button id="btn_close2" taborder="47" text="´Ý±â" escapebutton="true" onclick="hideDuplication" cssclass="btn_WF_cancel" right="10" bottom="7" width="60" height="24"/>
                     <Button id="btn_close" taborder="50" escapebutton="true" onclick="hideDuplication" cssclass="btn_POP_Cls" top="8" right="8" width="11" height="11"/>
                     <Grid id="Grid00" taborder="52" useinputpanel="false" left="10" top="96" right="10" binddataset="ds_mcDuplicated" autofittype="col" autosizingtype="col" cellsizingtype="col" bottom="46.24%">
                       <Formats>
@@ -686,7 +686,7 @@
                             <Row size="24"/>
                           </Rows>
                           <Band id="head">
-                            <Cell text="ìˆœë²ˆ"/>
+                            <Cell text="¼ø¹ø"/>
                             <Cell col="1" text="LVL"/>
                             <Cell col="2" text="MC_SEQ"/>
                             <Cell col="3" text="FULL_MC_NAME"/>
@@ -702,7 +702,7 @@
                         </Format>
                       </Formats>
                     </Grid>
-                    <TextArea id="TextArea00" taborder="54" left="10" top="29" right="10" height="43" value="ì¤‘ë³µëœ ê¸°ëŠ¥ëª…ì´ ì¡´ìž¬í•  ê²½ìš° ìƒì†í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤. &#10;ì•„ëž˜ ì¤‘ë³µëœ ê¸°ëŠ¥ì„ í™•ì¸í•˜ì—¬ ì¤‘ë³µì œê±° í›„ ìž¬ì‹œë„ í•˜ì‹­ì‹œì˜¤." Style1="background:transparent;border:0 none #808080ff ;" scrollbars="none" readonly="true"/>
+                    <TextArea id="TextArea00" taborder="54" left="10" top="29" right="10" height="43" value="Áßº¹µÈ ±â´É¸íÀÌ Á¸ÀçÇÒ °æ¿ì »ó¼ÓÇÒ ¼ö ¾ø½À´Ï´Ù. &#10;¾Æ·¡ Áßº¹µÈ ±â´ÉÀ» È®ÀÎÇÏ¿© Áßº¹Á¦°Å ÈÄ Àç½Ãµµ ÇÏ½Ê½Ã¿À." Style1="background:transparent;border:0 none #808080ff ;" scrollbars="none" readonly="true"/>
                     <Grid id="Grid01" taborder="55" binddataset="ds_fcDuplicated" useinputpanel="false" cellsizingtype="col" autofittype="col" autosizingtype="col" left="10" right="10" bottom="40" top="59.39%">
                       <Formats>
                         <Format id="default">
@@ -720,13 +720,13 @@
                             <Row size="24"/>
                           </Rows>
                           <Band id="head">
-                            <Cell text="ìˆœë²ˆ"/>
+                            <Cell text="¼ø¹ø"/>
                             <Cell col="1" text="LVL"/>
                             <Cell col="2" text="MC_SEQ"/>
                             <Cell col="3" text="FULL_MC_NAME"/>
                             <Cell col="4" text="FULL_INHERITANCE_NAME"/>
-                            <Cell col="5" text="ê¸°ëŠ¥ëª…"/>
-                            <Cell col="6" text="ì¤‘ë³µ"/>
+                            <Cell col="5" text="±â´É¸í"/>
+                            <Cell col="6" text="Áßº¹"/>
                           </Band>
                           <Band id="body">
                             <Cell text="expr:currow+1"/>
@@ -740,8 +740,8 @@
                         </Format>
                       </Formats>
                     </Grid>
-                    <Static id="Static13" taborder="56" text="ëª¨ë“ˆ ì¤‘ë³µ" cssclass="sta_POP_view02" left="10" top="75" width="72" height="18"/>
-                    <Static id="Static00" taborder="57" text="ê¸°ëŠ¥ ì¤‘ë³µ" cssclass="sta_POP_view02" left="10" width="72" height="18" bottom="41.08%"/>
+                    <Static id="Static13" taborder="56" text="¸ðµâ Áßº¹" cssclass="sta_POP_view02" left="10" top="75" width="72" height="18"/>
+                    <Static id="Static00" taborder="57" text="±â´É Áßº¹" cssclass="sta_POP_view02" left="10" width="72" height="18" bottom="41.08%"/>
                   </Layout>
                 </Layouts>
               </Div>
@@ -775,15 +775,15 @@
         <Rows>
           <Row>
             <Col id="CODE">R</Col>
-            <Col id="CAPTION">Runtime íŽ¸ì§‘</Col>
+            <Col id="CAPTION">Runtime ÆíÁý</Col>
           </Row>
           <Row>
             <Col id="CODE">H</Col>
-            <Col id="CAPTION">HTML5 íŽ¸ì§‘</Col>
+            <Col id="CAPTION">HTML5 ÆíÁý</Col>
           </Row>
           <Row>
             <Col id="CODE">M</Col>
-            <Col id="CAPTION">Mobile íŽ¸ì§‘</Col>
+            <Col id="CAPTION">Mobile ÆíÁý</Col>
           </Row>
         </Rows>
       </Dataset>
@@ -1363,20 +1363,20 @@
       <BindItem id="item79" compid="div_detail.edt_dblclickevent" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="DBLCLICKEVENT"/>
     </Bind>
     <Script type="xscript5.0"><![CDATA[/************************************************************************************************
- * 01. ì—…ë¬´êµ¬ë¶„ : í”„ë¡œì íŠ¸ - ì œí’ˆê´€ë¦¬
- * 02. í™”ë©´ëª…   : ëª¨ë“ˆ ë“±ë¡ (PP_ModuleRegister)
- * 03. í™”ë©´ì„¤ëª… : ëª¨ë“ˆ ë“±ë¡ ë° ìˆ˜ì •
- * 04. ìž‘ì„±ì¼   : 2014.04.10
- * 05. ìž‘ì„±ìž   : ì´ìš©ìž¬
- * 06. ìˆ˜ì •ì´ë ¥ :
+ * 01. ¾÷¹«±¸ºÐ : ÇÁ·ÎÁ§Æ® - Á¦Ç°°ü¸®
+ * 02. È­¸é¸í   : ¸ðµâ µî·Ï (PP_ModuleRegister)
+ * 03. È­¸é¼³¸í : ¸ðµâ µî·Ï ¹× ¼öÁ¤
+ * 04. ÀÛ¼ºÀÏ   : 2014.04.10
+ * 05. ÀÛ¼ºÀÚ   : ÀÌ¿ëÀç
+ * 06. ¼öÁ¤ÀÌ·Â :
  ***********************************************************************************************
- *     ìˆ˜ì •ì¼          ì´  ë¦„    ì‚¬ìœ 
+ *     ¼öÁ¤ÀÏ          ÀÌ  ¸§    »çÀ¯
  ***********************************************************************************************
  *     
 ************************************************************************************************/
 
 /************************************************************************************************
- * ê³µí†µ ë¼ì´ë¸ŒëŸ¬ë¦¬ INCLUDE ì˜ì—­
+ * °øÅë ¶óÀÌºê·¯¸® INCLUDE ¿µ¿ª
 ************************************************************************************************/
 include "Script::CommUtil.xjs"; 	
 include "Script::CommGrid.xjs"; 
@@ -1387,26 +1387,26 @@ include "Script::CommValidation.xjs";
 include "Script::CommWebEditor.xjs";
 
 /************************************************************************************************
- * ì „ì—­ ë³€ìˆ˜ ì˜ì—­
+ * Àü¿ª º¯¼ö ¿µ¿ª
 ************************************************************************************************/
-// this.pv_sourceCd	= "MC";		// ëª¨ë“ˆ:MC,ê¸°ëŠ¥:FC êµ¬ë¶„
+// this.pv_sourceCd	= "MC";		// ¸ðµâ:MC,±â´É:FC ±¸ºÐ
 // this.pv_productCd	= "XP92";
 // 
 // this.pv_mcSeq		= "5";
-// this.pv_language	= "KOR";	// ê¸°ëŠ¥ ì–¸ì–´ì½”ë“œ
+// this.pv_language	= "KOR";	// ±â´É ¾ð¾îÄÚµå
 
-this.pv_sourceCd;		// ëª¨ë“ˆ:MC,ê¸°ëŠ¥:FC êµ¬ë¶„
+this.pv_sourceCd;		// ¸ðµâ:MC,±â´É:FC ±¸ºÐ
 this.pv_productCd;
 this.pv_mcSeq;
-this.pv_language;	// ê¸°ëŠ¥ ì–¸ì–´ì½”ë“œ
+this.pv_language;	// ±â´É ¾ð¾îÄÚµå
 this.pv_ppSeq;
 
 this.fvSourceSeq	= "0";
 
-this.productRule = 0; // fnGetProductRule ì˜ ë¦¬í„´ê°’ìœ¼ë¡œ ì œí’ˆì„ êµ¬ë¶„
+this.productRule = 0; // fnGetProductRule ÀÇ ¸®ÅÏ°ªÀ¸·Î Á¦Ç°À» ±¸ºÐ
 
 /************************************************************************************************
- * FORM ì˜ì—­
+ * FORM ¿µ¿ª
 ************************************************************************************************/
 this.PP_ModuleRegister_onload = function(obj:Form, e:nexacro.LoadEventInfo)
 {
@@ -1434,14 +1434,14 @@ this.fnGetProductRule = function(sProductCd)
 }
 
 /************************************************************************************************
- * FORM ê³µí†µ FUNCTION ì˜ì—­
+ * FORM °øÅë FUNCTION ¿µ¿ª
 ************************************************************************************************/
 
 this.fnInit = function()
 {
 	this.fnGetCode();
 
-	// pseudo ì˜ì—­ ì˜ˆì™¸ì²˜ë¦¬	
+	// pseudo ¿µ¿ª ¿¹¿ÜÃ³¸®	
 	if(this.productRule > 0) {
 		this.div_control.move(this.div_pseudo.getOffsetLeft(), this.div_pseudo.getOffsetTop());
 		this.div_pseudo.set_visible(false);
@@ -1481,18 +1481,18 @@ this.fnInit = function()
 	}
 }
 
-// ê³µí†µì½”ë“œ ì¡°íšŒ
+// °øÅëÄÚµå Á¶È¸
 this.fnGetCode = function()
 {
-	this.gfnAddCodeDataset("ds_cmm_supporttype" , 	"SUPPORT_TYPE", 	false, false); //ì§€ì›êµ¬ë¶„
-	this.gfnAddCodeDataset("ds_cmm_usecd" , 		"USE_CD", 			false, false); //ì‚¬ìš©êµ¬ë¶„
-	this.gfnAddCodeDataset("ds_cmm_datatype" , 		"DATA_TYPE", 		false, false); //ë°ì´í„°íƒ€ìž…
+	this.gfnAddCodeDataset("ds_cmm_supporttype" , 	"SUPPORT_TYPE", 	false, false); //Áö¿ø±¸ºÐ
+	this.gfnAddCodeDataset("ds_cmm_usecd" , 		"USE_CD", 			false, false); //»ç¿ë±¸ºÐ
+	this.gfnAddCodeDataset("ds_cmm_datatype" , 		"DATA_TYPE", 		false, false); //µ¥ÀÌÅÍÅ¸ÀÔ
 	
-	this.gfnAddCodeDataset("ds_cmm_productkind" ,	"PRODUCT_KIND",		false, false); //ì œí’ˆì¢…ë¥˜
-	this.gfnAddCodeDataset("ds_cmm_support" ,		"SUPPORT",			false, false); //ì§€ì›í™˜ê²½
+	this.gfnAddCodeDataset("ds_cmm_productkind" ,	"PRODUCT_KIND",		false, false); //Á¦Ç°Á¾·ù
+	this.gfnAddCodeDataset("ds_cmm_support" ,		"SUPPORT",			false, false); //Áö¿øÈ¯°æ
 	
-	this.gfnAddCodeDataset("ds_cmm_supportrange" ,	"SUPPORT_RANGE",	false, false); //ì§€ì›ë²”ìœ„
-	this.gfnAddCodeDataset("ds_cmm_supportver" ,	"SUPPORT_VER",		false, false); //ì§€ì›ë²„ì „	
+	this.gfnAddCodeDataset("ds_cmm_supportrange" ,	"SUPPORT_RANGE",	false, false); //Áö¿ø¹üÀ§
+	this.gfnAddCodeDataset("ds_cmm_supportver" ,	"SUPPORT_VER",		false, false); //Áö¿ø¹öÀü	
 	
 	this.gfnAddCodeDataset("ds_cmm_registration" ,	"REGISTRATION"); //REGISTRATION	
 	this.gfnAddCodeDataset("ds_cmm_contentseditor" ,"CONTENTS_EDITOR",	true, false); //CONTENTS_EDITOR	
@@ -1503,33 +1503,33 @@ this.fnGetCode = function()
 	this.gfnCodeTransaction();
 }
 
-// ì¹´í…Œê³ ë¦¬ ë¦¬ìŠ¤íŠ¸ ì¡°íšŒ
+// Ä«Å×°í¸® ¸®½ºÆ® Á¶È¸
 this.fnMcCategorySearch = function()
 {	
 	var strSvcID 	= "PP_ModuleRegister_S06";
 	var strModelNm 	= "PP_ModuleRegister_S06";
 	
-	// ì¡°ê±´ê°’(Rarameter) ì…‹íŒ…
+	// Á¶°Ç°ª(Rarameter) ¼ÂÆÃ
 	this.gfnAddSendParameter("MC_SEQ", 		this.pv_mcSeq);
 	
-	// ì¡°íšŒìš© Output dataset ì„¸íŒ…
+	// Á¶È¸¿ë Output dataset ¼¼ÆÃ
 	this.gfnAddOutputDataset("ds_mcCategory"	, "ds_mcCategory");
 	
 	this.gfnCommonTransaction(strSvcID, strModelNm);
 }
 
-// íŒ¨ì¹˜ëª… ì½¤ë³´ë¦¬ìŠ¤íŠ¸ ì¡°íšŒ
+// ÆÐÄ¡¸í ÄÞº¸¸®½ºÆ® Á¶È¸
 this.fnPatchComboSearch = function()
 {	
 	var strSvcID 	= "PP_FunctionRegister_S04";
 	var strModelNm 	= "PP_FunctionRegister_S04";
 	
-	// ì¡°ê±´ê°’(Rarameter) ì…‹íŒ…
+	// Á¶°Ç°ª(Rarameter) ¼ÂÆÃ
 	this.gfnAddSendParameter("PRODUCT_CD"		, this.pv_productCd);
 	this.gfnAddSendParameter("CATEGORY"			, this.pv_sourceCd);
 	//this.gfnAddSendParameter("PP_SEQ"			, this.pv_ppSeq);
 	
-	// ì¡°íšŒìš© Output dataset ì„¸íŒ…
+	// Á¶È¸¿ë Output dataset ¼¼ÆÃ
 	this.gfnAddOutputDataset("ds_cmm_patch"	, "dsOutput");
 	
 	this.gfnCommonTransaction(strSvcID, strModelNm);
@@ -1540,13 +1540,13 @@ this.fnModuleSearch = function()
 	var strSvcID 	= "PP_ModuleRegister_S02";
 	var strModelNm 	= "PP_ModuleRegister_S02";
 	
-	// ì¡°ê±´ê°’(Rarameter) ì…‹íŒ…
+	// Á¶°Ç°ª(Rarameter) ¼ÂÆÃ
 	this.gfnAddSendParameter("MC_SEQ", 		this.pv_mcSeq);
 	this.gfnAddSendParameter("LANGUAGE_CD", this.pv_language);
 	this.gfnAddSendParameter("SOURCE_CD", 	this.pv_sourceCd);
 	this.gfnAddSendParameter("PP_SEQ", 		this.pv_ppSeq);
 	
-	// ì¡°íšŒìš© Output dataset ì„¸íŒ…
+	// Á¶È¸¿ë Output dataset ¼¼ÆÃ
 	this.gfnAddOutputDataset("ds_MODULE_CATEGORY"			, "ds_MODULE_CATEGORY");
 	this.gfnAddOutputDataset("ds_MODULE_DESCRIPTION"		, "ds_MODULE_DESCRIPTION");
 	this.gfnAddOutputDataset("ds_PSEUDO"					, "ds_PSEUDO");
@@ -1571,19 +1571,19 @@ this.fn_save = function(sCallType, sChangeReason)
 		this.ds_MC_HISTORY.clearData();
 		this.ds_MD_HISTORY.clearData();
 	
-		// ds_FUNCTION_CATEGORY ì´ë ¥ì²˜ë¦¬ 
+		// ds_FUNCTION_CATEGORY ÀÌ·ÂÃ³¸® 
 		var nRow = this.ds_MC_HISTORY.addRow();
 		this.ds_MC_HISTORY.copyRow(nRow, this.ds_MODULE_CATEGORY, 0);
 		this.ds_MC_HISTORY.setColumn(0, "PP_SEQ", 			this.cbo_patch.value);
 		this.ds_MC_HISTORY.setColumn(0, "CHANGE_REASON", 	sChangeReason);
 
-		// ds_FUNCTION_DESCRIPTION ì´ë ¥ì²˜ë¦¬ 
+		// ds_FUNCTION_DESCRIPTION ÀÌ·ÂÃ³¸® 
 		var nRow = this.ds_MD_HISTORY.addRow();
 		this.ds_MD_HISTORY.copyRow(nRow, this.ds_MODULE_DESCRIPTION, 0);				
 		this.ds_MD_HISTORY.setColumn(0, "PP_SEQ", 			this.cbo_patch.value);
 		this.ds_MD_HISTORY.setColumn(0, "CHANGE_REASON", 	sChangeReason);	
 	} else {
-		// ì´ë ¥ì •ë³´ ì²˜ë¦¬
+		// ÀÌ·ÂÁ¤º¸ Ã³¸®
 		this.ds_MC_HISTORY.copyRow(0, this.ds_MODULE_CATEGORY, 0);
 		this.ds_MD_HISTORY.copyRow(0, this.ds_MODULE_DESCRIPTION, 0);
 	}
@@ -1591,18 +1591,18 @@ this.fn_save = function(sCallType, sChangeReason)
 	var strSvcID 	= "PP_ModuleRegister_R01";
 	var strModelNm 	= "PP_ModuleRegister_R01";
 	
-	// ì¡°ê±´ê°’(Rarameter) ì…‹íŒ…
+	// Á¶°Ç°ª(Rarameter) ¼ÂÆÃ
 	this.gfnAddSendParameter("MC_SEQ", 		this.pv_mcSeq);
 	this.gfnAddSendParameter("LANGUAGE_CD", this.pv_language);
 	this.gfnAddSendParameter("SOURCE_CD", 	this.pv_sourceCd);
 	
-	this.gfnAddSendParameter("SOURCE_SEQ", 	this.fvSourceSeq);	// íŒŒì¼ì‹œí€€ìŠ¤ ì •ë³´
+	this.gfnAddSendParameter("SOURCE_SEQ", 	this.fvSourceSeq);	// ÆÄÀÏ½ÃÄö½º Á¤º¸
 	
 	this.gfnAddSendParameter("PP_SEQ",			this.cbo_patch.value);
 	this.gfnAddSendParameter("PATCH_CHANGE",	sCallType);
 	
 	
-	// ì €ìž¥ìš© Input dataset ì„¸íŒ…
+	// ÀúÀå¿ë Input dataset ¼¼ÆÃ
 	this.gfnAddInputDataset("ds_MODULE_CATEGORY"		, "ds_MODULE_CATEGORY");
 	this.gfnAddInputDataset("ds_MODULE_DESCRIPTION"		, "ds_MODULE_DESCRIPTION");
 	this.gfnAddInputDataset("ds_PSEUDO"					, "ds_PSEUDO");
@@ -1624,10 +1624,10 @@ this.fnInheritanceSearch = function()
 	var strSvcID 	= "PP_ModuleRegister_S03";
 	var strModelNm 	= "PP_ModuleRegister_S03";
 	
-	// ì¡°ê±´ê°’(Rarameter) ì…‹íŒ…
+	// Á¶°Ç°ª(Rarameter) ¼ÂÆÃ
 	this.gfnAddSendParameter("PRODUCT_CODE", this.pv_productCd);
 	
-	// ì¡°íšŒìš© Output dataset ì„¸íŒ…
+	// Á¶È¸¿ë Output dataset ¼¼ÆÃ
 	this.gfnAddOutputDataset("ds_cmm_inheritance"	, "ds_INHERITANCE");
 	
 	this.gfnCommonTransaction(strSvcID, strModelNm);
@@ -1638,10 +1638,10 @@ this.fnGroupSearch = function()
 	var strSvcID 	= "PP_ModuleRegister_S04";
 	var strModelNm 	= "PP_ModuleRegister_S04";
 	
-	// ì¡°ê±´ê°’(Rarameter) ì…‹íŒ…
+	// Á¶°Ç°ª(Rarameter) ¼ÂÆÃ
 	this.gfnAddSendParameter("PRODUCT_CODE", this.pv_productCd);
 	
-	// ì¡°íšŒìš© Output dataset ì„¸íŒ…
+	// Á¶È¸¿ë Output dataset ¼¼ÆÃ
 	this.gfnAddOutputDataset("ds_cmm_group", "ds_GROUP");
 	if(this.productRule == 2){
 		this.gfnAddOutputDataset("ds_cmm_subgroup", "ds_SUBGROUP");
@@ -1660,7 +1660,7 @@ this.fnCallBack = function (strSvcID, nErrorCode, strErrorMag)
 	
 	if(strSvcID == "gfnGetCode") {
 		
-		//this.ds_cmm_registration.setColumn(0,"CAPTION",""); // ê¸°ë³¸ê°’ì´ ì •í•´ì§
+		//this.ds_cmm_registration.setColumn(0,"CAPTION",""); // ±âº»°ªÀÌ Á¤ÇØÁü
 		this.ds_cmm_contentseditor.setColumn(0,"CAPTION","");
 		this.ds_cmm_generate.setColumn(0,"CAPTION","");
 		this.ds_cmm_edittypecomponent.setColumn(0,"CAPTION","");
@@ -1691,7 +1691,7 @@ this.fnCallBack = function (strSvcID, nErrorCode, strErrorMag)
 			}
 		}
 		
-		// FULL_TYPE_NAMEê°’ì´ ìžˆëŠ” ê²½ìš°ì— Inheritance ì½¤ë³´ ë¦¬ìŠ¤íŠ¸ ì¡°íšŒ
+		// FULL_TYPE_NAME°ªÀÌ ÀÖ´Â °æ¿ì¿¡ Inheritance ÄÞº¸ ¸®½ºÆ® Á¶È¸
 		if(!Eco.isEmpty(this.ds_MODULE_CATEGORY.getColumn(0, "FULL_TYPE_NAME"))) {
 			//this.fnInheritanceSearch();
 		}
@@ -1716,11 +1716,11 @@ this.fnCallBack = function (strSvcID, nErrorCode, strErrorMag)
 			
 			this.fnModuleSearch();
 		} else {
-			alert("ds_mcCategory ì •ë³´ì—†ìŒ!!");
+			alert("ds_mcCategory Á¤º¸¾øÀ½!!");
 		}
 		
 	} else if(strSvcID == "PP_ModuleRegister_R01") {
-		//alert("ì €ìž¥ ë˜ì—ˆìŠµë‹ˆë‹¤.");
+		//alert("ÀúÀå µÇ¾ú½À´Ï´Ù.");
 		this.commUtil.popupClose(strSvcID);
 	}
 }	
@@ -1729,21 +1729,21 @@ this.common_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
 {
 	if(obj.name == "btn_save") {
 		
-		// Validation ì²´í¬ 
+		// Validation Ã¼Å© 
 		if(!this.gfn_frm_getValidateCompList(this)) return false;
 
-// ë¡œì§ ì œê±° (15.03.16) : ë™ìž‘ ë¶ˆë¶„ëª… (FULL_TYPE_NAME ì´ ë¹„ì–´ìžˆëŠ” ê²½ìš° INHERITANCE_MC_SEQë¥¼ ì €ìž¥í•  ìˆ˜ ì—†ë‹¤.) 
+// ·ÎÁ÷ Á¦°Å (15.03.16) : µ¿ÀÛ ºÒºÐ¸í (FULL_TYPE_NAME ÀÌ ºñ¾îÀÖ´Â °æ¿ì INHERITANCE_MC_SEQ¸¦ ÀúÀåÇÒ ¼ö ¾ø´Ù.) 
 // 		if(Eco.isEmpty(this.ds_MODULE_CATEGORY.getColumn(0, "FULL_TYPE_NAME"))) {
 // 			if(!Eco.isEmpty(this.ds_MODULE_CATEGORY.getColumn(0, "INHERITANCE_MC_SEQ"))) this.ds_MODULE_CATEGORY.setColumn(0, "INHERITANCE_MC_SEQ", undefined);
 // 		}
 		
-		// íŒ¨ì¹˜ë²ˆí˜¸ê°€ ë³€ê²½ëœ ê²½ìš° ë³€ê²½ì‚¬ìœ  ì˜ˆì™¸ì²˜ë¦¬
+		// ÆÐÄ¡¹øÈ£°¡ º¯°æµÈ °æ¿ì º¯°æ»çÀ¯ ¿¹¿ÜÃ³¸®
 		if(this.ds_MODULE_CATEGORY.getColumn(0, "PP_SEQ") != this.ds_MODULE_CATEGORY.getOrgColumn(0, "PP_SEQ")) {
-			// ë³€ê²½ì‚¬ìœ  ìž…ë ¥
+			// º¯°æ»çÀ¯ ÀÔ·Â
 			var sArgument = {};
 			this.commUtil.popup(this, "CommChangeReason", "Common::CommChangeReason.xfdl", -1, -1, 414, 188, true, true, false, sArgument, "fn_popCallBack");			
 		} else {
-			if(!this.confirm("ì €ìž¥í•˜ì‹œê² ìŠµë‹ˆê¹Œ?")) return false;
+			if(!this.confirm("ÀúÀåÇÏ½Ã°Ú½À´Ï±î?")) return false;
 			
 			this.fn_save();
 		}
@@ -1834,7 +1834,7 @@ this.btn_delRowSettingSupport_onclick = function(obj:Button,  e:nexacro.ClickEve
 }
 
 
-// ì´ë¯¸ì§€ ë§í¬ì²˜ë¦¬
+// ÀÌ¹ÌÁö ¸µÅ©Ã³¸®
 this.btn_imageLink_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
 {
 	var sArgument = {pvProject:this.pv_productCd,pvMode:"VIEW"}
@@ -1848,7 +1848,7 @@ this.btn_imgCancel_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
 	this.btn_imgCancel.set_visible(false);
 }
 
-//íŒì—… ì½œë°±
+//ÆË¾÷ ÄÝ¹é
 this.fn_popCallBack = function(sPopupId, Variant)
 {
 	Variant = this.commUtil.popupReturn();
@@ -1884,7 +1884,7 @@ this.fn_popCallBack = function(sPopupId, Variant)
 			var curImcSeq = this.ds_MODULE_CATEGORY.getColumn(0, "INHERITANCE_MC_SEQ" );
 			if( parseInt(mcSeq) == parseInt(imcSeq) )
 			{
-				application.alert("í˜„ìž¬ ëª¨ë“ˆì„ ìƒì†ë°›ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
+				application.alert("ÇöÀç ¸ðµâÀ» »ó¼Ó¹ÞÀ» ¼ö ¾ø½À´Ï´Ù.");
 			}else{
 				if(curImcSeq != imcSeq)
 				{
@@ -1935,11 +1935,11 @@ this.checkDuplication = function(mcSeq, imcSeq)
 	var strSvcID 	= "PP_ModuleRegister_S07";
 	var strModelNm 	= "PP_ModuleRegister_S07";
 	
-	// ì¡°ê±´ê°’(Rarameter) ì…‹íŒ…
+	// Á¶°Ç°ª(Rarameter) ¼ÂÆÃ
 	this.gfnAddSendParameter("MC_SEQ"				, 	mcSeq);
 	this.gfnAddSendParameter("INHERITANCE_MC_SEQ"	, 	imcSeq);
 	
-	// ì¡°íšŒìš© Output dataset ì„¸íŒ…
+	// Á¶È¸¿ë Output dataset ¼¼ÆÃ
 	this.gfnAddOutputDataset("ds_mcDuplicated"	, "dsMcDuplication");
 	this.gfnAddOutputDataset("ds_fcDuplicated"	, "dsFcDuplication");
 	this.gfnCommonTransaction(strSvcID, strModelNm, null, false);	
@@ -2020,7 +2020,7 @@ this.div_fileTask_btn_addFile_onclick = function(obj:Button,  e:nexacro.ClickEve
 	this.commUtil.popupFileMaster(sSourceCd, sSourceSeq, sStatusCd, "fnFileCallBack", this, true);
 }
 
-//íŒŒì¼ ì½œë°±
+//ÆÄÀÏ ÄÝ¹é
 this.fnFileCallBack = function(FileId,Variant)
 {
 	Variant = this.commUtil.popupReturn();
@@ -2044,10 +2044,10 @@ this.fnSearchFile = function()
 	var strSvcID 	= "PP_ModuleRegister_S05";
 	var strModelNm 	= "PP_ModuleRegister_S05";
 	
-	// ì¡°ê±´ê°’(Rarameter) ì…‹íŒ…
-	this.gfnAddSendParameter("SOURCE_SEQ", 	this.fvSourceSeq);	// íŒŒì¼ì‹œí€€ìŠ¤ ì •ë³´
+	// Á¶°Ç°ª(Rarameter) ¼ÂÆÃ
+	this.gfnAddSendParameter("SOURCE_SEQ", 	this.fvSourceSeq);	// ÆÄÀÏ½ÃÄö½º Á¤º¸
 	
-	// ì¡°íšŒìš© Output dataset ì„¸íŒ…
+	// Á¶È¸¿ë Output dataset ¼¼ÆÃ
 	this.gfnAddOutputDataset("ds_FILE"			, "ds_FILE");
 	
 	this.gfnCommonTransaction(strSvcID, strModelNm);
@@ -2056,14 +2056,14 @@ this.fnSearchFile = function()
 this.Grid00_oncelldblclick = function(obj:Grid, e:nexacro.GridClickEventInfo)
 {
 	if(e.cell == 7) {
-		// TO-DO : íŒì—…ì°½ ì²˜ë¦¬ í•´ì•¼ í•¨
-		var objParam = new Object();  //var arrArg = []; ê°™ì€ í˜•ì‹ìž„
+		// TO-DO : ÆË¾÷Ã¢ Ã³¸® ÇØ¾ß ÇÔ
+		var objParam = new Object();  //var arrArg = []; °°Àº Çü½ÄÀÓ
 		objParam.pv_productCd = this.parent.pv_productCd;
 		
 		var sArgument = {pv_Object:objParam}
 		this.commUtil.popup(this, "CE_Menual", "Common::CE_Menual.xfdl", -1, -1, 489, 706, true, true, false, sArgument, "fn_popCallBack");			
 	} else if(e.cell == 8) {
-		var objParam = new Object();  //var arrArg = []; ê°™ì€ í˜•ì‹ìž„
+		var objParam = new Object();  //var arrArg = []; °°Àº Çü½ÄÀÓ
 		objParam.pv_mcSeq = this.pv_mcSeq;
 		
 		var sArgument = {pv_Object:objParam}
@@ -2071,7 +2071,7 @@ this.Grid00_oncelldblclick = function(obj:Grid, e:nexacro.GridClickEventInfo)
 	}
 }
 
-// ë¯¸ë¦¬ë³´ê¸°
+// ¹Ì¸®º¸±â
 this.btn_preView_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
 {
 	//var sUrl = "http://localhost:8080/Service/Manual/ReviewManualFuncHTML.jsp?PRODUCT_CODE='"+this.pv_productCd+"'&LANGUAGE_CD='"+this.pv_language+"'&MC_SEQ='"+this.pv_mcSeq+"'&PP_SEQ='"+this.cbo_patch.value+"'";
@@ -2152,7 +2152,7 @@ this.common_viewOpen_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
 	this.commUtil.popup(this, obj.name, "Common::CommBigTextArea.xfdl", -1, -1, 940, 621, true, true, false, sArgument, "fn_popViewOpenCallBack");	
 }
 
-//í¬ê²Œë³´ê¸°íŒì—… ì½œë°±
+//Å©°Ôº¸±âÆË¾÷ ÄÝ¹é
 this.fn_popViewOpenCallBack = function(sPopupId, Variant)
 {
 	switch(sPopupId) 
@@ -2277,3 +2277,4 @@ this.div_control_grd_control_oncloseup = function(obj:Grid, e:nexacro.GridEditEv
 ]]></Script>
   </Form>
 </FDL>
+
