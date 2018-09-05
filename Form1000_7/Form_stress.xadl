@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ADL version="2.0">
+  <Application id="Form_stress" screenid="desktop_D">
+    <Layout>
+      <MainFrame id="mainframe" showtitlebar="true" showstatusbar="true" left="0" top="0" width="1024" height="768" titletext="MidThreeFrame">
+        <VFrameSet id="VFrameSet00" separatesize="50,*,100">
+          <Frames>
+            <ChildFrame id="TopFrame" showtitlebar="false" showstatusbar="false" formurl="Frame::Frame_Top.xfdl"/>
+            <HFrameSet id="HFrameSet00" separatesize="200,*,200">
+              <Frames>
+                <ChildFrame id="LeftFrame" showtitlebar="false" showstatusbar="false" formurl="Frame::Frame_Left.xfdl"/>
+                <ChildFrame id="WorkFrame" showtitlebar="false" showstatusbar="false" formurl="Frame::Frame_Work.xfdl"/>
+                <ChildFrame id="RightFrame" showtitlebar="false" showstatusbar="false" formurl="Frame::Frame_Right.xfdl"/>
+              </Frames>
+            </HFrameSet>
+            <ChildFrame id="BottomFrame" showtitlebar="false" showstatusbar="false" formurl="Frame::Frame_Bottom.xfdl"/>
+          </Frames>
+        </VFrameSet>
+      </MainFrame>
+    </Layout>
+  </Application>
+</ADL>

@@ -1,0 +1,2279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.0">
+  <Form id="PP_ModuleRegister" classname="PP_BaseFunctionkMM" left="0" top="0" width="1185" height="881" titletext="모듈 등록" cssclass="frm_popBg" onload="PP_ModuleRegister_onload">
+    <Layouts>
+      <Layout>
+        <Div id="div_detail" taborder="103" left="972" top="45" width="203" height="791" Style1="background:cornsilk;" text="div_body">
+          <Layouts>
+            <Layout>
+              <Static id="Static14" taborder="22" cssclass="sta_WF_detailLbl03" left="0" top="28" width="203" bottom="0"/>
+              <Static id="Static11" taborder="1" cssclass="sta_WF_titleBg" left="0" top="0" width="81" height="29"/>
+              <Static id="Static05" taborder="0" text="사용" left="20" top="0" width="50" height="28"/>
+              <Combo id="Combo01" taborder="2" codecolumn="CODE" datacolumn="CAPTION" left="5" top="31" width="71" height="22" innerdataset="@ds_cmm_usecd"/>
+              <Static id="Static00" taborder="23" cssclass="sta_WF_titleBg" left="80" top="0" width="66" height="29"/>
+              <Static id="Static01" taborder="24" text="메뉴얼" left="94" top="0" width="38" height="28"/>
+              <Static id="Static02" taborder="25" cssclass="sta_WF_titleBg" left="145" top="0" width="58" height="29"/>
+              <Static id="Static03" taborder="26" text="Abstract" left="150" top="0" width="50" height="28"/>
+              <Static id="Static37" taborder="27" cssclass="sta_WF_detailLbl03" left="80" top="28" width="66" height="28"/>
+              <Static id="Static04" taborder="28" cssclass="sta_WF_detailLbl03" left="145" top="28" width="58" height="28"/>
+              <CheckBox id="CheckBox00" taborder="3" text="CheckBox00" left="106" top="33" width="17" height="19" falsevalue="0" truevalue="1"/>
+              <CheckBox id="CheckBox01" taborder="4" text="CheckBox00" left="167" top="33" width="17" height="19" falsevalue="0" truevalue="1"/>
+              <Static id="Static06" taborder="29" cssclass="sta_WF_titleBg" left="0" top="55" width="203" height="29"/>
+              <Static id="Static07" taborder="30" text="Meta Info" cssclass="sta_POP_GroupTit" left="11" top="55" width="76" height="28"/>
+              <Static id="Static17" taborder="31" text="  CSS Control Name" cssclass="sta_WF_detailLbl01" left="0" top="283" width="203" height="19" Style1="align:left middle;"/>
+              <Edit id="edt_masterCode02" taborder="9" lengthunit="utf8" onsetfocus="edt_masterCode_onsetfocus" onkillfocus="edt_masterCode_onkillfocus" left="10" top="307" width="185" height="21" onmouseenter="div_SyntaxDefault_edt_masterCode01_onmouseenter" onmouseleave="div_SyntaxDefault_edt_masterCode01_onmouseleave" maxlength="200"/>
+              <Static id="Static09" taborder="33" text="  Inheritance" cssclass="sta_WF_detailLbl01" left="0" top="83" width="203" height="19" Style1="align:left middle;"/>
+              <Static id="Static12" taborder="35" text="  CSS Type Name" cssclass="sta_WF_detailLbl01" left="0" top="233" width="203" height="19" Style1="align:left middle;"/>
+              <Edit id="edt_masterCode01" taborder="8" lengthunit="utf8" maxlength="200" onsetfocus="edt_masterCode_onsetfocus" onkillfocus="edt_masterCode_onkillfocus" left="10" top="257" width="185" height="21" onmouseenter="div_SyntaxDefault_edt_masterCode01_onmouseenter" onmouseleave="div_SyntaxDefault_edt_masterCode01_onmouseleave"/>
+              <Static id="Static15" taborder="37" text="  Group" cssclass="sta_WF_detailLbl01" left="0" top="433" width="203" height="19" Style1="align:left middle;"/>
+              <Static id="sta_sgBg00" taborder="70" cssclass="sta_WF_detailLbl03" visible="true" left="0" top="451" width="203" height="33"/>
+              <Combo id="Combo00" taborder="39" codecolumn="MC_SEQ" datacolumn="MC_NAME" left="11" top="107" width="183" height="22" innerdataset="@ds_cmm_inheritance" visible="false" index="-1"/>
+              <Combo id="cmb_group" taborder="10" codecolumn="GD_SEQ" datacolumn="GROUP_NAME" left="10" top="457" width="183" height="22" innerdataset="@ds_cmm_group" index="-1" onitemchanged="div_detail_cmb_group_onitemchanged"/>
+              <Static id="Static18" taborder="40" text="  Contents Editor" cssclass="sta_WF_detailLbl01" left="0" top="333" width="113" height="19" Style1="align:left middle;"/>
+              <Static id="Static20" taborder="42" text="  Registration" cssclass="sta_WF_detailLbl01" left="112" top="333" width="91" height="19" Style1="align:left middle;"/>
+              <Static id="Static22" taborder="44" text=" Default width, height" cssclass="sta_WF_detailLbl01" left="0" top="383" width="203" height="19" Style1="align:left middle;"/>
+              <Edit id="edt_masterCode04" taborder="13" lengthunit="utf8" maxlength="50" onsetfocus="edt_masterCode_onsetfocus" onkillfocus="edt_masterCode_onkillfocus" left="10" top="407" width="77" height="21" onmouseenter="div_SyntaxDefault_edt_masterCode01_onmouseenter" onmouseleave="div_SyntaxDefault_edt_masterCode01_onmouseleave" tooltiptext="Default width" inputtype="number"/>
+              <Edit id="edt_masterCode05" taborder="14" lengthunit="utf8" maxlength="50" onsetfocus="edt_masterCode_onsetfocus" onkillfocus="edt_masterCode_onkillfocus" left="94" top="407" width="77" height="21" onmouseenter="div_SyntaxDefault_edt_masterCode01_onmouseenter" onmouseleave="div_SyntaxDefault_edt_masterCode01_onmouseleave" tooltiptext="Default height" inputtype="number"/>
+              <Combo id="Combo03" taborder="11" innerdataset="@ds_cmm_contentseditor" codecolumn="CODE" datacolumn="CAPTION" left="11" top="357" width="95" height="22" index="-1"/>
+              <Combo id="Combo04" taborder="12" innerdataset="@ds_cmm_registration" codecolumn="CODE" datacolumn="CAPTION" left="117" top="357" width="79" height="22" index="-1"/>
+              <Static id="sta_INHERITANCE_MC_NAME" taborder="46" left="10" top="108" width="168" height="20" Style1="border:1 solid #808080ff ;padding:0 25 0 5;"/>
+              <Button id="btn_cancleObjectInfo" taborder="5" cssclass="tab_MDI_MdiTabCls" left="156" top="107" width="18" height="22" Style1="background:URL('theme://images/tab_extra.png') center middle;" onclick="div_detail_btn_cancleObjectInfo_onclick"/>
+              <Button id="btn_searchObjectInfo" taborder="6" cssclass="btn_WF_Sch" left="180" top="107" width="18" height="22" Style1="background:#ffffffff;" onclick="fnSearchObjectInfo_onclick"/>
+              <Static id="Static24" taborder="47" text="  Short Type Name" cssclass="sta_WF_detailLbl01" left="0" top="183" width="203" height="19" Style1="align:left middle;"/>
+              <Edit id="edt_masterCode00" taborder="7" lengthunit="utf8" maxlength="30" onsetfocus="edt_masterCode_onsetfocus" onkillfocus="edt_masterCode_onkillfocus" left="10" top="207" width="185" height="21" onmouseenter="div_SyntaxDefault_edt_masterCode01_onmouseenter" onmouseleave="div_SyntaxDefault_edt_masterCode01_onmouseleave"/>
+              <Static id="Static26" taborder="56" text="  Class Name" cssclass="sta_WF_detailLbl01" left="0" top="133" width="203" height="19" Style1="align:left middle;"/>
+              <Edit id="edt_masterCode03" taborder="57" lengthunit="utf8" maxlength="30" onsetfocus="edt_masterCode_onsetfocus" onkillfocus="edt_masterCode_onkillfocus" left="10" top="157" width="185" height="21" onmouseenter="div_SyntaxDefault_edt_masterCode01_onmouseenter" onmouseleave="div_SyntaxDefault_edt_masterCode01_onmouseleave"/>
+              <Static id="sta_sgTitle" taborder="58" text="  SubGroup" cssclass="sta_WF_detailLbl01" left="0" top="483" width="203" height="19" Style1="align:left middle;" visible="false"/>
+              <Static id="sta_sgBg" taborder="59" cssclass="sta_WF_detailLbl03" left="0" top="501" width="203" height="33" visible="false"/>
+              <Combo id="cmb_subgroup" taborder="60" left="10" top="507" width="183" height="22" visible="false" onitemchanged="div_detail_cmb_subgroup_onitemchanged" innerdataset="@ds_cmm_subgroup" codecolumn="SGD_SEQ" datacolumn="SUBGROUP_NAME"/>
+              <Static id="sta_edittype" taborder="61" text="  EditType" cssclass="sta_WF_detailLbl01" visible="false" left="0" top="533" width="203" height="19" Style1="align:left middle;"/>
+              <Static id="sta_generatetype" taborder="62" text="  GenerateType" cssclass="sta_WF_detailLbl01" visible="false" left="0" top="582" width="203" height="19" Style1="align:left middle;"/>
+              <Edit id="edt_edittype" taborder="64" lengthunit="utf8" maxlength="200" onsetfocus="edt_masterCode_onsetfocus" onkillfocus="edt_masterCode_onkillfocus" left="10" top="556" width="185" height="21" onmouseenter="div_SyntaxDefault_edt_masterCode01_onmouseenter" onmouseleave="div_SyntaxDefault_edt_masterCode01_onmouseleave" visible="false"/>
+              <Combo id="cmb_generatetype" taborder="66" innerdataset="@ds_cmm_generate" codecolumn="CODE" datacolumn="CAPTION" visible="false" left="10" top="606" width="183" height="22" index="-1"/>
+              <Static id="sta_edittypecomponent" taborder="71" text="  EditTypeComponent" cssclass="sta_WF_detailLbl01" visible="false" left="0" top="632" width="203" height="19" Style1="align:left middle;"/>
+              <Static id="sta_gtBg" taborder="72" cssclass="sta_WF_detailLbl03" visible="false" left="0" top="701" width="203" height="33"/>
+              <Combo id="cmb_edittypecomponent" taborder="73" innerdataset="ds_cmm_edittypecomponent" codecolumn="CODE" datacolumn="CAPTION" visible="false" left="10" top="656" width="183" height="22"/>
+              <Edit id="edt_dblclickevent" taborder="74" lengthunit="utf8" maxlength="200" left="10" top="707" width="185" height="21"/>
+              <Static id="sta_dblclickevent" taborder="75" text="  dblclickevent" cssclass="sta_WF_detailLbl01" left="0" top="683" width="203" height="19" Style1="align:left middle;"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static11" taborder="5" cssclass="sta_WF_titleBg" left="10" top="45" width="372" height="29"/>
+        <Static id="Static05" taborder="6" text="지원여부" cssclass="sta_POP_GroupTit" left="20" top="45" width="76" height="28"/>
+        <Static id="Static14" taborder="7" cssclass="sta_WF_detailLbl03" left="10" top="73" width="372" height="394"/>
+        <Combo id="Combo01" taborder="8" left="304" top="84" width="63" height="22" codecolumn="CODE" datacolumn="CAPTION" innerdataset="@ds_cmm_supporttype"/>
+        <Combo id="Combo00" taborder="9" left="188" top="84" width="63" height="22" codecolumn="CODE" datacolumn="CAPTION" innerdataset="@ds_cmm_supporttype"/>
+        <Combo id="Combo03" taborder="12" left="71" top="84" width="63" height="22" codecolumn="CODE" datacolumn="CAPTION" innerdataset="@ds_cmm_supporttype"/>
+        <Static id="Static15" taborder="13" text="Mobile" cssclass="sta_WF_DetailTit" left="249" top="84" width="49" height="22"/>
+        <Static id="Static10" taborder="15" text="HTML5" cssclass="sta_WF_DetailTit" left="133" top="84" width="49" height="22"/>
+        <Static id="Static00" taborder="17" text="Runtime" cssclass="sta_WF_DetailTit" left="16" top="84" width="49" height="22"/>
+        <Static id="st_title" taborder="31" text="모듈 등록 -" cssclass="sta_POP_Title" left="10" top="1" right="1098" height="35" Style1="color:#ffffffff;"/>
+        <Button id="btn_close" taborder="32" onclick="common_onclick" cssclass="btn_POP_Cls" top="10" right="10" width="15" height="15" hotkey="ESCAPE"/>
+        <Static id="Static12" taborder="33" cssclass="sta_POP_BtnBg" left="1" right="1" bottom="1" height="38"/>
+        <Button id="btn_save" taborder="34" text="저장" onclick="common_onclick" cssclass="btn_WF_tran" right="11" bottom="8" width="60" height="24"/>
+        <Static id="Static24" taborder="43" cssclass="sta_WF_titleBg" left="10" top="278" width="372" height="29"/>
+        <Static id="Static25" taborder="44" text="Image" cssclass="sta_POP_GroupTit" left="20" top="278" width="111" height="28"/>
+        <Static id="sta_stockLink_name" taborder="58" left="21" top="312" width="336" height="22" Style1="border:1 solid #808080ff ;padding:0 0 0 5;" onmouseenter="sta_stockLink_name_onmouseenter" onmouseleave="sta_stockLink_name_onmouseleave"/>
+        <Button id="btn_imageLink" taborder="59" cssclass="btn_WF_Sch" left="359" top="312" width="18" height="22" Style1="background:#ffffffff;" onclick="btn_imageLink_onclick"/>
+        <Static id="Static42" taborder="94" cssclass="sta_WF_titleBg" left="10" top="116" width="372" height="29"/>
+        <Static id="Static43" taborder="95" text="Requirement" cssclass="sta_POP_GroupTit" left="20" top="116" width="96" height="28"/>
+        <Static id="Static23" taborder="93" cssclass="sta_WF_detailLbl03" left="10" top="247" width="186" height="32"/>
+        <Static id="Static28" taborder="47" cssclass="sta_WF_detailLbl03" left="195" top="247" width="187" height="32"/>
+        <Static id="Static09" taborder="39" cssclass="sta_WF_titleBg" left="10" top="219" width="186" height="29"/>
+        <Static id="Static13" taborder="40" text="Object Rename" cssclass="sta_POP_GroupTit" left="20" top="219" width="111" height="28"/>
+        <Static id="Static16" taborder="41" cssclass="sta_WF_titleBg" left="195" top="219" width="187" height="29"/>
+        <Static id="Static22" taborder="42" text="Sample Rename" cssclass="sta_POP_GroupTit" left="201" top="219" width="111" height="28"/>
+        <Edit id="edt_masterCode01" taborder="54" lengthunit="utf8" maxlength="30" onsetfocus="edt_masterCode_onsetfocus" onkillfocus="edt_masterCode_onkillfocus" left="21" top="253" width="164" height="21" onmouseenter="div_SyntaxDefault_edt_masterCode01_onmouseenter" onmouseleave="div_SyntaxDefault_edt_masterCode01_onmouseleave"/>
+        <Edit id="edt_masterCode00" taborder="55" lengthunit="utf8" maxlength="30" onsetfocus="edt_masterCode_onsetfocus" onkillfocus="edt_masterCode_onkillfocus" left="206" top="253" width="165" height="21" onmouseenter="div_SyntaxDefault_edt_masterCode01_onmouseenter" onmouseleave="div_SyntaxDefault_edt_masterCode01_onmouseleave" enable="true"/>
+        <Static id="Static44" taborder="97" cssclass="sta_WF_titleBg" left="10" top="339" width="372" height="29"/>
+        <Static id="Static45" taborder="98" text="설계파일" cssclass="sta_POP_GroupTit" left="20" top="339" width="111" height="28"/>
+        <Grid id="Grid02" taborder="101" autoenter="select" useinputpanel="false" autofittype="col" left="21" top="373" width="351" height="66" tooltiptype="hover" binddataset="ds_FILE">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="242"/>
+                <Column size="105"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="20"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="파일명"/>
+                <Cell col="1" text="구분"/>
+              </Band>
+              <Band id="body">
+                <Cell edittype="none" text="bind:FILE_NAME"/>
+                <Cell col="1" text="expr:FILE_TYPE=='0'?'File':'Link'"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Div id="div_body" taborder="102" left="392" top="45" width="570" height="788" Style1="background:azure;">
+          <Layouts>
+            <Layout>
+              <Grid id="grd_Bfci" cssclass="grd_POP_attach" taborder="22" scrollbars="autovert" useinputpanel="false" autofittype="col" useselcolor="false" oncellclick="grd_Comm_oncellclick" left="0" top="28" width="570" bottom="0">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="449"/>
+                      <Column size="25"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="24"/>
+                    </Rows>
+                    <Band id="body">
+                      <Cell Style1="align:left middle;" text="bind:FULLNAME" tooltiptext="bind:FULLNAME"/>
+                      <Cell col="1" displaytype="image" text="theme://images/tab_extra.png"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static28" taborder="23" cssclass="sta_WF_detailLbl03" left="0" top="28" width="286" height="57"/>
+              <Static id="Static00" taborder="24" cssclass="sta_WF_detailLbl03" left="285" top="28" width="285" height="57"/>
+              <Static id="Static02" taborder="0" cssclass="sta_WF_titleBg" left="0" top="0" width="286" height="29"/>
+              <Static id="Static04" taborder="1" text="Description" cssclass="sta_POP_GroupTit" left="10" top="0" width="101" height="28"/>
+              <Static id="Static06" taborder="2" cssclass="sta_WF_titleBg" left="285" top="0" width="285" height="29"/>
+              <Static id="Static08" taborder="3" text="Remark" cssclass="sta_POP_GroupTit" left="295" top="0" width="101" height="28"/>
+              <Static id="Static20" taborder="7" cssclass="sta_WF_titleBg" left="0" top="91" width="570" height="29"/>
+              <Static id="Static19" taborder="8" text="Constructor" cssclass="sta_POP_GroupTit" left="10" top="91" width="91" height="28"/>
+              <CheckBox id="chk_css" taborder="9" text="Constructor 사용안함" value="0" truevalue="1" falsevalue="0" left="11" top="125" width="149" height="20"/>
+              <Static id="Static29" taborder="10" text="* Constructor 데이터는 Init Method에서 가져옵니다." left="237" top="124" width="327" height="20" Style1="color:royalblue;font:bold 9 돋움;"/>
+              <Static id="Static30" taborder="11" text="Syntax" cssclass="sta_WF_detailLbl01" left="0" top="148" width="78" height="54"/>
+              <TextArea id="txa_Syntax" taborder="12" scrollbars="autoboth" left="77" top="148" width="493" height="54" tooltiptype="hover" tooltiptext="Property Setting Syntax&#13;&#10;(필수요소 : @, 선택요소 : [@], 배열의 경우 : '['@']')&#13;&#10;&#13;&#10;&quot;XProperty&quot;를 입력하면 Syntax로 변경됨&#13;&#10;&quot;XObject&quot;를 입력하면 Link Object로 변경됨" wordwrap="true"/>
+              <Static id="Static32" taborder="13" text="Parameter Sample" cssclass="sta_WF_detailLbl01" left="0" top="201" width="78" height="59"/>
+              <TextArea id="txa_Parameter" taborder="15" scrollbars="autoboth" left="77" top="201" width="195" height="59" tooltiptype="hover" tooltiptext="Property Setting Syntax&#13;&#10;(필수요소 : @, 선택요소 : [@], 배열의 경우 : '['@']')&#13;&#10;&#13;&#10;&quot;XProperty&quot;를 입력하면 Syntax로 변경됨&#13;&#10;&quot;XObject&quot;를 입력하면 Link Object로 변경됨" wordwrap="true"/>
+              <Static id="Static34" taborder="16" text="Example" cssclass="sta_WF_detailLbl01" left="271" top="201" width="78" height="59"/>
+              <TextArea id="txa_Example" taborder="18" scrollbars="autoboth" left="348" top="201" width="222" height="59" tooltiptype="hover" tooltiptext="Property Setting Syntax&#13;&#10;(필수요소 : @, 선택요소 : [@], 배열의 경우 : '['@']')&#13;&#10;&#13;&#10;&quot;XProperty&quot;를 입력하면 Syntax로 변경됨&#13;&#10;&quot;XObject&quot;를 입력하면 Link Object로 변경됨" wordwrap="true"/>
+              <Button id="btn_addRowParameterSupport" taborder="19" text="추가" onclick="btn_addRowParameterSupport_onclick" left="464" top="264" width="46" height="22"/>
+              <Button id="btn_delRowParameterSupport" taborder="20" text="삭제" onclick="btn_delRowParameterSupport_onclick" left="512" top="264" width="46" height="22"/>
+              <Grid id="grd_param" taborder="21" binddataset="ds_PARAMETERSUPPORT" autoenter="select" useinputpanel="false" autofittype="none" left="11" top="290" width="548" height="154">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="111"/>
+                      <Column size="64"/>
+                      <Column size="176"/>
+                      <Column size="197"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="24" band="head"/>
+                      <Row size="18"/>
+                      <Row size="18"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="Parameter"/>
+                      <Cell col="1" text="Type"/>
+                      <Cell col="2" text="Description"/>
+                      <Cell col="3" text="순서"/>
+                      <Cell col="4" text="Runtime지원"/>
+                      <Cell col="5" text="Html5지원"/>
+                      <Cell col="6" text="Mobile지원"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell edittype="text" text="bind:NAME"/>
+                      <Cell col="1" rowspan="2" displaytype="combo" edittype="combo" text="bind:DATA_TYPE" combodataset="ds_cmm_datatype" combocodecol="CODE" combodatacol="CAPTION"/>
+                      <Cell col="2" rowspan="2" edittype="text" text="bind:DESCRIPTION"/>
+                      <Cell col="3" rowspan="2" edittype="normal" editfilter="number" text="bind:ORD"/>
+                      <Cell col="4" rowspan="2" displaytype="combo" edittype="combo" text="bind:RUNTIME_FLAG" combodataset="ds_cmm_supporttype" combocodecol="CODE" combodatacol="CAPTION"/>
+                      <Cell col="5" rowspan="2" displaytype="combo" edittype="combo" text="bind:HTML5_FLAG" combodataset="ds_cmm_supporttype" combocodecol="CODE" combodatacol="CAPTION"/>
+                      <Cell col="6" rowspan="2" displaytype="combo" edittype="combo" text="bind:MOBILE_FLAG" combodataset="ds_cmm_supporttype" combocodecol="CODE" combodatacol="CAPTION"/>
+                      <Cell row="1"/>
+                    </Band>
+                  </Format>
+                  <Format id="NP16">
+                    <Columns>
+                      <Column size="111"/>
+                      <Column size="142"/>
+                      <Column size="256"/>
+                      <Column size="40"/>
+                      <Column size="40"/>
+                      <Column size="40"/>
+                      <Column size="40"/>
+                      <Column size="40"/>
+                      <Column size="40"/>
+                      <Column size="40"/>
+                      <Column size="40"/>
+                      <Column size="40"/>
+                      <Column size="40"/>
+                      <Column size="40"/>
+                      <Column size="40"/>
+                      <Column size="40"/>
+                      <Column size="40"/>
+                      <Column size="40"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="24" band="head"/>
+                      <Row size="18"/>
+                      <Row size="18"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="Parameter"/>
+                      <Cell col="1" text="Type"/>
+                      <Cell col="2" text="Description"/>
+                      <Cell col="3" text="순서"/>
+                      <Cell col="4" text="nb(WIN)" tooltiptext="nexacro browser(Win)"/>
+                      <Cell col="5" text="nb(OSX)" tooltiptext="desktop Hybrid(maxOS)"/>
+                      <Cell col="6" text="IE8" tooltiptext="IE8"/>
+                      <Cell col="7" text="IE9" tooltiptext="IE9"/>
+                      <Cell col="8" text="IE10" tooltiptext="IE10"/>
+                      <Cell col="9" text="IE11" tooltiptext="IE11"/>
+                      <Cell col="10" text="Chrome" tooltiptext="Chrome"/>
+                      <Cell col="11" text="Firefox" tooltiptext="Firefox"/>
+                      <Cell col="12" text="Safari" tooltiptext="Safari"/>
+                      <Cell col="13" text="Opera" tooltiptext="Opera"/>
+                      <Cell col="14" text="mh(And)" tooltiptext="Mobile Hybrid(And)"/>
+                      <Cell col="15" text="mh(IOS)" tooltiptext="Mobile Hybrid(IOS)"/>
+                      <Cell col="16" text="mw(And)" tooltiptext="Mobile Web browser(And)"/>
+                      <Cell col="17" text="mw(IOS)" tooltiptext="Mobile Web browser(IOS)"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell edittype="text" text="bind:NAME"/>
+                      <Cell col="1" rowspan="2" displaytype="combo" edittype="combo" text="bind:DATA_TYPE" combodataset="ds_cmm_datatype" combocodecol="CODE" combodatacol="CAPTION"/>
+                      <Cell col="2" rowspan="2" edittype="text" text="bind:DESCRIPTION"/>
+                      <Cell col="3" rowspan="2" edittype="normal" editfilter="number" text="bind:ORD"/>
+                      <Cell col="4" rowspan="2" displaytype="checkbox" edittype="checkbox" text="bind:WINDOWS_FLAG" combodisplay="edit"/>
+                      <Cell col="5" rowspan="2" displaytype="checkbox" edittype="checkbox" text="bind:OSX_FLAG" combodisplay="edit"/>
+                      <Cell col="6" rowspan="2" displaytype="checkbox" edittype="checkbox" text="bind:IE8_FLAG" combodisplay="edit"/>
+                      <Cell col="7" rowspan="2" displaytype="checkbox" edittype="checkbox" text="bind:IE9_FLAG" combodisplay="edit"/>
+                      <Cell col="8" rowspan="2" displaytype="checkbox" edittype="checkbox" text="bind:IE10_FLAG" combodisplay="edit"/>
+                      <Cell col="9" rowspan="2" displaytype="checkbox" edittype="checkbox" text="bind:IE11_FLAG" combodisplay="edit"/>
+                      <Cell col="10" rowspan="2" displaytype="checkbox" edittype="checkbox" text="bind:CHROME_FLAG" combodisplay="edit"/>
+                      <Cell col="11" rowspan="2" displaytype="checkbox" edittype="checkbox" text="bind:FIREFOX_FLAG" combodisplay="edit"/>
+                      <Cell col="12" rowspan="2" displaytype="checkbox" edittype="checkbox" text="bind:SAFARI_FLAG" combodisplay="edit"/>
+                      <Cell col="13" rowspan="2" displaytype="checkbox" edittype="checkbox" text="bind:OPERA_FLAG" combodisplay="edit"/>
+                      <Cell col="14" rowspan="2" displaytype="checkbox" edittype="checkbox" text="bind:ANDROID_FLAG" combodisplay="edit"/>
+                      <Cell col="15" rowspan="2" displaytype="checkbox" edittype="checkbox" text="bind:IOS_FLAG" combodisplay="edit"/>
+                      <Cell col="16" rowspan="2" displaytype="checkbox" edittype="checkbox" text="bind:MOBILEWEB_ANDROID_FLAG" combodisplay="edit"/>
+                      <Cell col="17" rowspan="2" displaytype="checkbox" edittype="checkbox" text="bind:MOBILEWEB_IOS_FLAG" combodisplay="edit"/>
+                      <Cell row="1"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Tab id="tab_module" taborder="25" left="11" top="448" width="549" height="279" tabindex="0" scrollbars="autoboth">
+                <Tabpages>
+                  <Tabpage id="tabpage1" text="Settings">
+                    <Layouts>
+                      <Layout>
+                        <Static id="Static36" taborder="0" text="Syntax" cssclass="sta_WF_detailLbl01" left="0" top="10" width="78" height="67"/>
+                        <TextArea id="txa_Syntax" taborder="2" scrollbars="autoboth" left="77" top="10" width="200" height="67" tooltiptype="hover" tooltiptext="Property Setting Syntax&#13;&#10;(필수요소 : @, 선택요소 : [@], 배열의 경우 : '['@']')&#13;&#10;&#13;&#10;&quot;XProperty&quot;를 입력하면 Syntax로 변경됨&#13;&#10;&quot;XObject&quot;를 입력하면 Link Object로 변경됨" wordwrap="true"/>
+                        <Static id="Static38" taborder="3" text="Example" cssclass="sta_WF_detailLbl01" left="276" top="10" width="78" height="67"/>
+                        <TextArea id="txa_Example" taborder="5" scrollbars="autoboth" left="353" top="10" width="192" height="67" tooltiptype="hover" tooltiptext="Property Setting Syntax&#13;&#10;(필수요소 : @, 선택요소 : [@], 배열의 경우 : '['@']')&#13;&#10;&#13;&#10;&quot;XProperty&quot;를 입력하면 Syntax로 변경됨&#13;&#10;&quot;XObject&quot;를 입력하면 Link Object로 변경됨" wordwrap="true"/>
+                        <Button id="btn_addRowSettingSupport00" taborder="6" text="추가" onclick="btn_addRowSettingSupport_onclick" left="451" top="80" width="46" height="22"/>
+                        <Button id="btn_delRowSettingSupport00" taborder="7" text="삭제" onclick="btn_delRowSettingSupport_onclick" left="499" top="80" width="46" height="22"/>
+                        <Grid id="grd_setting" taborder="8" binddataset="ds_SETTINGSUPPORT" autoenter="select" useinputpanel="false" autofittype="none" oncelldblclick="Grid00_oncelldblclick" left="0" top="105" width="546" height="144" tooltiptype="hover" tooltiptext="Setting : &#13;&#10; - Property에 들어갈 수 있는 Setting 입력&#13;&#10;Description :&#13;&#10; - Setting에 대한 설명 입력&#13;&#10; - Default값 입력 (Style을 제외하고 모두 기본값을 입력함)" onexpandup="div_body_tab_module_tabpage1_Grid01_onexpandup" wheelscrollrow="1">
+                          <Formats>
+                            <Format id="default">
+                              <Columns>
+                                <Column size="111"/>
+                                <Column size="333"/>
+                                <Column size="56"/>
+                                <Column size="46"/>
+                                <Column size="80"/>
+                                <Column size="80"/>
+                                <Column size="80"/>
+                              </Columns>
+                              <Rows>
+                                <Row size="24" band="head"/>
+                                <Row size="18"/>
+                                <Row size="18"/>
+                                <Row size="18"/>
+                              </Rows>
+                              <Band id="head">
+                                <Cell text="Setting"/>
+                                <Cell col="1" text="Description"/>
+                                <Cell col="2" text="사용구분"/>
+                                <Cell col="3" text="순서"/>
+                                <Cell col="4" text="Runtime지원"/>
+                                <Cell col="5" text="Html5지원"/>
+                                <Cell col="6" text="Mobile지원"/>
+                              </Band>
+                              <Band id="body">
+                                <Cell edittype="text" text="bind:NAME"/>
+                                <Cell col="1" rowspan="3" edittype="text" text="bind:DESCRIPTION"/>
+                                <Cell col="2" rowspan="3" displaytype="combo" edittype="combo" text="bind:USE_CD" combodataset="ds_cmm_usecd" combocodecol="CODE" combodatacol="CAPTION"/>
+                                <Cell col="3" rowspan="3" edittype="normal" editfilter="number" text="bind:ORD"/>
+                                <Cell col="4" rowspan="3" displaytype="combo" edittype="combo" text="bind:RUNTIME_FLAG" combodataset="ds_cmm_supporttype" combocodecol="CODE" combodatacol="CAPTION"/>
+                                <Cell col="5" rowspan="3" displaytype="combo" edittype="combo" text="bind:HTML5_FLAG" combodataset="ds_cmm_supporttype" combocodecol="CODE" combodatacol="CAPTION"/>
+                                <Cell col="6" rowspan="3" displaytype="combo" edittype="combo" text="bind:MOBILE_FLAG" combodataset="ds_cmm_supporttype" combocodecol="CODE" combodatacol="CAPTION"/>
+                                <Cell row="1" text="bind:MNLC_SEQ_FULLNAME" expandshow="show" expandimage="URL('theme://images/tab_extra.png')"/>
+                                <Cell row="2" text="bind:FC_SEQ_OP_LINK_NAME" expandshow="show" expandimage="URL('theme://images/tab_extra.png')"/>
+                              </Band>
+                            </Format>
+                            <Format id="NP16">
+                              <Columns>
+                                <Column size="111"/>
+                                <Column size="323"/>
+                                <Column size="62"/>
+                                <Column size="52"/>
+                                <Column size="40"/>
+                                <Column size="40"/>
+                                <Column size="40"/>
+                                <Column size="40"/>
+                                <Column size="40"/>
+                                <Column size="40"/>
+                                <Column size="40"/>
+                                <Column size="40"/>
+                                <Column size="40"/>
+                                <Column size="40"/>
+                                <Column size="40"/>
+                                <Column size="40"/>
+                                <Column size="40"/>
+                                <Column size="40"/>
+                              </Columns>
+                              <Rows>
+                                <Row size="24" band="head"/>
+                                <Row size="18"/>
+                                <Row size="18"/>
+                                <Row size="18"/>
+                              </Rows>
+                              <Band id="head">
+                                <Cell text="Setting"/>
+                                <Cell col="1" text="Description"/>
+                                <Cell col="2" text="사용구분"/>
+                                <Cell col="3" text="순서"/>
+                                <Cell col="4" text="nb(WIN)" tooltiptext="nexacro browser(Win)"/>
+                                <Cell col="5" text="nb(OSX)" tooltiptext="desktop Hybrid(maxOS)"/>
+                                <Cell col="6" text="IE8" tooltiptext="IE8"/>
+                                <Cell col="7" text="IE9" tooltiptext="IE9"/>
+                                <Cell col="8" text="IE10" tooltiptext="IE10"/>
+                                <Cell col="9" text="IE11" tooltiptext="IE11"/>
+                                <Cell col="10" text="Chrome" tooltiptext="Chrome"/>
+                                <Cell col="11" text="Firefox" tooltiptext="Firefox"/>
+                                <Cell col="12" text="Safari" tooltiptext="Safari"/>
+                                <Cell col="13" text="Opera" tooltiptext="Opera"/>
+                                <Cell col="14" text="mh(And)" tooltiptext="Mobile Hybrid(And)"/>
+                                <Cell col="15" text="mh(IOS)" tooltiptext="Mobile Hybrid(IOS)"/>
+                                <Cell col="16" text="mw(And)" tooltiptext="Mobile Web browser(And)"/>
+                                <Cell col="17" text="mw(IOS)" tooltiptext="Mobile Web browser(IOS)"/>
+                              </Band>
+                              <Band id="body">
+                                <Cell edittype="text" text="bind:NAME"/>
+                                <Cell col="1" rowspan="3" edittype="text" text="bind:DESCRIPTION"/>
+                                <Cell col="2" rowspan="3" displaytype="combo" edittype="combo" text="bind:USE_CD" combodataset="ds_cmm_usecd" combocodecol="CODE" combodatacol="CAPTION"/>
+                                <Cell col="3" rowspan="3" edittype="normal" editfilter="number" text="bind:ORD"/>
+                                <Cell col="4" rowspan="3" displaytype="checkbox" edittype="checkbox" text="bind:WINDOWS_FLAG" combodisplay="edit"/>
+                                <Cell col="5" rowspan="3" displaytype="checkbox" edittype="checkbox" text="bind:OSX_FLAG" combodisplay="edit"/>
+                                <Cell col="6" rowspan="3" displaytype="checkbox" edittype="checkbox" text="bind:IE8_FLAG" combodisplay="edit"/>
+                                <Cell col="7" rowspan="3" displaytype="checkbox" edittype="checkbox" text="bind:IE9_FLAG" combodisplay="edit"/>
+                                <Cell col="8" rowspan="3" displaytype="checkbox" edittype="checkbox" text="bind:IE10_FLAG" combodisplay="edit"/>
+                                <Cell col="9" rowspan="3" displaytype="checkbox" edittype="checkbox" text="bind:IE11_FLAG" combodisplay="edit"/>
+                                <Cell col="10" rowspan="3" displaytype="checkbox" edittype="checkbox" text="bind:CHROME_FLAG" combodisplay="edit"/>
+                                <Cell col="11" rowspan="3" displaytype="checkbox" edittype="checkbox" text="bind:FIREFOX_FLAG" combodisplay="edit"/>
+                                <Cell col="12" rowspan="3" displaytype="checkbox" edittype="checkbox" text="bind:SAFARI_FLAG" combodisplay="edit"/>
+                                <Cell col="13" rowspan="3" displaytype="checkbox" edittype="checkbox" text="bind:OPERA_FLAG" combodisplay="edit"/>
+                                <Cell col="14" rowspan="3" displaytype="checkbox" edittype="checkbox" text="bind:ANDROID_FLAG" combodisplay="edit"/>
+                                <Cell col="15" rowspan="3" displaytype="checkbox" edittype="checkbox" text="bind:IOS_FLAG" combodisplay="edit"/>
+                                <Cell col="16" rowspan="3" displaytype="checkbox" edittype="checkbox" text="bind:MOBILEWEB_ANDROID_FLAG" combodisplay="edit"/>
+                                <Cell col="17" rowspan="3" displaytype="checkbox" edittype="checkbox" text="bind:MOBILEWEB_IOS_FLAG" combodisplay="edit"/>
+                                <Cell row="1" text="bind:MNLC_SEQ_FULLNAME" expandshow="show" expandimage="URL('theme://images/tab_extra.png')"/>
+                                <Cell row="2" text="bind:FC_SEQ_OP_LINK_NAME" expandshow="show" expandimage="URL('theme://images/tab_extra.png')"/>
+                              </Band>
+                            </Format>
+                          </Formats>
+                        </Grid>
+                        <Button id="btn_viewOpen_Setting_Syntax" taborder="9" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="59" top="13" width="16" height="17" tooltiptext="내용 크게보기"/>
+                        <Button id="btn_viewOpen_SettingExample" taborder="10" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="335" top="13" width="16" height="17" tooltiptext="내용 크게보기"/>
+                      </Layout>
+                    </Layouts>
+                  </Tabpage>
+                  <Tabpage id="tabpage2" text="Object">
+                    <Layouts>
+                      <Layout>
+                        <Static id="Static40" taborder="1" text="Example" cssclass="sta_WF_detailLbl01" left="0" top="5" width="78" height="244"/>
+                        <TextArea id="txa_Example" taborder="3" left="77" top="5" width="467" height="244" tooltiptype="hover" tooltiptext="Property Setting Syntax&#13;&#10;(필수요소 : @, 선택요소 : [@], 배열의 경우 : '['@']')&#13;&#10;&#13;&#10;&quot;XProperty&quot;를 입력하면 Syntax로 변경됨&#13;&#10;&quot;XObject&quot;를 입력하면 Link Object로 변경됨" wordwrap="true"/>
+                        <Button id="btn_viewOpen_Object_Example" taborder="4" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="59" top="13" width="16" height="17" tooltiptext="내용 크게보기"/>
+                      </Layout>
+                    </Layouts>
+                  </Tabpage>
+                </Tabpages>
+              </Tab>
+              <TextArea id="txa_remarkDefault" taborder="4" scrollbars="autoboth" left="0" top="28" width="286" height="57" tooltiptype="hover" tooltiptext="&quot;XProperty&quot;를 입력하면 Syntax로 변경됨&#13;&#10;component에 대한 기본 정의 외에 부가 설명 입력&#13;&#10;&#13;&#10; * Remark 중간에 표를 삽입하고자 할 때에는 &#13;&#10;   표를 위치하고자 하는 위치에 @T@를 입력&#13;&#10;&#13;&#10; * Html tag를 입력하고자 할 경우&#13;&#10;   &lt; 는 &lt;@&lt;, &gt; 는 &gt;@&gt;로 입력" wordwrap="true"/>
+              <TextArea id="txa_remarkDefault00" taborder="5" scrollbars="autoboth" left="285" top="28" width="285" height="57" tooltiptype="hover" tooltiptext="&quot;XProperty&quot;를 입력하면 Syntax로 변경됨&#13;&#10;component에 대한 기본 정의 외에 부가 설명 입력&#13;&#10;&#13;&#10; * Remark 중간에 표를 삽입하고자 할 때에는 &#13;&#10;   표를 위치하고자 하는 위치에 @T@를 입력&#13;&#10;&#13;&#10; * Html tag를 입력하고자 할 경우&#13;&#10;   &lt; 는 &lt;@&lt;, &gt; 는 &gt;@&gt;로 입력" wordwrap="true"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="div_pseudo" taborder="105" left="10" top="444" width="372" height="390" Style1="background:azure;">
+          <Layouts>
+            <Layout>
+              <Static id="Static02" taborder="0" cssclass="sta_WF_detailLbl03" left="0" top="28" width="372" bottom="0"/>
+              <Static id="Static03" taborder="1" cssclass="sta_WF_titleBg" left="0" top="0" width="372" height="29"/>
+              <Static id="Static01" taborder="2" text="Pseudo" cssclass="sta_POP_GroupTit" left="10" top="0" width="76" height="28"/>
+              <Button id="btn_addRowPseudo" taborder="3" text="추가" onclick="btn_addRowPseudo_onclick" left="268" top="4" width="46" height="21"/>
+              <Button id="btn_delRowPseudo" taborder="4" text="삭제" onclick="btn_delRowPseudo_onclick" left="316" top="4" width="46" height="21"/>
+              <Grid id="Grid00" taborder="5" binddataset="ds_PSEUDO" autoenter="select" useinputpanel="false" autofittype="col" left="11" top="39" width="351" tooltiptype="hover" tooltiptext="Setting : &#13;&#10; - Property에 들어갈 수 있는 Setting 입력&#13;&#10;Description :&#13;&#10; - Setting에 대한 설명 입력&#13;&#10; - Default값 입력 (Style을 제외하고 모두 기본값을 입력함)" bottom="10">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="203"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                      <Column size="80"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="24" band="head"/>
+                      <Row size="24"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="NAME"/>
+                      <Cell col="1" text="Ctrl"/>
+                      <Cell col="2" text="Depre"/>
+                      <Cell col="3" text="Unused"/>
+                      <Cell col="4" text="Default"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell edittype="normal" text="bind:PD_NAME"/>
+                      <Cell col="1" displaytype="checkbox" edittype="checkbox" text="bind:CONTROL_FLAG"/>
+                      <Cell col="2" displaytype="checkbox" edittype="checkbox" text="bind:DEPRECATED_FLAG"/>
+                      <Cell col="3" displaytype="checkbox" edittype="checkbox" text="bind:UNUSED_FLAG"/>
+                      <Cell col="4" displaytype="checkbox" edittype="checkbox" text="bind:DEFAULT_FLAG"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="div_control" taborder="106" left="11" top="989" width="372" height="390" Style1="background:azure;" visible="false">
+          <Layouts>
+            <Layout>
+              <Static id="Static02" taborder="6" cssclass="sta_WF_detailLbl03" left="0" top="28" width="372" bottom="0"/>
+              <Static id="Static03" taborder="7" cssclass="sta_WF_titleBg" left="0" top="0" width="372" height="29"/>
+              <Static id="sta_name" taborder="8" text="Pseudo" cssclass="sta_POP_GroupTit" left="10" top="0" width="76" height="28"/>
+              <Button id="btn_addRowPseudo" taborder="9" text="추가" onclick="btn_addRowPseudo_onclick" left="267" top="5" width="46" height="21"/>
+              <Button id="btn_delRowPseudo" taborder="10" text="삭제" onclick="btn_delRowPseudo_onclick" left="315" top="5" width="46" height="21"/>
+              <Grid id="grd_pseudo" taborder="11" binddataset="ds_PSEUDO" autoenter="select" useinputpanel="false" autofittype="none" left="11" top="34" width="351" height="156" tooltiptype="hover" tooltiptext="Setting : &#13;&#10; - Property에 들어갈 수 있는 Setting 입력&#13;&#10;Description :&#13;&#10; - Setting에 대한 설명 입력&#13;&#10; - Default값 입력 (Style을 제외하고 모두 기본값을 입력함)" cellsizingtype="col">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="131"/>
+                      <Column size="55"/>
+                      <Column size="52"/>
+                      <Column size="58"/>
+                      <Column size="54"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="24" band="head"/>
+                      <Row size="24"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="NAME"/>
+                      <Cell col="1" text="Ctrl"/>
+                      <Cell col="2" text="Depre"/>
+                      <Cell col="3" text="Unused"/>
+                      <Cell col="4" text="Default"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell edittype="normal" text="bind:PD_NAME"/>
+                      <Cell col="1" displaytype="checkbox" edittype="checkbox" text="bind:CONTROL_FLAG"/>
+                      <Cell col="2" displaytype="checkbox" edittype="checkbox" text="bind:DEPRECATED_FLAG"/>
+                      <Cell col="3" displaytype="checkbox" edittype="checkbox" text="bind:UNUSED_FLAG"/>
+                      <Cell col="4" displaytype="checkbox" edittype="checkbox" text="bind:DEFAULT_FLAG"/>
+                    </Band>
+                  </Format>
+                  <Format id="NP16">
+                    <Columns>
+                      <Column size="40"/>
+                      <Column size="108"/>
+                      <Column size="102"/>
+                      <Column size="49"/>
+                      <Column size="49"/>
+                      <Column size="52"/>
+                      <Column size="54"/>
+                      <Column size="56"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="24" band="head"/>
+                      <Row size="24"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="NO"/>
+                      <Cell col="1" text="NAME"/>
+                      <Cell col="2" text="DESCRIPTION"/>
+                      <Cell col="3" text="Ctrl"/>
+                      <Cell col="4" text="Depre"/>
+                      <Cell col="5" text="Unused"/>
+                      <Cell col="6" text="Default"/>
+                      <Cell col="7" text="Group"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell displaytype="normal" edittype="masknumber" text="bind:ORD" maskchar="00" editdisplay="edit"/>
+                      <Cell col="1" displaytype="normal" edittype="none" text="bind:PD_NAME" combodisplay="edit"/>
+                      <Cell col="2" edittype="text" text="bind:DESCRIPTION"/>
+                      <Cell col="3" displaytype="checkbox" edittype="checkbox" text="bind:CONTROL_FLAG"/>
+                      <Cell col="4" displaytype="checkbox" edittype="checkbox" text="bind:DEPRECATED_FLAG"/>
+                      <Cell col="5" displaytype="checkbox" edittype="checkbox" text="bind:UNUSED_FLAG"/>
+                      <Cell col="6" displaytype="checkbox" edittype="checkbox" text="bind:DEFAULT_FLAG"/>
+                      <Cell col="7" displaytype="combo" edittype="none" text="bind:GD_SEQ" combodataset="ds_cmm_pseudogroup" combocodecol="GD_SEQ" combodatacol="GROUP_NAME"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static00" taborder="12" cssclass="sta_WF_titleBg" left="0" width="372" height="29" top="50%"/>
+              <Static id="Static04" taborder="13" text="Control" cssclass="sta_POP_GroupTit" left="10" top="195" width="76" height="28"/>
+              <Button id="btn_addRowControl" taborder="14" text="추가" left="267" top="199" width="46" height="21" onclick="div_control_btn_addRowControl_onclick"/>
+              <Button id="btn_delRowControl" taborder="15" text="삭제" left="315" top="199" width="46" height="21" onclick="div_control_btn_delRowControl_onclick"/>
+              <Grid id="grd_control" taborder="16" binddataset="ds_CONTROL_DATA" autoenter="select" useinputpanel="false" autofittype="none" left="11" top="228" width="351" height="155" tooltiptype="hover" tooltiptext="Setting : &#13;&#10; - Property에 들어갈 수 있는 Setting 입력&#13;&#10;Description :&#13;&#10; - Setting에 대한 설명 입력&#13;&#10; - Default값 입력 (Style을 제외하고 모두 기본값을 입력함)" onexpandup="fnSearchObjectInfo_onclick" cellsizingtype="col" oncloseup="div_control_grd_control_oncloseup">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="114"/>
+                      <Column size="100"/>
+                      <Column size="71"/>
+                      <Column size="66"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="24" band="head"/>
+                      <Row size="24"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="NAME"/>
+                      <Cell col="1" text="TypeName"/>
+                      <Cell col="2" text="Depre."/>
+                      <Cell col="3" text="Unused"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell edittype="normal" text="bind:CONTROL_NAME" tooltiptext="bind:CONTROL_NAME"/>
+                      <Cell col="1" displaytype="normal" edittype="none" text="bind:TYPE_NAME" expandshow="show" expandimage="expr:(Eco.isEmpty(TYPE_NAME)==true?'theme://images/tab_extra.png':'theme://images/tab_extra.png')" tooltiptext="bind:TYPE_NAME"/>
+                      <Cell col="2" displaytype="checkbox" edittype="checkbox" text="bind:DEPRECATED_FLAG"/>
+                      <Cell col="3" displaytype="checkbox" edittype="checkbox" text="bind:UNUSED_FLAG"/>
+                    </Band>
+                  </Format>
+                  <Format id="NP16">
+                    <Columns>
+                      <Column size="114"/>
+                      <Column size="100"/>
+                      <Column size="71"/>
+                      <Column size="66"/>
+                      <Column size="69"/>
+                      <Column size="68"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="24" band="head"/>
+                      <Row size="24"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell text="NAME"/>
+                      <Cell col="1" text="Class Name"/>
+                      <Cell col="2" text="Depre."/>
+                      <Cell col="3" text="Unused"/>
+                      <Cell col="4" text="Group"/>
+                      <Cell col="5" text="SubGroup"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell edittype="normal" text="bind:CONTROL_NAME" tooltiptext="bind:CONTROL_NAME"/>
+                      <Cell col="1" displaytype="normal" edittype="none" text="bind:TYPE_NAME" expandshow="show" expandimage="expr:(Eco.isEmpty(TYPE_NAME)==true?'theme://images/tab_extra.png':'theme://images/tab_extra.png')" tooltiptext="bind:TYPE_NAME"/>
+                      <Cell col="2" displaytype="checkbox" edittype="checkbox" text="bind:DEPRECATED_FLAG"/>
+                      <Cell col="3" displaytype="checkbox" edittype="checkbox" text="bind:UNUSED_FLAG"/>
+                      <Cell col="4" displaytype="combo" edittype="combo" text="bind:GD_SEQ" combodataset="ds_cmm_group" combocodecol="GD_SEQ" combodatacol="GROUP_NAME"/>
+                      <Cell col="5" displaytype="combo" edittype="combo" text="bind:SGD_SEQ" combodataset="ds_cmm_subgroup_con" combocodecol="SGD_SEQ" combodatacol="SUBGROUP_NAME"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+            </Layout>
+          </Layouts>
+        </Div>
+        <FileDownload id="btn_fileDown" taborder="107" retry="0" text="다운로드" visible="false" top="343" right="814" width="70" height="21" onclick="btn_fileDown_onclick"/>
+        <Button id="btn_addFile" taborder="108" onclick="div_fileTask_btn_addFile_onclick" cssclass="btn_POP_Add" left="84" top="345" width="16" height="16"/>
+        <Static id="Static01" taborder="109" text="패치명" left="185" top="51" width="37" height="20"/>
+        <Combo id="cbo_patch" taborder="110" innerdataset="ds_cmm_patch" codecolumn="PP_SEQ" datacolumn="PATCH_INFO" left="227" top="50" width="150" height="20" validate="title:패치명,required:true"/>
+        <Div id="div_supportEnv_n" taborder="111" left="1211" top="65" width="359" height="35" Style1="background:white;" text="Div00" visible="false">
+          <Layouts>
+            <Layout>
+              <CheckBox id="chk_IE7_FLAG" taborder="11" text="IE7" value="0" truevalue="1" falsevalue="0" left="0" top="-1" width="44" height="18"/>
+              <CheckBox id="chk_IE8_FLAG" taborder="12" text="IE8" value="0" truevalue="1" falsevalue="0" left="44" top="-1" width="42" height="18"/>
+              <CheckBox id="chk_IE9_FLAG" taborder="13" text="IE9" value="0" truevalue="1" falsevalue="0" left="88" top="-1" width="41" height="18"/>
+              <CheckBox id="chk_IE10_FLAG" taborder="14" text="IE10" value="0" truevalue="1" falsevalue="0" left="133" top="-1" width="47" height="18"/>
+              <CheckBox id="chk_IE11_FLAG" taborder="15" text="IE11" value="0" truevalue="1" falsevalue="0" left="182" top="-1" width="47" height="18"/>
+              <CheckBox id="chk_CHROME_FLAG" taborder="16" text="Chrome" value="0" truevalue="1" falsevalue="0" left="231" top="-1" width="69" height="18"/>
+              <CheckBox id="chk_SAFARI_FLAG" taborder="17" text="Safari" value="0" truevalue="1" falsevalue="0" left="300" top="-1" width="54" height="18"/>
+              <CheckBox id="chk_FIREFOX_FLAG" taborder="18" text="Firefox" value="0" truevalue="1" falsevalue="0" left="0" top="17" width="64" height="18"/>
+              <CheckBox id="chk_WINDOWS_FLAG" taborder="19" text="Win Run" value="0" truevalue="1" falsevalue="0" left="121" top="17" width="68" height="18"/>
+              <CheckBox id="chk_ANDROID_FLAG" taborder="20" text="Android Run" value="0" truevalue="1" falsevalue="0" left="192" top="17" width="93" height="18"/>
+              <CheckBox id="chk_IOS_FLAG" taborder="21" text="iOS Run" value="0" truevalue="1" falsevalue="0" left="286" top="17" width="68" height="18"/>
+              <CheckBox id="chk_OPERA_FLAG" taborder="22" text="Opera" value="0" truevalue="1" falsevalue="0" left="62" top="17" width="57" height="18"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Button id="btn_preView" taborder="112" text="미리보기" onclick="btn_preView_onclick" left="10" bottom="8" width="70" height="24"/>
+        <Button id="btn_viewOpen_Description" taborder="113" cssclass="btn_WF_WinPop" left="659" top="49" width="16" height="17" onclick="common_viewOpen_onclick" tooltiptext="내용 크게보기"/>
+        <Button id="btn_viewOpen_Remark" taborder="114" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="943" top="49" width="16" height="17" tooltiptext="내용 크게보기"/>
+        <Button id="btn_viewOpen_Syntax" taborder="115" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="451" top="197" width="16" height="17" tooltiptext="내용 크게보기"/>
+        <Button id="btn_viewOpen_Parameter" taborder="116" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="451" top="249" width="16" height="17" tooltiptext="내용 크게보기"/>
+        <Button id="btn_viewOpen_Example" taborder="117" onclick="common_viewOpen_onclick" cssclass="btn_WF_WinPop" left="721" top="249" width="16" height="17" tooltiptext="내용 크게보기"/>
+        <Static id="st_fullPath" taborder="119" cssclass="sta_POP_Title" left="91" top="1" right="42" height="35" Style1="color:#ffffffff;" background="URL(&quot;imagefile::desktop_tablet.png&quot;)"/>
+        <Grid id="grd_requirementData" taborder="120" binddataset="ds_REQUIREMENT_DATA" autoenter="select" useinputpanel="false" autofittype="col" oncellclick="grd_requirementData_oncellclick" ondropdown="grd_requirementData_ondropdown" oncloseup="grd_requirementData_oncloseup" left="21" top="150" width="351" height="64">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="70"/>
+                <Column size="165"/>
+                <Column size="45"/>
+                <Column size="55"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="20"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="타입"/>
+                <Cell col="1" text="지원내용"/>
+                <Cell col="2" text="버전"/>
+                <Cell col="3" text="범위"/>
+              </Band>
+              <Band id="body">
+                <Cell displaytype="combo" edittype="combo" text="bind:SUPPORT_TYPE" combodataset="ds_cmm_productkind" combocodecol="CODE" combodatacol="CAPTION"/>
+                <Cell col="1" displaytype="combo" edittype="combo" text="bind:SUPPORT_CODE" combodataset="ds_cmm_support" combocodecol="CODE" combodatacol="CAPTION"/>
+                <Cell col="2" displaytype="combo" edittype="combo" text="bind:VERSION" combodataset="ds_cmm_supportver" combocodecol="CODE" combodatacol="CAPTION"/>
+                <Cell col="3" displaytype="combo" edittype="combo" text="bind:RANGE" combodataset="ds_cmm_supportrange" combocodecol="CODE" combodatacol="CAPTION"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Button id="btn_addRowRequirementData" taborder="121" text="추가" onclick="btn_addRowRequirementData_onclick" left="278" top="120" width="46" height="22"/>
+        <Button id="btn_delRowRequirementData" taborder="122" text="삭제" onclick="btn_delRowRequirementData_onclick" left="326" top="120" width="46" height="22"/>
+        <Button id="btn_PopContentsInfo" taborder="124" text="ContensInfo" left="90" bottom="8" width="86" height="24" onclick="common_viewOpen_onclick"/>
+        <Div id="div_supportEnv_NP16" taborder="125" text="Div00" left="1211" top="113" width="359" height="138" Style1="background:white;" visible="false">
+          <Layouts>
+            <Layout>
+              <CheckBox id="chk_IE8_FLAG" taborder="24" text="IE8" value="0" truevalue="1" falsevalue="0" left="4" top="38" width="42" height="18" Style1="textpadding:0 0 0 1;"/>
+              <CheckBox id="chk_IE9_FLAG" taborder="25" text="IE9" value="0" truevalue="1" falsevalue="0" left="48" top="38" width="41" height="18" Style1="textpadding:0 0 0 1;"/>
+              <CheckBox id="chk_IE10_FLAG" taborder="26" text="IE10" value="0" truevalue="1" falsevalue="0" left="93" top="38" width="47" height="18" Style1="textpadding:0 0 0 1;"/>
+              <CheckBox id="chk_IE11_FLAG" taborder="27" text="IE11" value="0" truevalue="1" falsevalue="0" left="142" top="38" width="47" height="18" Style1="textpadding:0 0 0 1;"/>
+              <CheckBox id="chk_CHROME_FLAG" taborder="28" text="Chrome" value="0" truevalue="1" falsevalue="0" left="4" top="57" width="69" height="18" Style1="textpadding:0 0 0 1;"/>
+              <CheckBox id="chk_SAFARI_FLAG" taborder="29" text="Safari" value="0" truevalue="1" falsevalue="0" left="139" top="57" width="54" height="18" Style1="textpadding:0 0 0 1;"/>
+              <CheckBox id="chk_FIREFOX_FLAG" taborder="30" text="Firefox" value="0" truevalue="1" falsevalue="0" left="73" top="57" width="64" height="18" Style1="textpadding:0 0 0 1;"/>
+              <CheckBox id="chk_WINDOWS_FLAG" taborder="31" text="nexacro browser (Win)" value="0" truevalue="1" falsevalue="0" left="4" top="19" width="154" height="18" Style1="textpadding:0 0 0 1;"/>
+              <CheckBox id="chk_ANDROID_FLAG" taborder="32" text="Mobile Hybrid (And)" value="0" truevalue="1" falsevalue="0" left="4" top="99" width="157" height="18" Style1="textpadding:0 0 0 1;"/>
+              <CheckBox id="chk_IOS_FLAG" taborder="33" text="Mobile Hybrid (IOS)" value="0" truevalue="1" falsevalue="0" left="145" top="99" width="132" height="18" Style1="textpadding:0 0 0 1;"/>
+              <CheckBox id="chk_OPERA_FLAG" taborder="34" text="Opera" value="0" truevalue="1" falsevalue="0" left="199" top="57" width="57" height="18" Style1="textpadding:0 0 0 1;"/>
+              <Static id="Static00" taborder="35" text="[Desktop]" left="5" top="2" width="58" height="18"/>
+              <Static id="Static01" taborder="36" text="[Mobile]" left="2" top="81" width="50" height="18"/>
+              <CheckBox id="chk_MW_ANDROID_FLAG" taborder="37" text="Mobile Web browser (And)" value="0" truevalue="1" falsevalue="0" left="4" top="118" width="197" height="18" Style1="textpadding:0 0 0 1;"/>
+              <CheckBox id="chk_MW_IOS_FLAG" taborder="38" text="Mobile Web browser (IOS)" value="0" truevalue="1" falsevalue="0" left="180" top="118" width="174" height="18" Style1="textpadding:0 0 0 1;"/>
+              <CheckBox id="chk_OSX_FLAG" taborder="39" text="desktop Hybrid (macOS)" value="0" truevalue="1" falsevalue="0" left="164" top="19" width="154" height="18" Style1="textpadding:0 0 0 1;"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Button id="btn_PopCommentary" taborder="126" text="참고사항" onclick="common_viewOpen_onclick" left="186" bottom="8" width="86" height="24"/>
+        <Div id="div_bg" taborder="127" left="1632" top="32" width="832" height="522" Style1="background:#00000096;" onkillfocus="div_bg_onkillfocus" onkeydown="div_bg_onkeydown" visible="false">
+          <Layouts>
+            <Layout>
+              <Div id="div_Duple" taborder="0" left="6.73%" top="42" right="7.09%" height="428" Style1="background:white;border:1 solid #808080ff ;bordertype:round 5 5 ;">
+                <Layouts>
+                  <Layout>
+                    <Static id="sta_title" taborder="45" text="  중복기능명 상속 불가" left="0%" top="0" right="0%" height="24" Style1="background:black;color:white;font:bold 9 Dotum;"/>
+                    <Button id="btn_close2" taborder="47" text="닫기" escapebutton="true" onclick="hideDuplication" cssclass="btn_WF_cancel" right="10" bottom="7" width="60" height="24"/>
+                    <Button id="btn_close" taborder="50" escapebutton="true" onclick="hideDuplication" cssclass="btn_POP_Cls" top="8" right="8" width="11" height="11"/>
+                    <Grid id="Grid00" taborder="52" useinputpanel="false" left="10" top="96" right="10" binddataset="ds_mcDuplicated" autofittype="col" autosizingtype="col" cellsizingtype="col" bottom="46.24%">
+                      <Formats>
+                        <Format id="default">
+                          <Columns>
+                            <Column size="40"/>
+                            <Column size="40"/>
+                            <Column size="60"/>
+                            <Column size="300"/>
+                            <Column size="200"/>
+                          </Columns>
+                          <Rows>
+                            <Row size="24" band="head"/>
+                            <Row size="24"/>
+                          </Rows>
+                          <Band id="head">
+                            <Cell text="순번"/>
+                            <Cell col="1" text="LVL"/>
+                            <Cell col="2" text="MC_SEQ"/>
+                            <Cell col="3" text="FULL_MC_NAME"/>
+                            <Cell col="4" text="FULL_INHERITANCE_NAME"/>
+                          </Band>
+                          <Band id="body">
+                            <Cell text="expr:currow+1"/>
+                            <Cell col="1" text="bind:LVL"/>
+                            <Cell col="2" text="bind:MC_SEQ"/>
+                            <Cell col="3" Style1="align:left;" text="bind:FULL_MC_NAME"/>
+                            <Cell col="4" Style1="align:left;" text="bind:FULL_INHERITANCE_NAME"/>
+                          </Band>
+                        </Format>
+                      </Formats>
+                    </Grid>
+                    <TextArea id="TextArea00" taborder="54" left="10" top="29" right="10" height="43" value="중복된 기능명이 존재할 경우 상속할 수 없습니다. &#10;아래 중복된 기능을 확인하여 중복제거 후 재시도 하십시오." Style1="background:transparent;border:0 none #808080ff ;" scrollbars="none" readonly="true"/>
+                    <Grid id="Grid01" taborder="55" binddataset="ds_fcDuplicated" useinputpanel="false" cellsizingtype="col" autofittype="col" autosizingtype="col" left="10" right="10" bottom="40" top="59.39%">
+                      <Formats>
+                        <Format id="default">
+                          <Columns>
+                            <Column size="40"/>
+                            <Column size="40"/>
+                            <Column size="60"/>
+                            <Column size="300"/>
+                            <Column size="200"/>
+                            <Column size="80"/>
+                            <Column size="40"/>
+                          </Columns>
+                          <Rows>
+                            <Row size="24" band="head"/>
+                            <Row size="24"/>
+                          </Rows>
+                          <Band id="head">
+                            <Cell text="순번"/>
+                            <Cell col="1" text="LVL"/>
+                            <Cell col="2" text="MC_SEQ"/>
+                            <Cell col="3" text="FULL_MC_NAME"/>
+                            <Cell col="4" text="FULL_INHERITANCE_NAME"/>
+                            <Cell col="5" text="기능명"/>
+                            <Cell col="6" text="중복"/>
+                          </Band>
+                          <Band id="body">
+                            <Cell text="expr:currow+1"/>
+                            <Cell col="1" text="bind:LVL"/>
+                            <Cell col="2" text="bind:MC_SEQ"/>
+                            <Cell col="3" Style1="align:left;" text="bind:FULL_MC_NAME"/>
+                            <Cell col="4" Style1="align:left;" text="bind:FULL_INHERITANCE_NAME"/>
+                            <Cell col="5" Style1="align:left;" text="bind:FC_NAME"/>
+                            <Cell col="6" text="bind:FC_NAME_CNT"/>
+                          </Band>
+                        </Format>
+                      </Formats>
+                    </Grid>
+                    <Static id="Static13" taborder="56" text="모듈 중복" cssclass="sta_POP_view02" left="10" top="75" width="72" height="18"/>
+                    <Static id="Static00" taborder="57" text="기능 중복" cssclass="sta_POP_view02" left="10" width="72" height="18" bottom="41.08%"/>
+                  </Layout>
+                </Layouts>
+              </Div>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Button id="btn_imgCancel" taborder="128" cssclass="tab_MDI_MdiTabCls" left="338" top="312" width="18" height="22" Style1="background:URL('theme://images/tab_extra.png') center middle;" visible="false" onclick="btn_imgCancel_onclick"/>
+        <CheckBox id="chk_css" taborder="129" text="csspseudo" value="0" truevalue="1" falsevalue="0" left="411" top="785" width="93" height="19" Style1="textpadding:0 0 0 5;"/>
+        <CheckBox id="CheckBox03" taborder="130" text="composite" value="0" truevalue="1" falsevalue="0" left="504" top="785" width="93" height="19" Style1="textpadding:0 0 0 5;"/>
+        <CheckBox id="CheckBox04" taborder="131" text="cssstyle" value="0" truevalue="1" falsevalue="0" left="504" top="805" width="93" height="19" Style1="textpadding:0 0 0 5;"/>
+        <CheckBox id="CheckBox05" taborder="132" text="container" value="0" truevalue="1" falsevalue="0" left="411" top="805" width="93" height="19" Style1="textpadding:0 0 0 5;"/>
+        <CheckBox id="CheckBox06" taborder="133" text="tabstop" value="0" truevalue="1" falsevalue="0" left="595" top="785" width="93" height="19" Style1="textpadding:0 0 0 5;"/>
+        <CheckBox id="CheckBox07" taborder="134" text="contents" value="0" truevalue="1" falsevalue="0" left="595" top="806" width="93" height="19" Style1="textpadding:0 0 0 5;"/>
+        <CheckBox id="CheckBox09" taborder="135" text="formats" value="0" truevalue="1" falsevalue="0" left="675" top="784" width="93" height="19" Style1="textpadding:0 0 0 5;"/>
+        <CheckBox id="chk_useinitvalue" taborder="136" text="useinitvalue" value="0" truevalue="1" falsevalue="0" visible="false" left="752" top="784" width="93" height="19" Style1="textpadding:0 0 0 5;"/>
+        <CheckBox id="chk_popup" taborder="137" text="popup" value="0" truevalue="1" falsevalue="0" visible="false" left="675" top="804" width="93" height="19" Style1="textpadding:0 0 0 5;"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_cmm_supportkind" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="CODE" type="string" size="30"/>
+          <Column id="CAPTION" type="string" size="100"/>
+          <Column id="VAL1" type="string" size="255"/>
+          <Column id="VAL2" type="string" size="255"/>
+          <Column id="VAL3" type="string" size="255"/>
+          <Column id="VAL4" type="string" size="255"/>
+          <Column id="REMARK" type="string" size="255"/>
+          <Column id="ORD" type="string" size="255"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="CODE">R</Col>
+            <Col id="CAPTION">Runtime 편집</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">H</Col>
+            <Col id="CAPTION">HTML5 편집</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">M</Col>
+            <Col id="CAPTION">Mobile 편집</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_cmm_supporttype" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="CODE" type="string" size="30"/>
+          <Column id="CAPTION" type="string" size="100"/>
+          <Column id="VAL1" type="string" size="255"/>
+          <Column id="VAL2" type="string" size="255"/>
+          <Column id="VAL3" type="string" size="255"/>
+          <Column id="VAL4" type="string" size="255"/>
+          <Column id="REMARK" type="string" size="255"/>
+          <Column id="ORD" type="string" size="255"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_MODULE_CATEGORY" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="MC_SEQ" type="bigdecimal" size="20"/>
+          <Column id="MC_CODE" type="string" size="20"/>
+          <Column id="MC_NAME" type="string" size="200"/>
+          <Column id="FULL_MC_NAME" type="string" size="500"/>
+          <Column id="PP_SEQ" type="bigdecimal" size="20"/>
+          <Column id="RUNTIME_FLAG" type="string" size="1"/>
+          <Column id="HTML5_FLAG" type="string" size="1"/>
+          <Column id="MOBILE_FLAG" type="string" size="1"/>
+          <Column id="MANUAL_FLAG" type="string" size="1"/>
+          <Column id="USE_CD" type="string" size="30"/>
+          <Column id="CONSTRUCTOR_FLAG" type="string" size="1"/>
+          <Column id="OBJECT_RENAME" type="string" size="100"/>
+          <Column id="SAMPLE_RENAME" type="string" size="100"/>
+          <Column id="MNLI_SEQ" type="bigdecimal" size="20"/>
+          <Column id="MODULE_TYPE" type="string" size="30"/>
+          <Column id="FULL_TYPE_NAME" type="string" size="500"/>
+          <Column id="INHERITANCE_MC_SEQ" type="bigdecimal" size="20"/>
+          <Column id="CSS_TYPE_NAME" type="string" size="500"/>
+          <Column id="GD_SEQ" type="bigdecimal" size="20"/>
+          <Column id="PSEUDO_FLAG" type="string" size="1"/>
+          <Column id="CONTROL_FLAG" type="string" size="1"/>
+          <Column id="CONTAINER_FLAG" type="string" size="1"/>
+          <Column id="CSSSTYLE_FLAG" type="string" size="1"/>
+          <Column id="TABSTOP_FLAG" type="string" size="1"/>
+          <Column id="CONTENTS_FLAG" type="string" size="1"/>
+          <Column id="FORMATS_FLAG" type="string" size="1"/>
+          <Column id="ABSTRACT_FLAG" type="string" size="1"/>
+          <Column id="IMAGE_FILE" type="string" size="150"/>
+          <Column id="PATCH" type="string" size="20"/>
+          <Column id="PRODUCT_VERSION" type="string" size="500"/>
+          <Column id="INHERITANCE_MC_NAME" type="STRING" size="256"/>
+          <Column id="SGD_SEQ" type="BIGDECIMAL" size="18"/>
+          <Column id="EDIT_TYPE" type="STRING" size="256"/>
+          <Column id="GENERATE_TYPE" type="STRING" size="256"/>
+          <Column id="USEINITVALUE_FLAG" type="STRING" size="256"/>
+          <Column id="POPUP_FLAG" type="STRING" size="256"/>
+          <Column id="COMMENTARY" type="STRING" size="500"/>
+          <Column id="EDIT_TYPE_COMPONENT" type="STRING" size="256"/>
+          <Column id="DBLCLICKEVENT" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_MODULE_DESCRIPTION" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="MC_SEQ" type="bigdecimal" size="20"/>
+          <Column id="LANGUAGE_CD" type="string" size="30"/>
+          <Column id="DESCRIPTION" type="string" size="1073741823"/>
+          <Column id="REMARK" type="string" size="1073741823"/>
+          <Column id="CONSTRUCTOR_SYNTAX" type="string" size="1073741823"/>
+          <Column id="CONSTRUCTOR_SAMPLE" type="string" size="1073741823"/>
+          <Column id="CONSTRUCTOR_EXAMPLE" type="string" size="1073741823"/>
+          <Column id="SETTINGS_SYNTAX" type="string" size="1073741823"/>
+          <Column id="SETTINGS_EXAMPLE" type="string" size="1073741823"/>
+          <Column id="OBJECT_EXAMPLE" type="string" size="1073741823"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_PSEUDO" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="MC_SEQ" type="bigdecimal" size="20"/>
+          <Column id="PD_SEQ" type="bigdecimal" size="20"/>
+          <Column id="CONTROL_FLAG" type="string" size="1"/>
+          <Column id="DEPRECATED_FLAG" type="string" size="1"/>
+          <Column id="UNUSED_FLAG" type="string" size="1"/>
+          <Column id="PD_NAME" type="string" size="100"/>
+          <Column id="LANGUAGE_CD" type="string" size="30"/>
+          <Column id="DESCRIPTION" type="string" size="1073741823"/>
+          <Column id="REMARK" type="string" size="1073741823"/>
+          <Column id="GD_SEQ" type="BIGDECIMAL" size="20"/>
+          <Column id="ORD" type="INT" size="20"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_PARAMETERSUPPORT" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="MC_SEQ" type="bigdecimal" size="20"/>
+          <Column id="MC_CODE" type="string" size="30"/>
+          <Column id="MC_NAME" type="string" size="100"/>
+          <Column id="PM_SEQ" type="bigdecimal" size="20"/>
+          <Column id="SOURCE_CD" type="string" size="30"/>
+          <Column id="NAME" type="string" size="300"/>
+          <Column id="DATA_TYPE" type="string" size="30"/>
+          <Column id="HLINK_CD" type="string" size="30"/>
+          <Column id="HLINK_CD_FULLNAME" type="STRING" size="256"/>
+          <Column id="HLINK_MNLCD_SEQ" type="bigdecimal" size="20"/>
+          <Column id="HLINK_MNLCD_SEQ_FULLNAME" type="STRING" size="256"/>
+          <Column id="NECESSARY_FLAG" type="string" size="1"/>
+          <Column id="ORD" type="string" size="10"/>
+          <Column id="LANGUAGE_CD" type="string" size="30"/>
+          <Column id="DESCRIPTION" type="string" size="1073741823"/>
+          <Column id="SU_SOURCE_CD" type="string" size="30"/>
+          <Column id="RUNTIME_FLAG" type="string" size="1"/>
+          <Column id="HTML5_FLAG" type="string" size="1"/>
+          <Column id="MOBILE_FLAG" type="string" size="1"/>
+          <Column id="WINDOWS_FLAG" type="string" size="1"/>
+          <Column id="OSX_FLAG" type="STRING" size="1"/>
+          <Column id="ANDROID_FLAG" type="string" size="1"/>
+          <Column id="IOS_FLAG" type="string" size="1"/>
+          <Column id="CHROME_FLAG" type="string" size="1"/>
+          <Column id="FIREFOX_FLAG" type="string" size="1"/>
+          <Column id="SAFARI_FLAG" type="string" size="1"/>
+          <Column id="OPERA_FLAG" type="string" size="1"/>
+          <Column id="IE6_FLAG" type="string" size="1"/>
+          <Column id="IE7_FLAG" type="string" size="1"/>
+          <Column id="IE8_FLAG" type="string" size="1"/>
+          <Column id="IE9_FLAG" type="string" size="1"/>
+          <Column id="IE10_FLAG" type="string" size="1"/>
+          <Column id="IE11_FLAG" type="string" size="1"/>
+          <Column id="MOBILEWEB_ANDROID_FLAG" type="STRING" size="1"/>
+          <Column id="MOBILEWEB_IOS_FLAG" type="STRING" size="1"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_SETTINGSUPPORT" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="MC_SEQ" type="bigdecimal" size="20"/>
+          <Column id="MC_CODE" type="string" size="30"/>
+          <Column id="MC_NAME" type="string" size="100"/>
+          <Column id="SU_SOURCE_CD" type="string" size="30"/>
+          <Column id="SP_SEQ" type="bigdecimal" size="20"/>
+          <Column id="OJ_SEQ" type="bigdecimal" size="20"/>
+          <Column id="SOURCE_CD" type="string" size="30"/>
+          <Column id="NAME" type="string" size="300"/>
+          <Column id="FC_SEQ_OP_LINK" type="bigdecimal" size="20"/>
+          <Column id="FC_SEQ_OP_LINK_NAME" type="string" size="256"/>
+          <Column id="MNLC_SEQ" type="bigdecimal" size="20"/>
+          <Column id="MNLC_SEQ_FULLNAME" type="string" size="256"/>
+          <Column id="USE_CD" type="string" size="30"/>
+          <Column id="ORD" type="string" size="10"/>
+          <Column id="LANGUAGE_CD" type="string" size="30"/>
+          <Column id="PM_SEQ" type="bigdecimal" size="20"/>
+          <Column id="ST_SEQ" type="bigdecimal" size="20"/>
+          <Column id="DESCRIPTION" type="string" size="1073741823"/>
+          <Column id="RUNTIME_FLAG" type="string" size="1"/>
+          <Column id="HTML5_FLAG" type="string" size="1"/>
+          <Column id="MOBILE_FLAG" type="string" size="1"/>
+          <Column id="WINDOWS_FLAG" type="string" size="1"/>
+          <Column id="OSX_FLAG" type="string" size="1"/>
+          <Column id="ANDROID_FLAG" type="string" size="1"/>
+          <Column id="IOS_FLAG" type="string" size="1"/>
+          <Column id="CHROME_FLAG" type="string" size="1"/>
+          <Column id="FIREFOX_FLAG" type="string" size="1"/>
+          <Column id="SAFARI_FLAG" type="string" size="1"/>
+          <Column id="OPERA_FLAG" type="string" size="1"/>
+          <Column id="IE6_FLAG" type="string" size="1"/>
+          <Column id="IE7_FLAG" type="string" size="1"/>
+          <Column id="IE8_FLAG" type="string" size="1"/>
+          <Column id="IE9_FLAG" type="string" size="1"/>
+          <Column id="IE10_FLAG" type="string" size="1"/>
+          <Column id="IE11_FLAG" type="string" size="1"/>
+          <Column id="MOBILEWEB_ANDROID_FLAG" type="string" size="1"/>
+          <Column id="MOBILEWEB_IOS_FLAG" type="string" size="1"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_cmm_datatype" firefirstcount="0" firenextcount="0" useclientlayout="false" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="CODE" type="string" size="30"/>
+          <Column id="CAPTION" type="string" size="100"/>
+          <Column id="VAL1" type="string" size="255"/>
+          <Column id="VAL2" type="string" size="255"/>
+          <Column id="VAL3" type="string" size="255"/>
+          <Column id="VAL4" type="string" size="255"/>
+          <Column id="REMARK" type="string" size="255"/>
+          <Column id="ORD" type="string" size="255"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_cmm_usecd" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="CODE" type="string" size="30"/>
+          <Column id="CAPTION" type="string" size="100"/>
+          <Column id="VAL1" type="string" size="255"/>
+          <Column id="VAL2" type="string" size="255"/>
+          <Column id="VAL3" type="string" size="255"/>
+          <Column id="VAL4" type="string" size="255"/>
+          <Column id="REMARK" type="string" size="255"/>
+          <Column id="ORD" type="string" size="255"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_CONTROL_DATA" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="CD_SEQ" type="bigdecimal" size="18"/>
+          <Column id="MC_SEQ" type="bigdecimal" size="18"/>
+          <Column id="CONTROL_NAME" type="string" size="1000"/>
+          <Column id="TYPE_NAME" type="string" size="1000"/>
+          <Column id="DEPRECATED_FLAG" type="string" size="1"/>
+          <Column id="UNUSED_FLAG" type="string" size="1"/>
+          <Column id="GD_SEQ" type="BIGDECIMAL" size="18"/>
+          <Column id="SGD_SEQ" type="BIGDECIMAL" size="18"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_cmm_inheritance" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="MC_CODE" type="string" size="20"/>
+          <Column id="MC_NAME" type="string" size="200"/>
+          <Column id="MC_SEQ" type="bigdecimal" size="20"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_cmm_group" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="GD_SEQ" type="BIGDECIMAL" size="20"/>
+          <Column id="PRODUCT_CODE" type="string" size="30"/>
+          <Column id="GROUP_NAME" type="string" size="100"/>
+          <Column id="GROUP_TYPE" type="string" size="10"/>
+          <Column id="DESCRIPTION" type="string" size="1073741823"/>
+          <Column id="USE_FLAG" type="string" size="1"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_FILE" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="FM_SEQ" type="bigdecimal" size="20"/>
+          <Column id="FILE_TYPE" type="string" size="1"/>
+          <Column id="FILE_NAME" type="string" size="300"/>
+          <Column id="SAVE_FILE_NAME" type="string" size="300"/>
+          <Column id="SAVE_PATH" type="string" size="1000"/>
+          <Column id="SOURCE_CD" type="string" size="30"/>
+          <Column id="SOURCE_SEQ" type="bigdecimal" size="20"/>
+          <Column id="STATUS_CD" type="string" size="30"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_cmm_patch" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="PP_SEQ" type="STRING" size="18"/>
+          <Column id="PRODUCT_CODE" type="string" size="30"/>
+          <Column id="PRODUCT_KIND" type="string" size="20"/>
+          <Column id="PATCH" type="string" size="20"/>
+          <Column id="PRODUCT_VERSION" type="string" size="32"/>
+          <Column id="PATCH_INFO" type="STRING" size="256"/>
+          <Column id="BUILD_PLAN_DATE" type="datetime" size="23"/>
+          <Column id="DEPLOY_PLAN_DATE" type="datetime" size="23"/>
+          <Column id="DEPLOY_DATE" type="datetime" size="23"/>
+          <Column id="DESCRIPTION" type="string" size="32767"/>
+          <Column id="REMARK" type="string" size="32767"/>
+          <Column id="USE_FLAG" type="string" size="1"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_MD_HISTORY" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="MC_SEQ" type="bigdecimal" size="20"/>
+          <Column id="LANGUAGE_CD" type="string" size="30"/>
+          <Column id="PP_SEQ" type="STRING" size="256"/>
+          <Column id="CHANGE_REASON" type="STRING" size="256"/>
+          <Column id="DESCRIPTION" type="string" size="1073741823"/>
+          <Column id="REMARK" type="string" size="1073741823"/>
+          <Column id="CONSTRUCTOR_SYNTAX" type="string" size="1073741823"/>
+          <Column id="CONSTRUCTOR_SAMPLE" type="string" size="1073741823"/>
+          <Column id="CONSTRUCTOR_EXAMPLE" type="string" size="1073741823"/>
+          <Column id="SETTINGS_SYNTAX" type="string" size="1073741823"/>
+          <Column id="SETTINGS_EXAMPLE" type="string" size="1073741823"/>
+          <Column id="OBJECT_EXAMPLE" type="string" size="1073741823"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_MC_HISTORY" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="MC_SEQ" type="bigdecimal" size="20"/>
+          <Column id="MC_CODE" type="string" size="20"/>
+          <Column id="MC_NAME" type="string" size="200"/>
+          <Column id="PP_SEQ" type="STRING" size="256"/>
+          <Column id="CHANGE_REASON" type="STRING" size="256"/>
+          <Column id="RUNTIME_FLAG" type="string" size="1"/>
+          <Column id="HTML5_FLAG" type="string" size="1"/>
+          <Column id="MOBILE_FLAG" type="string" size="1"/>
+          <Column id="MANUAL_FLAG" type="string" size="1"/>
+          <Column id="USE_CD" type="string" size="30"/>
+          <Column id="CONSTRUCTOR_FLAG" type="string" size="1"/>
+          <Column id="OBJECT_RENAME" type="string" size="100"/>
+          <Column id="SAMPLE_RENAME" type="string" size="100"/>
+          <Column id="MNLI_SEQ" type="bigdecimal" size="20"/>
+          <Column id="MODULE_TYPE" type="string" size="30"/>
+          <Column id="FULL_TYPE_NAME" type="string" size="100"/>
+          <Column id="INHERITANCE_MC_SEQ" type="bigdecimal" size="20"/>
+          <Column id="CSS_TYPE_NAME" type="string" size="500"/>
+          <Column id="GD_SEQ" type="bigdecimal" size="20"/>
+          <Column id="PSEUDO_FLAG" type="string" size="1"/>
+          <Column id="CONTROL_FLAG" type="string" size="1"/>
+          <Column id="CONTAINER_FLAG" type="string" size="1"/>
+          <Column id="CSSSTYLE_FLAG" type="string" size="1"/>
+          <Column id="TABSTOP_FLAG" type="string" size="1"/>
+          <Column id="CONTENTS_FLAG" type="string" size="1"/>
+          <Column id="FORMATS_FLAG" type="string" size="1"/>
+          <Column id="ABSTRACT_FLAG" type="string" size="1"/>
+          <Column id="IMAGE_FILE" type="STRING" size="256"/>
+          <Column id="EDIT_TYPE" type="STRING" size="256"/>
+          <Column id="GENERATE_TYPE" type="STRING" size="256"/>
+          <Column id="USEINITVALUE_FLAG" type="STRING" size="256"/>
+          <Column id="POPUP_FLAG" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_SUPPORTENVIRONMENT" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="SE_SEQ" type="bigdecimal" size="18"/>
+          <Column id="SOURCE_CD" type="string" size="30"/>
+          <Column id="MC_SEQ" type="bigdecimal" size="18"/>
+          <Column id="FC_SEQ" type="bigdecimal" size="18"/>
+          <Column id="WINDOWS_FLAG" type="string" size="1"/>
+          <Column id="OSX_FLAG" type="STRING" size="1"/>
+          <Column id="ANDROID_FLAG" type="string" size="1"/>
+          <Column id="IOS_FLAG" type="string" size="1"/>
+          <Column id="CHROME_FLAG" type="string" size="1"/>
+          <Column id="FIREFOX_FLAG" type="string" size="1"/>
+          <Column id="SAFARI_FLAG" type="string" size="1"/>
+          <Column id="OPERA_FLAG" type="string" size="1"/>
+          <Column id="IE6_FLAG" type="string" size="1"/>
+          <Column id="IE7_FLAG" type="string" size="1"/>
+          <Column id="IE8_FLAG" type="string" size="1"/>
+          <Column id="IE9_FLAG" type="string" size="1"/>
+          <Column id="IE10_FLAG" type="string" size="1"/>
+          <Column id="IE11_FLAG" type="string" size="1"/>
+          <Column id="MOBILEWEB_ANDROID_FLAG" type="STRING" size="1"/>
+          <Column id="MOBILEWEB_IOS_FLAG" type="STRING" size="1"/>
+          <Column id="INSERT_DATE" type="datetime" size="23"/>
+          <Column id="INSERT_EMP_NO" type="string" size="60"/>
+          <Column id="INSERT_DEPT_CD" type="string" size="60"/>
+          <Column id="INSERT_MODEL" type="string" size="100"/>
+          <Column id="UPDATE_DATE" type="datetime" size="23"/>
+          <Column id="UPDATE_EMP_NO" type="string" size="60"/>
+          <Column id="UPDATE_DEPT_CD" type="string" size="60"/>
+          <Column id="UPDATE_MODEL" type="string" size="100"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_REQUIREMENT_DATA" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false" oncolumnchanged="ds_REQUIREMENT_DATA_oncolumnchanged">
+        <ColumnInfo>
+          <Column id="REQ_SEQ" type="bigdecimal" size="20"/>
+          <Column id="SOURCE_CD" type="string" size="30"/>
+          <Column id="MC_SEQ" type="bigdecimal" size="20"/>
+          <Column id="FC_SEQ" type="bigdecimal" size="20"/>
+          <Column id="BFC_SEQ" type="bigdecimal" size="20"/>
+          <Column id="SUPPORT_TYPE" type="string" size="30"/>
+          <Column id="SUPPORT_CODE" type="string" size="30"/>
+          <Column id="VERSION" type="string" size="10"/>
+          <Column id="RANGE" type="string" size="30"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_cmm_productkind" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="CODE" type="string" size="30"/>
+          <Column id="CAPTION" type="string" size="100"/>
+          <Column id="VAL1" type="string" size="255"/>
+          <Column id="VAL2" type="string" size="255"/>
+          <Column id="VAL3" type="string" size="255"/>
+          <Column id="VAL4" type="string" size="255"/>
+          <Column id="REMARK" type="string" size="255"/>
+          <Column id="ORD" type="string" size="255"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_cmm_support" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="CODE" type="string" size="30"/>
+          <Column id="CAPTION" type="string" size="100"/>
+          <Column id="VAL1" type="string" size="255"/>
+          <Column id="VAL2" type="string" size="255"/>
+          <Column id="VAL3" type="string" size="255"/>
+          <Column id="VAL4" type="string" size="255"/>
+          <Column id="REMARK" type="string" size="255"/>
+          <Column id="ORD" type="string" size="255"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_cmm_supportrange" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="CODE" type="string" size="30"/>
+          <Column id="CAPTION" type="string" size="100"/>
+          <Column id="VAL1" type="string" size="255"/>
+          <Column id="VAL2" type="string" size="255"/>
+          <Column id="VAL3" type="string" size="255"/>
+          <Column id="VAL4" type="string" size="255"/>
+          <Column id="REMARK" type="string" size="255"/>
+          <Column id="ORD" type="string" size="255"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_cmm_supportver" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="CODE" type="string" size="30"/>
+          <Column id="CAPTION" type="string" size="100"/>
+          <Column id="VAL1" type="string" size="255"/>
+          <Column id="VAL2" type="string" size="255"/>
+          <Column id="VAL3" type="string" size="255"/>
+          <Column id="VAL4" type="string" size="255"/>
+          <Column id="REMARK" type="string" size="255"/>
+          <Column id="ORD" type="string" size="255"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_mcCategory" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false"/>
+      <Dataset id="ds_cmm_contentseditor" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="CODE" type="string" size="30"/>
+          <Column id="CAPTION" type="string" size="100"/>
+          <Column id="VAL1" type="string" size="255"/>
+          <Column id="VAL2" type="string" size="255"/>
+          <Column id="VAL3" type="string" size="255"/>
+          <Column id="VAL4" type="string" size="255"/>
+          <Column id="REMARK" type="string" size="255"/>
+          <Column id="ORD" type="string" size="255"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_cmm_registration" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="CODE" type="string" size="30"/>
+          <Column id="CAPTION" type="string" size="100"/>
+          <Column id="VAL1" type="string" size="255"/>
+          <Column id="VAL2" type="string" size="255"/>
+          <Column id="VAL3" type="string" size="255"/>
+          <Column id="VAL4" type="string" size="255"/>
+          <Column id="REMARK" type="string" size="255"/>
+          <Column id="ORD" type="string" size="255"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_cmm_subgroup" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="SGD_SEQ" type="BIGDECIMAL" size="20"/>
+          <Column id="PRODUCT_CODE" type="string" size="30"/>
+          <Column id="SUBGROUP_NAME" type="string" size="100"/>
+          <Column id="GD_SEQ" type="BIGDECIMAL" size="20"/>
+          <Column id="DESCRIPTION" type="string" size="1073741823"/>
+          <Column id="USE_FLAG" type="string" size="1"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_cmm_pseudogroup" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="GD_SEQ" type="BIGDECIMAL" size="20"/>
+          <Column id="PRODUCT_CODE" type="string" size="30"/>
+          <Column id="GROUP_NAME" type="string" size="100"/>
+          <Column id="GROUP_TYPE" type="string" size="10"/>
+          <Column id="DESCRIPTION" type="string" size="1073741823"/>
+          <Column id="USE_FLAG" type="string" size="1"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_cmm_generate" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="CODE" type="string" size="30"/>
+          <Column id="CAPTION" type="string" size="100"/>
+          <Column id="VAL1" type="string" size="255"/>
+          <Column id="VAL2" type="string" size="255"/>
+          <Column id="VAL3" type="string" size="255"/>
+          <Column id="VAL4" type="string" size="255"/>
+          <Column id="REMARK" type="string" size="255"/>
+          <Column id="ORD" type="string" size="255"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_mcDuplicated">
+        <ColumnInfo>
+          <Column id="T" type="INT" size="11"/>
+          <Column id="LVL" type="INT" size="11"/>
+          <Column id="SORT" type="BIGDECIMAL" size="20"/>
+          <Column id="MC_SEQ" type="BIGDECIMAL" size="20"/>
+          <Column id="MC_CODE" type="STRING" size="20"/>
+          <Column id="INHERITANCE_MC_SEQ" type="BIGDECIMAL" size="20"/>
+          <Column id="MC_NAME" type="STRING" size="200"/>
+          <Column id="FULL_MC_NAME" type="STRING" size="500"/>
+          <Column id="FULL_INHERITANCE_NAME" type="STRING" size="1073741823"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_fcDuplicated">
+        <ColumnInfo>
+          <Column id="LVL" type="INT" size="11"/>
+          <Column id="MC_SEQ" type="BIGDECIMAL" size="20"/>
+          <Column id="FULL_MC_NAME" type="STRING" size="602"/>
+          <Column id="FULL_INHERITANCE_NAME" type="STRING" size="1073741823"/>
+          <Column id="FC_NAME" type="STRING" size="100"/>
+          <Column id="FC_NAME_CNT" type="INT" size="11"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_cmm_edittypecomponent" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="CODE" type="string" size="30"/>
+          <Column id="CAPTION" type="string" size="100"/>
+          <Column id="VAL1" type="string" size="255"/>
+          <Column id="VAL2" type="string" size="255"/>
+          <Column id="VAL3" type="string" size="255"/>
+          <Column id="VAL4" type="string" size="255"/>
+          <Column id="REMARK" type="string" size="255"/>
+          <Column id="ORD" type="string" size="255"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_cmm_subgroup_con" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="SGD_SEQ" type="BIGDECIMAL" size="20"/>
+          <Column id="PRODUCT_CODE" type="string" size="30"/>
+          <Column id="SUBGROUP_NAME" type="string" size="100"/>
+          <Column id="GD_SEQ" type="BIGDECIMAL" size="20"/>
+          <Column id="DESCRIPTION" type="string" size="1073741823"/>
+          <Column id="USE_FLAG" type="string" size="1"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+    <Bind>
+      <BindItem id="item0" compid="Combo03" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="RUNTIME_FLAG"/>
+      <BindItem id="item1" compid="Combo00" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="HTML5_FLAG"/>
+      <BindItem id="item2" compid="Combo01" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="MOBILE_FLAG"/>
+      <BindItem id="item11" compid="edt_masterCode01" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="OBJECT_RENAME"/>
+      <BindItem id="item12" compid="edt_masterCode00" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="SAMPLE_RENAME"/>
+      <BindItem id="item3" compid="div_body.txa_remarkDefault" propid="value" datasetid="ds_MODULE_DESCRIPTION" columnid="DESCRIPTION"/>
+      <BindItem id="item4" compid="div_body.txa_remarkDefault00" propid="value" datasetid="ds_MODULE_DESCRIPTION" columnid="REMARK"/>
+      <BindItem id="item13" compid="div_body.chk_css" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="CONSTRUCTOR_FLAG"/>
+      <BindItem id="item5" compid="div_body.txa_Syntax" propid="value" datasetid="ds_MODULE_DESCRIPTION" columnid="CONSTRUCTOR_SYNTAX"/>
+      <BindItem id="item6" compid="div_body.txa_Parameter" propid="value" datasetid="ds_MODULE_DESCRIPTION" columnid="CONSTRUCTOR_SAMPLE"/>
+      <BindItem id="item7" compid="div_body.txa_Example" propid="value" datasetid="ds_MODULE_DESCRIPTION" columnid="CONSTRUCTOR_EXAMPLE"/>
+      <BindItem id="item9" compid="div_body.Tab00.tabpage1.txa_Syntax" propid="value" datasetid="ds_MODULE_DESCRIPTION" columnid="SETTINGS_SYNTAX"/>
+      <BindItem id="item10" compid="div_body.Tab00.tabpage1.txa_Example" propid="value" datasetid="ds_MODULE_DESCRIPTION" columnid="SETTINGS_EXAMPLE"/>
+      <BindItem id="item8" compid="div_body.Tab00.tabpage2.TextArea05" propid="value" datasetid="ds_MODULE_DESCRIPTION" columnid="OBJECT_EXAMPLE"/>
+      <BindItem id="item15" compid="div_detail.Combo01" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="USE_CD"/>
+      <BindItem id="item16" compid="div_detail.edt_masterCode02" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="CSS_CONTROL_NAME"/>
+      <BindItem id="item18" compid="div_detail.edt_masterCode01" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="CSS_TYPE_NAME"/>
+      <BindItem id="item17" compid="div_detail.Combo00" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="INHERITANCE_MC_SEQ"/>
+      <BindItem id="item19" compid="div_detail.cmb_group" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="GD_SEQ"/>
+      <BindItem id="item27" compid="div_detail.CheckBox01" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="ABSTRACT_FLAG"/>
+      <BindItem id="item28" compid="sta_stockLink_name" propid="text" datasetid="ds_MODULE_CATEGORY" columnid="IMAGE_FILE"/>
+      <BindItem id="item29" compid="cbo_patch" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="PP_SEQ"/>
+      <BindItem id="item30" compid="div_supportEnv_n.chk_IE7_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="IE7_FLAG"/>
+      <BindItem id="item31" compid="div_supportEnv_n.chk_IE8_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="IE8_FLAG"/>
+      <BindItem id="item32" compid="div_supportEnv_n.chk_IE9_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="IE9_FLAG"/>
+      <BindItem id="item33" compid="div_supportEnv_n.chk_IE10_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="IE10_FLAG"/>
+      <BindItem id="item34" compid="div_supportEnv_n.chk_IE11_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="IE11_FLAG"/>
+      <BindItem id="item35" compid="div_supportEnv_n.chk_CHROME_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="CHROME_FLAG"/>
+      <BindItem id="item36" compid="div_supportEnv_n.chk_SAFARI_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="SAFARI_FLAG"/>
+      <BindItem id="item37" compid="div_supportEnv_n.chk_FIREFOX_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="FIREFOX_FLAG"/>
+      <BindItem id="item38" compid="div_supportEnv_n.chk_WINDOWS_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="WINDOWS_FLAG"/>
+      <BindItem id="item39" compid="div_supportEnv_n.chk_ANDROID_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="ANDROID_FLAG"/>
+      <BindItem id="item40" compid="div_supportEnv_n.chk_IOS_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="IOS_FLAG"/>
+      <BindItem id="item41" compid="div_detail.CheckBox00" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="MANUAL_FLAG"/>
+      <BindItem id="item42" compid="st_fullPath" propid="text" datasetid="ds_MODULE_CATEGORY" columnid="FULL_MC_NAME"/>
+      <BindItem id="item43" compid="div_body.tab_module.tabpage1.txa_Syntax" propid="value" datasetid="ds_MODULE_DESCRIPTION" columnid="SETTINGS_SYNTAX"/>
+      <BindItem id="item44" compid="div_body.tab_module.tabpage1.txa_Example" propid="value" datasetid="ds_MODULE_DESCRIPTION" columnid="SETTINGS_EXAMPLE"/>
+      <BindItem id="item45" compid="div_body.tab_module.tabpage2.txa_Example" propid="value" datasetid="ds_MODULE_DESCRIPTION" columnid="OBJECT_EXAMPLE"/>
+      <BindItem id="item14" compid="div_supportEnv_n.chk_OPERA_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="OPERA_FLAG"/>
+      <BindItem id="item46" compid="popTitleMaker.txa_Syntax" propid="value" datasetid="ds_MODULE_DESCRIPTION" columnid="SETTINGS_SYNTAX"/>
+      <BindItem id="item50" compid="div_detail.edt_masterCode04" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="DEFAULT_WIDTH"/>
+      <BindItem id="item51" compid="div_detail.edt_masterCode05" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="DEFAULT_HEIGHT"/>
+      <BindItem id="item52" compid="div_detail.edt_masterCode02" propid="tooltiptext" datasetid="ds_MODULE_CATEGORY" columnid="CSS_CONTROL_NAME"/>
+      <BindItem id="item53" compid="div_detail.edt_masterCode01" propid="tooltiptext" datasetid="ds_MODULE_CATEGORY" columnid="CSS_TYPE_NAME"/>
+      <BindItem id="item56" compid="div_detail.Combo03" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="CONTENTS_EDITOR_CD"/>
+      <BindItem id="item57" compid="div_detail.Combo04" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="REGISTRATION_CD"/>
+      <BindItem id="item78" compid="div_detail.sta_INHERITANCE_MC_NAME" propid="text" datasetid="ds_MODULE_CATEGORY" columnid="INHERITANCE_MC_NAME"/>
+      <BindItem id="item47" compid="div_detail.edt_masterCode00" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="SHORT_TYPE_NAME"/>
+      <BindItem id="item48" compid="div_detail.edt_masterCode00" propid="tooltiptext" datasetid="ds_MODULE_CATEGORY" columnid="SHORT_TYPE_NAME"/>
+      <BindItem id="item49" compid="div_detail.edt_masterCode03" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="CLASS_NAME"/>
+      <BindItem id="item54" compid="div_detail.edt_masterCode03" propid="tooltiptext" datasetid="ds_MODULE_CATEGORY" columnid="CLASS_NAME"/>
+      <BindItem id="item55" compid="div_detail.cmb_subgroup" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="SGD_SEQ"/>
+      <BindItem id="item58" compid="div_supportEnv_NP16.chk_WINDOWS_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="WINDOWS_FLAG"/>
+      <BindItem id="item59" compid="div_supportEnv_NP16.chk_IE8_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="IE8_FLAG"/>
+      <BindItem id="item60" compid="div_supportEnv_NP16.chk_IE9_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="IE9_FLAG"/>
+      <BindItem id="item61" compid="div_supportEnv_NP16.chk_IE10_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="IE10_FLAG"/>
+      <BindItem id="item62" compid="div_supportEnv_NP16.chk_IE11_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="IE11_FLAG"/>
+      <BindItem id="item63" compid="div_supportEnv_NP16.chk_CHROME_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="CHROME_FLAG"/>
+      <BindItem id="item64" compid="div_supportEnv_NP16.chk_FIREFOX_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="FIREFOX_FLAG"/>
+      <BindItem id="item65" compid="div_supportEnv_NP16.chk_SAFARI_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="SAFARI_FLAG"/>
+      <BindItem id="item66" compid="div_supportEnv_NP16.chk_OPERA_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="OPERA_FLAG"/>
+      <BindItem id="item67" compid="div_supportEnv_NP16.chk_ANDROID_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="ANDROID_FLAG"/>
+      <BindItem id="item68" compid="div_supportEnv_NP16.chk_IOS_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="IOS_FLAG"/>
+      <BindItem id="item69" compid="div_supportEnv_NP16.chk_MW_ANDROID_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="MOBILEWEB_ANDROID_FLAG"/>
+      <BindItem id="item70" compid="div_supportEnv_NP16.chk_MW_IOS_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="MOBILEWEB_IOS_FLAG"/>
+      <BindItem id="item71" compid="div_supportEnv_NP16.chk_OSX_FLAG" propid="value" datasetid="ds_SUPPORTENVIRONMENT" columnid="OSX_FLAG"/>
+      <BindItem id="item72" compid="div_detail.edt_edittype" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="EDIT_TYPE"/>
+      <BindItem id="item73" compid="div_detail.edt_edittype" propid="tooltiptext" datasetid="ds_MODULE_CATEGORY" columnid="EDIT_TYPE"/>
+      <BindItem id="item74" compid="div_detail.cmb_generatetype" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="GENERATE_TYPE"/>
+      <BindItem id="item77" compid="div_detail.cmb_edittypecomponent" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="EDIT_TYPE_COMPONENT"/>
+      <BindItem id="item20" compid="chk_css" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="PSEUDO_FLAG"/>
+      <BindItem id="item21" compid="CheckBox03" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="CONTROL_FLAG"/>
+      <BindItem id="item23" compid="CheckBox04" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="CSSSTYLE_FLAG"/>
+      <BindItem id="item22" compid="CheckBox05" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="CONTAINER_FLAG"/>
+      <BindItem id="item24" compid="CheckBox06" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="TABSTOP_FLAG"/>
+      <BindItem id="item25" compid="CheckBox07" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="CONTENTS_FLAG"/>
+      <BindItem id="item26" compid="CheckBox09" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="FORMATS_FLAG"/>
+      <BindItem id="item75" compid="chk_useinitvalue" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="USEINITVALUE_FLAG"/>
+      <BindItem id="item76" compid="chk_popup" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="POPUP_FLAG"/>
+      <BindItem id="item79" compid="div_detail.edt_dblclickevent" propid="value" datasetid="ds_MODULE_CATEGORY" columnid="DBLCLICKEVENT"/>
+    </Bind>
+    <Script type="xscript5.0"><![CDATA[/************************************************************************************************
+ * 01. 업무구분 : 프로젝트 - 제품관리
+ * 02. 화면명   : 모듈 등록 (PP_ModuleRegister)
+ * 03. 화면설명 : 모듈 등록 및 수정
+ * 04. 작성일   : 2014.04.10
+ * 05. 작성자   : 이용재
+ * 06. 수정이력 :
+ ***********************************************************************************************
+ *     수정일          이  름    사유
+ ***********************************************************************************************
+ *     
+************************************************************************************************/
+
+/************************************************************************************************
+ * 공통 라이브러리 INCLUDE 영역
+************************************************************************************************/
+include "Script::CommUtil.xjs"; 	
+include "Script::CommGrid.xjs"; 
+include "Script::CommTrans.xjs";
+include "Script::CommSystem.xjs";
+include "Script::CommConst.xjs";
+include "Script::CommValidation.xjs";
+include "Script::CommWebEditor.xjs";
+
+/************************************************************************************************
+ * 전역 변수 영역
+************************************************************************************************/
+// this.pv_sourceCd	= "MC";		// 모듈:MC,기능:FC 구분
+// this.pv_productCd	= "XP92";
+// 
+// this.pv_mcSeq		= "5";
+// this.pv_language	= "KOR";	// 기능 언어코드
+
+this.pv_sourceCd;		// 모듈:MC,기능:FC 구분
+this.pv_productCd;
+this.pv_mcSeq;
+this.pv_language;	// 기능 언어코드
+this.pv_ppSeq;
+
+this.fvSourceSeq	= "0";
+
+this.productRule = 0; // fnGetProductRule 의 리턴값으로 제품을 구분
+
+/************************************************************************************************
+ * FORM 영역
+************************************************************************************************/
+this.PP_ModuleRegister_onload = function(obj:Form, e:nexacro.LoadEventInfo)
+{
+	this.pv_sourceCd 	= this.parent.pv_sourceCd;
+	this.pv_productCd 	= this.parent.pv_productCd;
+	this.pv_mcSeq 		= this.parent.pv_mcSeq;
+	this.pv_language 	= this.parent.pv_language;
+	//this.pv_ppSeq		= this.parent.pv_ppSeq;
+	
+	this.productRule 	= this.fnGetProductRule(this.pv_productCd);
+
+	this.gfnCompInit(obj);
+	this.fnInit();
+}
+
+this.fnGetProductRule = function(sProductCd)
+{
+	if(sProductCd == "XP13" || sProductCd == "NP14"|| sProductCd == "NP14N") {
+		return 1;
+	} else if(sProductCd == "NP16") {
+		return 2;
+	} else {
+		return 0;
+	}
+}
+
+/************************************************************************************************
+ * FORM 공통 FUNCTION 영역
+************************************************************************************************/
+
+this.fnInit = function()
+{
+	this.fnGetCode();
+
+	// pseudo 영역 예외처리	
+	if(this.productRule > 0) {
+		this.div_control.move(this.div_pseudo.getOffsetLeft(), this.div_pseudo.getOffsetTop());
+		this.div_pseudo.set_visible(false);
+		this.div_control.set_visible(true);
+		
+		if(this.productRule == 1){
+			this.div_supportEnv_n.move(17, 78);
+			this.div_supportEnv_n.set_visible(true);
+			
+		} else if(this.productRule == 2){
+			this.Static42.set_visible(false);
+			this.div_supportEnv_NP16.move(17, 78);
+			this.div_supportEnv_NP16.set_visible(true);
+			this.div_detail.sta_sgTitle.set_visible(true);
+			this.div_detail.sta_sgBg.set_visible(true);
+			this.div_detail.cmb_subgroup.set_visible(true);
+			this.div_detail.sta_gtBg.set_visible(true);
+			this.div_detail.sta_edittype.set_visible(true);
+			this.div_detail.edt_edittype.set_visible(true);
+			this.div_detail.sta_generatetype.set_visible(true);
+			this.div_detail.cmb_generatetype.set_visible(true);
+			this.div_detail.sta_edittypecomponent.set_visible(true);
+			this.div_detail.cmb_edittypecomponent.set_visible(true);
+			this.div_detail.sta_dblclickevent.set_visible(true);
+			this.div_detail.edt_dblclickevent.set_visible(true);
+			
+			this.chk_useinitvalue.set_visible(true);
+			this.chk_popup.set_visible(true);
+			
+			this.div_control.sta_name.set_text("Status");
+			this.div_control.grd_pseudo.setFormat("NP16");
+			this.div_control.grd_control.setFormat("NP16");
+			this.div_body.grd_param.setFormat("NP16");
+			this.div_body.tab_module.tabpage1.grd_setting.setFormat("NP16");
+			this.chk_css.set_text("cssstatus");
+		}
+	}
+}
+
+// 공통코드 조회
+this.fnGetCode = function()
+{
+	this.gfnAddCodeDataset("ds_cmm_supporttype" , 	"SUPPORT_TYPE", 	false, false); //지원구분
+	this.gfnAddCodeDataset("ds_cmm_usecd" , 		"USE_CD", 			false, false); //사용구분
+	this.gfnAddCodeDataset("ds_cmm_datatype" , 		"DATA_TYPE", 		false, false); //데이터타입
+	
+	this.gfnAddCodeDataset("ds_cmm_productkind" ,	"PRODUCT_KIND",		false, false); //제품종류
+	this.gfnAddCodeDataset("ds_cmm_support" ,		"SUPPORT",			false, false); //지원환경
+	
+	this.gfnAddCodeDataset("ds_cmm_supportrange" ,	"SUPPORT_RANGE",	false, false); //지원범위
+	this.gfnAddCodeDataset("ds_cmm_supportver" ,	"SUPPORT_VER",		false, false); //지원버전	
+	
+	this.gfnAddCodeDataset("ds_cmm_registration" ,	"REGISTRATION"); //REGISTRATION	
+	this.gfnAddCodeDataset("ds_cmm_contentseditor" ,"CONTENTS_EDITOR",	true, false); //CONTENTS_EDITOR	
+	
+	this.gfnAddCodeDataset("ds_cmm_generate",		"GENERATE_TYPE",	true, false);// GENERATE_TYPE
+	this.gfnAddCodeDataset("ds_cmm_edittypecomponent","EDIT_TYPE_COMPONENT",	true, false);// EDIT_TYPE_COMPONENT
+	
+	this.gfnCodeTransaction();
+}
+
+// 카테고리 리스트 조회
+this.fnMcCategorySearch = function()
+{	
+	var strSvcID 	= "PP_ModuleRegister_S06";
+	var strModelNm 	= "PP_ModuleRegister_S06";
+	
+	// 조건값(Rarameter) 셋팅
+	this.gfnAddSendParameter("MC_SEQ", 		this.pv_mcSeq);
+	
+	// 조회용 Output dataset 세팅
+	this.gfnAddOutputDataset("ds_mcCategory"	, "ds_mcCategory");
+	
+	this.gfnCommonTransaction(strSvcID, strModelNm);
+}
+
+// 패치명 콤보리스트 조회
+this.fnPatchComboSearch = function()
+{	
+	var strSvcID 	= "PP_FunctionRegister_S04";
+	var strModelNm 	= "PP_FunctionRegister_S04";
+	
+	// 조건값(Rarameter) 셋팅
+	this.gfnAddSendParameter("PRODUCT_CD"		, this.pv_productCd);
+	this.gfnAddSendParameter("CATEGORY"			, this.pv_sourceCd);
+	//this.gfnAddSendParameter("PP_SEQ"			, this.pv_ppSeq);
+	
+	// 조회용 Output dataset 세팅
+	this.gfnAddOutputDataset("ds_cmm_patch"	, "dsOutput");
+	
+	this.gfnCommonTransaction(strSvcID, strModelNm);
+}
+
+this.fnModuleSearch = function()
+{
+	var strSvcID 	= "PP_ModuleRegister_S02";
+	var strModelNm 	= "PP_ModuleRegister_S02";
+	
+	// 조건값(Rarameter) 셋팅
+	this.gfnAddSendParameter("MC_SEQ", 		this.pv_mcSeq);
+	this.gfnAddSendParameter("LANGUAGE_CD", this.pv_language);
+	this.gfnAddSendParameter("SOURCE_CD", 	this.pv_sourceCd);
+	this.gfnAddSendParameter("PP_SEQ", 		this.pv_ppSeq);
+	
+	// 조회용 Output dataset 세팅
+	this.gfnAddOutputDataset("ds_MODULE_CATEGORY"			, "ds_MODULE_CATEGORY");
+	this.gfnAddOutputDataset("ds_MODULE_DESCRIPTION"		, "ds_MODULE_DESCRIPTION");
+	this.gfnAddOutputDataset("ds_PSEUDO"					, "ds_PSEUDO");
+	this.gfnAddOutputDataset("ds_CONTROL_DATA"				, "ds_CONTROL_DATA");
+	
+	this.gfnAddOutputDataset("ds_PARAMETERSUPPORT"			, "ds_PARAMETERSUPPORT");
+	this.gfnAddOutputDataset("ds_SETTINGSUPPORT"			, "ds_SETTINGSUPPORT");
+	this.gfnAddOutputDataset("ds_FILE"						, "ds_FILE");
+	this.gfnAddOutputDataset("ds_SUPPORTENVIRONMENT"		, "ds_SUPPORTENVIRONMENT");
+	
+	this.gfnAddOutputDataset("ds_REQUIREMENT_DATA"			, "ds_REQUIREMENT_DATA");
+	
+	this.gfnAddOutputDataset("ds_MC_HISTORY"				, "ds_MC_HISTORY");
+	this.gfnAddOutputDataset("ds_MD_HISTORY"				, "ds_MD_HISTORY");
+	
+	this.gfnCommonTransaction(strSvcID, strModelNm);
+}
+
+this.fn_save = function(sCallType, sChangeReason)
+{
+	if(sCallType == "PATCHCHANGE") {
+		this.ds_MC_HISTORY.clearData();
+		this.ds_MD_HISTORY.clearData();
+	
+		// ds_FUNCTION_CATEGORY 이력처리 
+		var nRow = this.ds_MC_HISTORY.addRow();
+		this.ds_MC_HISTORY.copyRow(nRow, this.ds_MODULE_CATEGORY, 0);
+		this.ds_MC_HISTORY.setColumn(0, "PP_SEQ", 			this.cbo_patch.value);
+		this.ds_MC_HISTORY.setColumn(0, "CHANGE_REASON", 	sChangeReason);
+
+		// ds_FUNCTION_DESCRIPTION 이력처리 
+		var nRow = this.ds_MD_HISTORY.addRow();
+		this.ds_MD_HISTORY.copyRow(nRow, this.ds_MODULE_DESCRIPTION, 0);				
+		this.ds_MD_HISTORY.setColumn(0, "PP_SEQ", 			this.cbo_patch.value);
+		this.ds_MD_HISTORY.setColumn(0, "CHANGE_REASON", 	sChangeReason);	
+	} else {
+		// 이력정보 처리
+		this.ds_MC_HISTORY.copyRow(0, this.ds_MODULE_CATEGORY, 0);
+		this.ds_MD_HISTORY.copyRow(0, this.ds_MODULE_DESCRIPTION, 0);
+	}
+
+	var strSvcID 	= "PP_ModuleRegister_R01";
+	var strModelNm 	= "PP_ModuleRegister_R01";
+	
+	// 조건값(Rarameter) 셋팅
+	this.gfnAddSendParameter("MC_SEQ", 		this.pv_mcSeq);
+	this.gfnAddSendParameter("LANGUAGE_CD", this.pv_language);
+	this.gfnAddSendParameter("SOURCE_CD", 	this.pv_sourceCd);
+	
+	this.gfnAddSendParameter("SOURCE_SEQ", 	this.fvSourceSeq);	// 파일시퀀스 정보
+	
+	this.gfnAddSendParameter("PP_SEQ",			this.cbo_patch.value);
+	this.gfnAddSendParameter("PATCH_CHANGE",	sCallType);
+	
+	
+	// 저장용 Input dataset 세팅
+	this.gfnAddInputDataset("ds_MODULE_CATEGORY"		, "ds_MODULE_CATEGORY");
+	this.gfnAddInputDataset("ds_MODULE_DESCRIPTION"		, "ds_MODULE_DESCRIPTION");
+	this.gfnAddInputDataset("ds_PSEUDO"					, "ds_PSEUDO");
+	this.gfnAddInputDataset("ds_CONTROL_DATA"			, "ds_CONTROL_DATA");
+	this.gfnAddInputDataset("ds_PARAMETERSUPPORT"		, "ds_PARAMETERSUPPORT"		, "A");
+	this.gfnAddInputDataset("ds_SETTINGSUPPORT"			, "ds_SETTINGSUPPORT"		, "A");
+	this.gfnAddInputDataset("ds_SUPPORTENVIRONMENT"		, "ds_SUPPORTENVIRONMENT");
+	
+	this.gfnAddInputDataset("ds_REQUIREMENT_DATA"		, "ds_REQUIREMENT_DATA");
+	
+	this.gfnAddInputDataset("ds_MC_HISTORY"				, "ds_MC_HISTORY");
+	this.gfnAddInputDataset("ds_MD_HISTORY"				, "ds_MD_HISTORY");
+		
+	this.gfnCommonTransaction(strSvcID, strModelNm);
+}
+
+this.fnInheritanceSearch = function()
+{
+	var strSvcID 	= "PP_ModuleRegister_S03";
+	var strModelNm 	= "PP_ModuleRegister_S03";
+	
+	// 조건값(Rarameter) 셋팅
+	this.gfnAddSendParameter("PRODUCT_CODE", this.pv_productCd);
+	
+	// 조회용 Output dataset 세팅
+	this.gfnAddOutputDataset("ds_cmm_inheritance"	, "ds_INHERITANCE");
+	
+	this.gfnCommonTransaction(strSvcID, strModelNm);
+}
+
+this.fnGroupSearch = function()
+{
+	var strSvcID 	= "PP_ModuleRegister_S04";
+	var strModelNm 	= "PP_ModuleRegister_S04";
+	
+	// 조건값(Rarameter) 셋팅
+	this.gfnAddSendParameter("PRODUCT_CODE", this.pv_productCd);
+	
+	// 조회용 Output dataset 세팅
+	this.gfnAddOutputDataset("ds_cmm_group", "ds_GROUP");
+	if(this.productRule == 2){
+		this.gfnAddOutputDataset("ds_cmm_subgroup", "ds_SUBGROUP");
+		this.gfnAddOutputDataset("ds_cmm_pseudogroup", "ds_PSEUDOGROUP");
+	}
+	
+	this.gfnCommonTransaction(strSvcID, strModelNm);
+}
+
+//call back
+this.fnCallBack = function (strSvcID, nErrorCode, strErrorMag)
+{
+	if(nErrorCode != 0)	{
+		return;
+	}	
+	
+	if(strSvcID == "gfnGetCode") {
+		
+		//this.ds_cmm_registration.setColumn(0,"CAPTION",""); // 기본값이 정해짐
+		this.ds_cmm_contentseditor.setColumn(0,"CAPTION","");
+		this.ds_cmm_generate.setColumn(0,"CAPTION","");
+		this.ds_cmm_edittypecomponent.setColumn(0,"CAPTION","");
+		
+		this.fnPatchComboSearch();	
+		
+	} else if(strSvcID == "PP_FunctionRegister_S04") {	
+		
+		this.fnGroupSearch();
+		
+	} else if(strSvcID == "PP_ModuleRegister_S02") {
+	
+		//this.pv_ppSeq = this.ds_MODULE_CATEGORY.getColumn(0, "PP_SEQ");
+
+		this.ds_cmm_patch.set_filterstr("PATCH>='"+this.ds_MODULE_CATEGORY.getColumn(0, "PATCH")+"'");	
+	
+		if(this.ds_MODULE_DESCRIPTION.rowcount <= 0) {
+			var nRow = this.ds_MODULE_DESCRIPTION.addRow();
+			this.ds_MODULE_DESCRIPTION.setColumn(nRow, "MC_SEQ", 		this.pv_mcSeq);
+			this.ds_MODULE_DESCRIPTION.setColumn(nRow, "LANGUAGE_CD",	this.pv_language);
+		}
+		
+		if(this.productRule > 0) {
+			if(this.ds_SUPPORTENVIRONMENT.rowcount == 0) {
+				var nRow = this.ds_SUPPORTENVIRONMENT.addRow();
+				this.ds_SUPPORTENVIRONMENT.setColumn(nRow, "SOURCE_CD", this.pv_sourceCd);
+				this.ds_SUPPORTENVIRONMENT.setColumn(nRow, "MC_SEQ", 	this.pv_mcSeq);
+			}
+		}
+		
+		// FULL_TYPE_NAME값이 있는 경우에 Inheritance 콤보 리스트 조회
+		if(!Eco.isEmpty(this.ds_MODULE_CATEGORY.getColumn(0, "FULL_TYPE_NAME"))) {
+			//this.fnInheritanceSearch();
+		}
+		if(!Eco.isEmpty(this.ds_MODULE_CATEGORY.getColumn(0, "MNLI_SEQ"))) {
+			this.btn_imgCancel.set_visible(true);
+		}
+		
+		this.groupFilter();
+
+	} else if(strSvcID == "PP_ModuleRegister_S03") {	
+	
+	} else if(strSvcID == "PP_ModuleRegister_S04") {
+		//this.fnModuleSearch();
+		
+		this.ds_cmm_subgroup_con.copyData(this.ds_cmm_subgroup);
+		this.fnMcCategorySearch();
+	
+	} else if(strSvcID == "PP_ModuleRegister_S06") {
+	
+		if(this.ds_mcCategory.rowcount == 1) {
+			this.pv_ppSeq = this.ds_mcCategory.getColumn(0, "PP_SEQ");
+			
+			this.fnModuleSearch();
+		} else {
+			alert("ds_mcCategory 정보없음!!");
+		}
+		
+	} else if(strSvcID == "PP_ModuleRegister_R01") {
+		//alert("저장 되었습니다.");
+		this.commUtil.popupClose(strSvcID);
+	}
+}	
+	
+this.common_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	if(obj.name == "btn_save") {
+		
+		// Validation 체크 
+		if(!this.gfn_frm_getValidateCompList(this)) return false;
+
+// 로직 제거 (15.03.16) : 동작 불분명 (FULL_TYPE_NAME 이 비어있는 경우 INHERITANCE_MC_SEQ를 저장할 수 없다.) 
+// 		if(Eco.isEmpty(this.ds_MODULE_CATEGORY.getColumn(0, "FULL_TYPE_NAME"))) {
+// 			if(!Eco.isEmpty(this.ds_MODULE_CATEGORY.getColumn(0, "INHERITANCE_MC_SEQ"))) this.ds_MODULE_CATEGORY.setColumn(0, "INHERITANCE_MC_SEQ", undefined);
+// 		}
+		
+		// 패치번호가 변경된 경우 변경사유 예외처리
+		if(this.ds_MODULE_CATEGORY.getColumn(0, "PP_SEQ") != this.ds_MODULE_CATEGORY.getOrgColumn(0, "PP_SEQ")) {
+			// 변경사유 입력
+			var sArgument = {};
+			this.commUtil.popup(this, "CommChangeReason", "Common::CommChangeReason.xfdl", -1, -1, 414, 188, true, true, false, sArgument, "fn_popCallBack");			
+		} else {
+			if(!this.confirm("저장하시겠습니까?")) return false;
+			
+			this.fn_save();
+		}
+
+	} else if(obj.name == "btn_close") {
+		this.close();
+	}
+}
+
+this.btn_addRowPseudo_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	var sArgument = {pvVal:"Modal", pvProject:this.pv_productCd, pvLanguage:this.pv_language, pvContext:"PP_ModuleRegister"};
+	
+	this.commUtil.popup(this, "popPseudo", "Project::PR_PseudoMMPop.xfdl", -1, -1, 400, 200, true, true, false, sArgument, "fn_popCallBack");
+}
+
+this.btn_delRowPseudo_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	this.ds_PSEUDO.deleteRow(this.ds_PSEUDO.rowposition);
+}
+
+this.btn_addRowParameterSupport_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	var nRow = this.ds_PARAMETERSUPPORT.addRow();
+	
+	this.ds_PARAMETERSUPPORT.setColumn(nRow, "MC_SEQ", 			this.pv_mcSeq);
+	this.ds_PARAMETERSUPPORT.setColumn(nRow, "SOURCE_CD", 		this.pv_sourceCd);
+	this.ds_PARAMETERSUPPORT.setColumn(nRow, "LANGUAGE_CD", 	this.pv_language);
+	this.ds_PARAMETERSUPPORT.setColumn(nRow, "SU_SOURCE_CD", 	"PM");
+	
+	if(this.pv_productCd == "NP16"){
+		this.ds_PARAMETERSUPPORT.setColumn(nRow, "WINDOWS_FLAG", "1");
+		this.ds_PARAMETERSUPPORT.setColumn(nRow, "OSX_FLAG", "1");
+		this.ds_PARAMETERSUPPORT.setColumn(nRow, "ANDROID_FLAG", "1");
+		this.ds_PARAMETERSUPPORT.setColumn(nRow, "IOS_FLAG", "1");
+		this.ds_PARAMETERSUPPORT.setColumn(nRow, "CHROME_FLAG", "1");
+		this.ds_PARAMETERSUPPORT.setColumn(nRow, "FIREFOX_FLAG", "1");
+		this.ds_PARAMETERSUPPORT.setColumn(nRow, "SAFARI_FLAG", "1");
+		this.ds_PARAMETERSUPPORT.setColumn(nRow, "OPERA_FLAG", "1");
+		this.ds_PARAMETERSUPPORT.setColumn(nRow, "IE6_FLAG", "1");
+		this.ds_PARAMETERSUPPORT.setColumn(nRow, "IE7_FLAG", "1");
+		this.ds_PARAMETERSUPPORT.setColumn(nRow, "IE8_FLAG", "1");
+		this.ds_PARAMETERSUPPORT.setColumn(nRow, "IE9_FLAG", "1");
+		this.ds_PARAMETERSUPPORT.setColumn(nRow, "IE10_FLAG", "1");
+		this.ds_PARAMETERSUPPORT.setColumn(nRow, "IE11_FLAG", "1");
+		this.ds_PARAMETERSUPPORT.setColumn(nRow, "MOBILEWEB_ANDROID_FLAG", "1");
+		this.ds_PARAMETERSUPPORT.setColumn(nRow, "MOBILEWEB_IOS_FLAG", "1");
+	}
+}
+
+this.btn_delRowParameterSupport_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	this.ds_PARAMETERSUPPORT.deleteRow(this.ds_PARAMETERSUPPORT.rowposition);
+}
+
+this.btn_addRowSettingSupport_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	var nRow = this.ds_SETTINGSUPPORT.addRow();
+	
+	this.ds_SETTINGSUPPORT.setColumn(nRow, "SOURCE_CD", 	this.pv_sourceCd);
+	this.ds_SETTINGSUPPORT.setColumn(nRow, "MC_SEQ", 		this.pv_mcSeq);
+	this.ds_SETTINGSUPPORT.setColumn(nRow, "LANGUAGE_CD", 	this.pv_language);	
+	this.ds_SETTINGSUPPORT.setColumn(nRow, "SU_SOURCE_CD", 	"ST");
+	
+	if(this.pv_productCd == "NP16"){
+		this.ds_SETTINGSUPPORT.setColumn(nRow, "WINDOWS_FLAG", "1");
+		this.ds_SETTINGSUPPORT.setColumn(nRow, "OSX_FLAG", "1");
+		this.ds_SETTINGSUPPORT.setColumn(nRow, "ANDROID_FLAG", "1");
+		this.ds_SETTINGSUPPORT.setColumn(nRow, "IOS_FLAG", "1");
+		this.ds_SETTINGSUPPORT.setColumn(nRow, "CHROME_FLAG", "1");
+		this.ds_SETTINGSUPPORT.setColumn(nRow, "FIREFOX_FLAG", "1");
+		this.ds_SETTINGSUPPORT.setColumn(nRow, "SAFARI_FLAG", "1");
+		this.ds_SETTINGSUPPORT.setColumn(nRow, "OPERA_FLAG", "1");
+		this.ds_SETTINGSUPPORT.setColumn(nRow, "IE6_FLAG", "1");
+		this.ds_SETTINGSUPPORT.setColumn(nRow, "IE7_FLAG", "1");
+		this.ds_SETTINGSUPPORT.setColumn(nRow, "IE8_FLAG", "1");
+		this.ds_SETTINGSUPPORT.setColumn(nRow, "IE9_FLAG", "1");
+		this.ds_SETTINGSUPPORT.setColumn(nRow, "IE10_FLAG", "1");
+		this.ds_SETTINGSUPPORT.setColumn(nRow, "IE11_FLAG", "1");
+		this.ds_SETTINGSUPPORT.setColumn(nRow, "MOBILEWEB_ANDROID_FLAG", "1");
+		this.ds_SETTINGSUPPORT.setColumn(nRow, "MOBILEWEB_IOS_FLAG", "1");
+	}
+}
+
+this.btn_delRowSettingSupport_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	this.ds_SETTINGSUPPORT.deleteRow(this.ds_SETTINGSUPPORT.rowposition);
+}
+
+
+// 이미지 링크처리
+this.btn_imageLink_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	var sArgument = {pvProject:this.pv_productCd,pvMode:"VIEW"}
+ 	this.commUtil.popup(this, "PM_ManualImageMMPop", "Project::PM_ManualImageMMPop.xfdl", -1, -1, 500, 600, true, true, false, sArgument, "fn_popCallBack");	
+}
+
+this.btn_imgCancel_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	this.ds_MODULE_CATEGORY.setColumn(0, "MNLI_SEQ", 	null);
+	this.ds_MODULE_CATEGORY.setColumn(0, "IMAGE_FILE", 	'');
+	this.btn_imgCancel.set_visible(false);
+}
+
+//팝업 콜백
+this.fn_popCallBack = function(sPopupId, Variant)
+{
+	Variant = this.commUtil.popupReturn();
+	if(sPopupId == "PM_ManualImageMMPop") {
+		if(Variant instanceof Object) {
+			this.ds_MODULE_CATEGORY.setColumn(0, "MNLI_SEQ", 	Variant.MNLI_SEQ);
+			this.ds_MODULE_CATEGORY.setColumn(0, "IMAGE_FILE", 	Variant.IMAGE_FILE);
+			this.btn_imgCancel.set_visible(true);
+		}
+	} else if (sPopupId == "CommChangeReason") {
+		if(!Eco.isEmpty(Variant)) {
+			this.fn_save("PATCHCHANGE", Variant);
+		}
+	} else if(sPopupId == "CE_Menual") {
+		if(Variant instanceof Object) {
+			this.ds_SETTINGSUPPORT.setColumn(this.ds_SETTINGSUPPORT.rowposition, "MNLC_SEQ", 			Variant.mnlc_seq);
+			this.ds_SETTINGSUPPORT.setColumn(this.ds_SETTINGSUPPORT.rowposition, "MNLC_SEQ_FULLNAME", 	Variant.mnlc_name);
+		}
+	} else if(sPopupId == "CE_Function") {
+		if(Variant instanceof Object) {
+			this.ds_SETTINGSUPPORT.setColumn(this.ds_SETTINGSUPPORT.rowposition, "FC_SEQ_OP_LINK", 		Variant.fc_seq);
+			this.ds_SETTINGSUPPORT.setColumn(this.ds_SETTINGSUPPORT.rowposition, "FC_SEQ_OP_LINK_NAME", Variant.fc_name);
+		}
+	} else if (sPopupId == "popObject_btn_searchObjectInfo"){
+		if(!Eco.isEmpty(Variant)) 
+		{
+			var sArr = Variant.pArrList[0].split("::");
+			
+			var mcSeq = this.ds_MODULE_CATEGORY.getColumn(0, "MC_SEQ");
+			var imcSeq = sArr[0];
+			var imcName = sArr[1];
+			
+			var curImcSeq = this.ds_MODULE_CATEGORY.getColumn(0, "INHERITANCE_MC_SEQ" );
+			if( parseInt(mcSeq) == parseInt(imcSeq) )
+			{
+				application.alert("현재 모듈을 상속받을 수 없습니다.");
+			}else{
+				if(curImcSeq != imcSeq)
+				{
+					if( !this.checkDuplication( mcSeq, imcSeq ) )
+					{
+						this.ds_MODULE_CATEGORY.setColumn(0, "INHERITANCE_MC_SEQ", imcSeq );
+						this.ds_MODULE_CATEGORY.setColumn(0, "INHERITANCE_MC_NAME", imcName );
+					}else{
+						this.showDuplication();
+					}
+				}
+			}
+		}	
+	} else if (sPopupId == "popObject_grd_control"){
+		if(!Eco.isEmpty(Variant)) 
+		{
+			var prefix = ""
+			if(this.productRule != 0){
+				prefix = "nexacro.";
+			}
+			var sArr = Variant.pArrList[0].split("::");
+			this.ds_CONTROL_DATA.setColumn(this.ds_CONTROL_DATA.rowposition, "TYPE_NAME_MC_SEQ", sArr[0]);
+			this.ds_CONTROL_DATA.setColumn(this.ds_CONTROL_DATA.rowposition, "TYPE_NAME", (prefix+sArr[1]));
+		}	
+	} else if (sPopupId == "popPseudo"){
+		if(!Eco.isEmpty(Variant)){
+			var ds = new Dataset();
+			ds.loadXML(Variant.toString(), true);
+			
+			for(var i = 0; i < ds.rowcount; i++){
+				if(this.ds_PSEUDO.findRow("PD_SEQ", ds.getColumn(i, "PD_SEQ")) == -1){
+					var aRow = this.ds_PSEUDO.addRow();
+					this.ds_PSEUDO.copyRow(aRow, ds, i);
+					this.ds_PSEUDO.setColumn(aRow, "MC_SEQ", this.pv_mcSeq);
+					this.ds_PSEUDO.setColumn(aRow, "CONTROL_FLAG", "1");
+					this.ds_PSEUDO.setColumn(aRow, "DEPRECATED_FLAG", "1");
+					this.ds_PSEUDO.setColumn(aRow, "UNUSED_FLAG", "1");
+					this.ds_PSEUDO.setColumn(aRow, "DEFAULT_FLAG", "1");
+					this.ds_PSEUDO.setColumn(aRow, "ORD", this.ds_PSEUDO.rowcount);
+				}
+			}
+		}
+	}
+}
+
+this.checkDuplication = function(mcSeq, imcSeq)
+{
+	var strSvcID 	= "PP_ModuleRegister_S07";
+	var strModelNm 	= "PP_ModuleRegister_S07";
+	
+	// 조건값(Rarameter) 셋팅
+	this.gfnAddSendParameter("MC_SEQ"				, 	mcSeq);
+	this.gfnAddSendParameter("INHERITANCE_MC_SEQ"	, 	imcSeq);
+	
+	// 조회용 Output dataset 세팅
+	this.gfnAddOutputDataset("ds_mcDuplicated"	, "dsMcDuplication");
+	this.gfnAddOutputDataset("ds_fcDuplicated"	, "dsFcDuplication");
+	this.gfnCommonTransaction(strSvcID, strModelNm, null, false);	
+	
+	var nMcCnt = this.ds_mcDuplicated.getRowCount();
+	var nFcCnt = this.ds_fcDuplicated.getRowCount();
+	if(nMcCnt > 0 || nFcCnt > 0)
+	{
+		return true;
+	}else{
+		return false;
+	}
+}
+
+this.showDuplication = function()
+{
+	var bg = this.div_bg;
+	bg.move("0%", "0%", null, null, "0%", "0%");
+	bg.set_visible(true);
+	
+	var div = bg.div_Duple;
+	
+	var parentWidth		= bg.getOffsetWidth();
+	var parentHeight	= bg.getOffsetHeight();
+	
+	var width 			= parentWidth * 0.7;
+	var height 			= parentHeight * 0.7;
+	var left 			= (parentWidth/2) - ( width/2);
+	var top 			= (parentHeight/2) - ( height/2);
+	
+	div.move(left, top, width, height);
+	div.setFocus();
+}
+
+this.hideDuplication = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	var bg = this.div_bg;
+	bg.set_visible(false);
+	return true;
+}
+
+this.groupFilter = function()
+{
+	this.ds_cmm_subgroup.filter("GD_SEQ == null || GD_SEQ == " + this.ds_MODULE_CATEGORY.getColumn(0, "GD_SEQ"));
+	
+	if(this.ds_MODULE_CATEGORY.getColumn(0, "SGD_SEQ") != null){
+		var sgdSeq = this.ds_MODULE_CATEGORY.getColumn(0, "SGD_SEQ");
+		this.ds_MODULE_CATEGORY.set_updatecontrol(false);
+		this.div_detail.cmb_subgroup.set_value(null);
+		this.div_detail.cmb_subgroup.set_value(sgdSeq);
+		this.ds_MODULE_CATEGORY.set_updatecontrol(true);
+	}
+	
+}
+
+
+this.div_fileTask_btn_addFile_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	var sSourceCd;
+	var sSourceSeq;
+	var sStatusCd;
+	
+// 	if (this.fvStatus == "00") {
+// 		sFileCd = "MC";
+// 		sRpStatus = "";
+// 		sSeq=this.fvFileSeq;
+// 	} else {
+// 		sFileCd = "RP";
+// 		sRpStatus = this.fvStatus;
+// 		sSeq = this.fvRpSeq;
+// 	}
+	
+	sSourceCd 		= this.pv_sourceCd;
+	//sSourceSeq 	= "0";
+	sSourceSeq 		= this.pv_mcSeq;
+	sStatusCd		= null;
+	
+	this.commUtil.popupFileMaster(sSourceCd, sSourceSeq, sStatusCd, "fnFileCallBack", this, true);
+}
+
+//파일 콜백
+this.fnFileCallBack = function(FileId,Variant)
+{
+	Variant = this.commUtil.popupReturn();
+	
+	if(Eco.XComp.typeOf(Variant) == "Dataset")
+	{
+		this.fvSourceSeq = Variant.getColumn(0,"SOURCE_SEQ")
+		this.fnSearchFile();
+		
+// 		if (this.fvStatus == "00") this.fnSearchFile(0, this.fvFileSeq);
+// 		else this.fnSearchFile(this.fvRpSeq, this.fvRcSeq);
+	} else if(Variant == "FileDelete") {
+		//alert("this.fvSourceSeq::"+this.fvSourceSeq);
+		this.fvSourceSeq = this.pv_mcSeq;
+		this.fnSearchFile();
+	}
+}
+
+this.fnSearchFile = function()
+{
+	var strSvcID 	= "PP_ModuleRegister_S05";
+	var strModelNm 	= "PP_ModuleRegister_S05";
+	
+	// 조건값(Rarameter) 셋팅
+	this.gfnAddSendParameter("SOURCE_SEQ", 	this.fvSourceSeq);	// 파일시퀀스 정보
+	
+	// 조회용 Output dataset 세팅
+	this.gfnAddOutputDataset("ds_FILE"			, "ds_FILE");
+	
+	this.gfnCommonTransaction(strSvcID, strModelNm);
+}
+
+this.Grid00_oncelldblclick = function(obj:Grid, e:nexacro.GridClickEventInfo)
+{
+	if(e.cell == 7) {
+		// TO-DO : 팝업창 처리 해야 함
+		var objParam = new Object();  //var arrArg = []; 같은 형식임
+		objParam.pv_productCd = this.parent.pv_productCd;
+		
+		var sArgument = {pv_Object:objParam}
+		this.commUtil.popup(this, "CE_Menual", "Common::CE_Menual.xfdl", -1, -1, 489, 706, true, true, false, sArgument, "fn_popCallBack");			
+	} else if(e.cell == 8) {
+		var objParam = new Object();  //var arrArg = []; 같은 형식임
+		objParam.pv_mcSeq = this.pv_mcSeq;
+		
+		var sArgument = {pv_Object:objParam}
+		this.commUtil.popup(this, "CE_Function", "Common::CE_Function.xfdl", -1, -1, 489, 706, true, true, false, sArgument, "fn_popCallBack");		
+	}
+}
+
+// 미리보기
+this.btn_preView_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	//var sUrl = "http://localhost:8080/Service/Manual/ReviewManualFuncHTML.jsp?PRODUCT_CODE='"+this.pv_productCd+"'&LANGUAGE_CD='"+this.pv_language+"'&MC_SEQ='"+this.pv_mcSeq+"'&PP_SEQ='"+this.cbo_patch.value+"'";
+	//var strServiceURL = application.services["ServiceURL"].url;
+	//var sUrl = strServiceURL+"Service/Manual/ReviewManualModHTML.jsp?PRODUCT_CODE="+this.pv_productCd+"&LANGUAGE_CD="+this.pv_language+"&MC_SEQ="+this.pv_mcSeq+"&PP_SEQ="+this.cbo_patch.value;
+	//var sUrl = "http://localhost:8080/Service/Manual/ReviewManualModHTML.jsp?PRODUCT_CODE=XP13&LANGUAGE_CD=KOR&MC_SEQ=3285&PP_SEQ=1";
+	//system.execBrowser(sUrl);
+	
+	var strSourcdCd = "MC";
+	var strProductCd = this.pv_productCd;
+	var strLanguageCd = this.pv_language;
+	var strMCseq = this.pv_mcSeq;
+	var strppseq = this.cbo_patch.value;
+	var sArgument = {pv_SourceCd:strSourcdCd,pv_ProductCd:strProductCd,pv_LanguageCd:strLanguageCd,pv_seq:strMCseq,pv_ppseq:strppseq}
+ 	this.commUtil.popup(this, "PP_ModuleReview", "Project::PM_ManualReview.xfdl", -1, -1, 1185, 706, true, true, false, sArgument, "fnPopupCallBack");	
+}
+
+this.div_control_btn_addRowControl_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	var nRow = this.ds_CONTROL_DATA.addRow();
+	this.ds_CONTROL_DATA.setColumn(nRow, "MC_SEQ", this.pv_mcSeq);
+	this.ds_CONTROL_DATA.setColumn(nRow, "DEPRECATED_FLAG", "1");
+	this.ds_CONTROL_DATA.setColumn(nRow, "UNUSED_FLAG", "1");
+}
+
+this.div_control_btn_delRowControl_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	this.ds_CONTROL_DATA.deleteRow(this.ds_CONTROL_DATA.rowposition);
+}
+
+this.btn_fileDown_onclick = function(obj:FileDownload,  e:nexacro.ClickEventInfo)
+{
+	
+}
+
+this.common_viewOpen_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	var sContents;
+	
+	switch(obj.name) 
+	{
+		case "btn_viewOpen_Description":
+			sContents = this.div_body.txa_remarkDefault.value;
+			break;
+// 		case "btn_viewOpen_Requirement":
+// 			sContents = this.txa_remarkDefault01.value;
+// 			break;
+		case "btn_viewOpen_Remark":
+			sContents = this.div_body.txa_remarkDefault00.value;
+			break;	
+		case "btn_viewOpen_Syntax":
+			sContents = this.div_body.txa_Syntax.value;
+			break;	
+		case "btn_viewOpen_Parameter":
+			sContents = this.div_body.txa_Parameter.value;
+			break;	
+		case "btn_viewOpen_Example":
+			sContents = this.div_body.txa_Example.value;
+			break;	
+		case "btn_viewOpen_Setting_Syntax":
+			sContents = this.div_body.tab_module.tabpage1.txa_Syntax.value;
+			break;	
+		case "btn_viewOpen_SettingExample":
+			sContents = this.div_body.tab_module.tabpage1.txa_Example.value;
+			break;	
+		case "btn_viewOpen_Object_Example":
+			sContents = this.div_body.tab_module.tabpage2.txa_Example.value;
+			break;	
+		case "btn_PopContentsInfo":
+			sContents = this.ds_MODULE_CATEGORY.getColumn(0,"CONTENTSINFO_TXT");
+			break;
+		case "btn_PopCommentary":
+			sContents = this.ds_MODULE_CATEGORY.getColumn(0,"COMMENTARY");
+			break;
+	}
+	
+	var sArgument = {pv_contents:sContents}
+	this.commUtil.popup(this, obj.name, "Common::CommBigTextArea.xfdl", -1, -1, 940, 621, true, true, false, sArgument, "fn_popViewOpenCallBack");	
+}
+
+//크게보기팝업 콜백
+this.fn_popViewOpenCallBack = function(sPopupId, Variant)
+{
+	switch(sPopupId) 
+	{
+		case "btn_viewOpen_Description":
+			this.div_body.txa_remarkDefault.set_value(Variant);
+			break;
+// 		case "btn_viewOpen_Requirement":
+// 			this.txa_remarkDefault01.set_value(Variant);
+// 			break;
+		case "btn_viewOpen_Remark":
+			this.div_body.txa_remarkDefault00.set_value(Variant);
+			break;	
+		case "btn_viewOpen_Syntax":
+			this.div_body.txa_Syntax.set_value(Variant);
+			break;	
+		case "btn_viewOpen_Parameter":
+			this.div_body.txa_Parameter.set_value(Variant);
+			break;	
+		case "btn_viewOpen_Example":
+			this.div_body.txa_Example.set_value(Variant);
+			break;	
+		case "btn_viewOpen_Setting_Syntax":
+			this.div_body.tab_module.tabpage1.txa_Syntax.set_value(Variant);
+			break;	
+		case "btn_viewOpen_SettingExample":
+			this.div_body.tab_module.tabpage1.txa_Example.set_value(Variant);
+			break;	
+		case "btn_viewOpen_Object_Example":
+			this.div_body.tab_module.tabpage2.txa_Example.set_value(Variant);
+			break;	
+		case "btn_PopContentsInfo":
+			this.ds_MODULE_CATEGORY.setColumn(0, "CONTENTSINFO_TXT", Variant);
+			break;
+		case "btn_PopCommentary":
+			this.ds_MODULE_CATEGORY.setColumn(0, "COMMENTARY", Variant);
+			break;
+
+	}
+
+}	
+
+this.btn_addRowRequirementData_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	var nRow = this.ds_REQUIREMENT_DATA.addRow();
+	
+	this.ds_REQUIREMENT_DATA.setColumn(nRow, "SOURCE_CD", 	"MC");
+	this.ds_REQUIREMENT_DATA.setColumn(nRow, "MC_SEQ", 		this.pv_mcSeq);
+}
+
+this.btn_delRowRequirementData_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	this.ds_REQUIREMENT_DATA.deleteRow(this.ds_REQUIREMENT_DATA.rowposition);
+}
+
+this.ds_REQUIREMENT_DATA_oncolumnchanged = function(obj:Dataset, e:nexacro.DSColChangeEventInfo)
+{
+	if(e.columnid == "SUPPORT_CODE") {
+		obj.setColumn(e.row, "VERSION", "");
+	}
+}
+
+this.div_body_tab_module_tabpage1_Grid01_onexpandup = function(obj:Grid, e:nexacro.GridMouseEventInfo)
+{
+	if(e.cell == 7) {
+		if(!Eco.isEmpty(this.ds_SETTINGSUPPORT.getColumn(e.row, "MNLC_SEQ"))) {
+			this.ds_SETTINGSUPPORT.setColumn(e.row, "MNLC_SEQ", 			"");
+			this.ds_SETTINGSUPPORT.setColumn(e.row, "MNLC_SEQ_FULLNAME", 	"");
+		}	
+	} else if(e.cell == 8) {
+		if(!Eco.isEmpty(this.ds_SETTINGSUPPORT.getColumn(e.row, "FC_SEQ_OP_LINK"))) {
+			this.ds_SETTINGSUPPORT.setColumn(e.row, "FC_SEQ_OP_LINK", 		"");
+			this.ds_SETTINGSUPPORT.setColumn(e.row, "FC_SEQ_OP_LINK_NAME", "");
+		}	
+	}
+}
+
+this.fnSearchObjectInfo_onclick = function(obj, e)
+{
+	if(obj.id == "grd_control" && !Eco.isEmpty(this.ds_CONTROL_DATA.getColumn(this.ds_CONTROL_DATA.rowposition, "TYPE_NAME")))
+	{
+		this.ds_CONTROL_DATA.setColumn(this.ds_CONTROL_DATA.rowposition, "TYPE_NAME", "");
+		this.ds_CONTROL_DATA.setColumn(this.ds_CONTROL_DATA.rowposition, "TYPE_NAME_MC_SEQ", "");
+	}else{
+		var strCode   = this.pv_productCd;
+		var sArgument = {pvVal:"Modal", pvProject:strCode, pvMode:"SELECT"};
+		this.commUtil.popupCategorySearch(this, "popObject_"+obj.id, "fn_popCallBack", this.pv_productCd, "MC", false, "S");
+	}
+}
+
+this.div_detail_btn_cancleObjectInfo_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	this.ds_MODULE_CATEGORY.setColumn(0, "INHERITANCE_MC_SEQ", "");
+	this.ds_MODULE_CATEGORY.setColumn(0, "INHERITANCE_MC_NAME", "");
+}
+
+this.div_bg_onkeydown = function(obj:Div, e:nexacro.KeyEventInfo)
+{
+	if(e.keycode === nexacro.Event.KEY_ESC)
+	{
+		this.hideDuplication();
+	}
+	return true;
+}
+
+this.div_bg_onkillfocus = function(obj:Div, e:nexacro.KillFocusEventInfo)
+{
+	this.hideDuplication();
+}
+
+this.div_detail_cmb_group_onitemchanged = function(obj:Combo, e:nexacro.ItemChangeEventInfo)
+{
+	this.groupFilter();
+}
+
+this.div_control_grd_control_oncloseup = function(obj:Grid, e:nexacro.GridEditEventInfo)
+{
+	if(e.col == 4){
+		this.ds_cmm_subgroup_con.filter("GD_SEQ == null || GD_SEQ == " + e.value);
+	}
+}
+]]></Script>
+  </Form>
+</FDL>
